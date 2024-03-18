@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Характеристики триггера для начального периода работы детектора ATLAS</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+
+<table border="0" cellpadding="5" cellspacing="1" style="border-collapse: collapse" bordercolorlight="#000000" bordercolordark="#000000" width="700" id="table1">
+	<tr>
+		<td>
+<h2 ALIGN="center" STYLE="text-indent: 1.25cm; margin-bottom: 0cm">
+Характеристики триггера для начального периода работы детектора ATLAS</h2>
+<p>&nbsp;&nbsp;&nbsp; Скорости счета триггера до начала эксперимента определяются с помощью 
+моделированных событий. Разработка меню триггера, как правило, требует 
+нескольких этапов оптимизации критериев отбора событий для того, чтобы скорость 
+поступления событий оставалась внутри заданной полосы пропускания. При этом 
+необходимо обеспечивать высокую эффективность отбора событий с исследуемой 
+физикой.<br>
+&nbsp;&nbsp;&nbsp; Первым шагом определения скорости счета триггера является выбор оптимального 
+набора моделированных событий, событий с большими сечениями, определяющими общий 
+фон для многих исследуемых процессов. События, которые должны пройти условия 
+отбора триггера, в этом наборе составляют малую долю, поэтому для определения 
+скорости счета триггера с приемлемой статистической точностью общее количество 
+моделированных событий должно быть велико. На рис. 8.1 приведены сечения для 
+различных процессов при планируемой энергии и светимости LHC 14 ТэВ и 10<sup>34</sup> 
+см<sup>-2 </sup>с<sup>-1</sup>. На нем видно, что для поиска бозона Хиггса и 
+других новых частиц необходимо отсечь несколько порядков скорости счета 
+основного потока событий.<br>
+&nbsp;&nbsp;&nbsp; Для начального этапа эксперимента меню триггера сформировано для светимости 
+10<sup>31</sup> см<sup>-2</sup> с<sup>-1</sup> и энергии 14 ТэВ. Использовался 
+полный набор недифракционных взаимодействий (minimum-bias) из семи миллионов 
+событий, соответствующий сечению ~ 70 мб и обеспечивающую статистическую 
+точность оценок ~0,1 Гц. При моделировании больших светимостей предполагается 
+использовать полные наборы событий, обогащенные жесткими взаимодействиями 
+квантовой хромодинамики (КХД), включающие начальный порог для попречных 
+импульсов мюонов, ЕМ кластеров и струй. Только такие события будут проходить 
+фазу реконструкции, что существенно уменьшит требуемые вычислительные ресурсы. В 
+дополнение к КХД физике, для определения скоростей счета должны быть учтены и 
+другие процессы с большими сечениями, например, рождение W и Z-бозонов. Однако, 
+моделированные меню триггера опираются на существующее понимание физики и 
+детектора. В процессе эксперимента потребуется уточнение существующих оценок и 
+разработка новых критериев для выделения все более редких событий.</p>
+<div align="center">
+	<table border="1" cellpadding="5" style="border-collapse: collapse" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="0" id="table4" width="500">
+		<tr>
+			<td>
+			<img border="0" src="images/atlas8_1.jpg" width="488" height="543"><br>
+			Рис.8.1. Сечения (левая шкала) и скорости потока соответствующих событий 
+(шкала справа) различных физических процессов рр-взаимодействий при энергии и 
+светимости LHC 14 ТэВ и <br>
+10<sup>34</sup> см<sup>-2 </sup>с<sup>-1</sup>.</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Для расчета меню триггера было проведено полное моделирование триггера 
+(L1, L2 и фильтра событий) с использованием полного набора событий, 
+сгенерированных PYTHIA и прошедших реконструкцию в детекторе с помощью GEANT4.
+<br>
+&nbsp;&nbsp;&nbsp; Меню триггера представляет собой таблицы, содержащие определения физических 
+объектов на каждом уровне триггера. Эти определения включают пороги и критерии 
+отбора объектов. Принята следующая система обозначений меню триггера: e – 
+электрон, g – фотон, j – струя, fj- струя в передней области, xE – потерянная 
+поперечная энергия Е<sub>т</sub>, te - полная скалярная сумма Е<sub>т</sub>, je 
+– скалярная сумма энергий Е<sub>т</sub> струй, mu – мюоны, tau – τ-лептоны. 
+Типичный примет триггера 2е15i – два изолированных электрона с поперечным 
+импульсом р<sub>т</sub> ≥ 15 ГэВ/с, или tau20i_xE30 – изолированный τ-лептон, 
+распавшийся по адронной моде с видимым р<sub>т</sub> выше 20 ГэВ и потерянной 
+энергией Е<sub>т</sub> выше 30 ГэВ. Префикс перед обозначением указывает для 
+какого уровня триггера предназначено определение. Если объект требует нескольких 
+признаков, используется объединение этих признаков через AND, который 
+обозначается “_”, как это сделано в примере с τ-лептоном, где объединены два 
+признака, с р<sub>т</sub> и потерянной энергией. Если нет указания порога, могут 
+использоваться просто символы, например, е + μ для триггера на электрон и мюон.<br>
+&nbsp;&nbsp;&nbsp; Триггер первого уровня L1 имеет обозначения объектов заглавными буквами. 
+Например, ЕМ обозначает кластер электромагнитного калориметра, J – струю, I – 
+изолированность, nJ - количество n струй J. Фактор <i>prescale </i>обозначает 
+уменьшение соответствующего потока событий в указанное число раз. При 1 берется 
+каждое событие, при 10 – каждое десятое. Так уменьшается поток событий с 
+большими сечениями при низких порогах для падающих спектров частиц. В таблице 
+8.1 приведен пример скоростей счета струй в L1.</p>
+<p>Таблица 8.1.</p>
+<div align="center">
+	<table WIDTH="410" BORDER="1" BORDERCOLOR="#000000" CELLPADDING="7" CELLSPACING="0" id="table2" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+		<colgroup>
+			<col WIDTH="27"><col WIDTH="20"><col WIDTH="16"><col WIDTH="16">
+			<col WIDTH="12"><col WIDTH="12"><col WIDTH="12"><col WIDTH="16">
+			<col WIDTH="16"><col WIDTH="16"><col WIDTH="16"><col WIDTH="16">
+			<col WIDTH="15">
+		</colgroup>
+		<tr VALIGN="TOP">
+			<td WIDTH="27">
+			 Объект</td>
+			<td WIDTH="20">
+			 J10 </td>
+			<td WIDTH="16">
+			 J18 </td>
+			<td WIDTH="16">
+			 J23</td>
+			<td WIDTH="12">
+			 J35</td>
+			<td WIDTH="12">
+			 J42</td>
+			<td WIDTH="12">
+			 J70</td>
+			<td WIDTH="16">
+			 J120</td>
+			<td WIDTH="16">
+			 3J10</td>
+			<td WIDTH="16">
+			 3J18</td>
+			<td WIDTH="16">
+			 4J10</td>
+			<td WIDTH="16">
+			 4J18</td>
+			<td WIDTH="15">
+			 4J23</td>
+		</tr>
+		<tr VALIGN="TOP">
+			<td WIDTH="27">
+			 <i>prescale</i></td>
+			<td WIDTH="20">
+			 42000</td>
+			<td WIDTH="16">
+			 6000</td>
+			<td WIDTH="16">
+			 2000</td>
+			<td WIDTH="12">
+			 500</td>
+			<td WIDTH="12">
+			 100</td>
+			<td WIDTH="12">
+			 15</td>
+			<td WIDTH="16">
+			 1</td>
+			<td WIDTH="16">
+			 150</td>
+			<td WIDTH="16">
+			 1</td>
+			<td WIDTH="16">
+			 30</td>
+			<td WIDTH="16">
+			 1</td>
+			<td WIDTH="15">
+			 1</td>
+		</tr>
+		<tr VALIGN="TOP">
+			<td WIDTH="27">
+			 Поток,<span lang="en">&nbsp;</span>Гц</td>
+			<td WIDTH="20">
+			 4</td>
+			<td WIDTH="16">
+			 1</td>
+			<td WIDTH="16">
+			 1</td>
+			<td WIDTH="12">
+			 1</td>
+			<td WIDTH="12">
+			 4</td>
+			<td WIDTH="12">
+			 4</td>
+			<td WIDTH="16">
+			 8</td>
+			<td WIDTH="16">
+			 40</td>
+			<td WIDTH="16">
+			 140</td>
+			<td WIDTH="16">
+			 40</td>
+			<td WIDTH="16">
+			 20</td>
+			<td WIDTH="15">
+			 8</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; На рисунке 8.2 приведен спектр энергий регистрируемых лидирующих струй с 
+фактором <i>prescale</i> и без него.</p>
+<div align="center">
+	<table border="1" cellpadding="5" style="border-collapse: collapse" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="0" id="table5" width="360">
+		<tr>
+			<td>
+			<img border="0" src="images/atlas8_2.gif" width="347" height="238"><br>
+			Рис.8.2. Энергетический спектр Ет струй до применения фактора <i>prescale </i>
+(пунктир) и после его применения при светимости 10<sup>31</sup> см<sup>-2 </sup>
+с<sup>-1</sup>.</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Скорости потоков событий (rates) мюонного триггера можно оценить из рисунка 
+8.3, где показаны также отдельные источники мюонов: распады b и c-кварков, 
+распады на лету π и К-мезонов, распады W-бозонов. Триггер первого уровня L1 
+имеет высокую эффективность (99%) регистрации мюонов выше порогов в пределах 
+эффективной области детектора.</p>
+<div align="center">
+	<table border="1" cellpadding="5" style="border-collapse: collapse" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="0" id="table6" width="390">
+		<tr>
+			<td>
+			<img border="0" src="images/atlas8_3.gif" width="372" height="253"><br>
+			Рис.8.3. Скорости потоков мюонов в зависимости от величины порога р<sub>т</sub> 
+при светимости 10<sup>31</sup> см<sup>-2</sup> с<sup>-1</sup> и для различных 
+процессов генерации. Темными квадратами отмечен суммарный спектр.</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; На начальном этапе большая часть триггеров высокого уровня предполагает 
+проведение расчетов без отбора событий, в пассивном режиме, или при 
+использовании отдельных критериев. В таблице 8.2 приведены примеры таких 
+триггергных объектов с низкими порогами с ожидаемыми при <br>
+10<sup>31</sup> см<sup>-2
+</sup>с<sup>-1</sup> скоростями счета.</p>
+<p>Таблица 8.2.</p>
+<div align="center">
+	<center>
+	<table DIR="ltr" WIDTH="650" BORDER="1" BORDERCOLOR="#000000" CELLPADDING="7" CELLSPACING="0" id="table3" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+		<colgroup>
+			<col WIDTH="40"><col WIDTH="22"><col WIDTH="22"><col WIDTH="22">
+			<col WIDTH="22"><col WIDTH="22"><col WIDTH="34"><col WIDTH="41">
+			<col WIDTH="27"><col WIDTH="22"><col WIDTH="21">
+		</colgroup>
+		<tr VALIGN="TOP">
+			<td WIDTH="40" nowrap align="center">
+			 Объект</td>
+			<td WIDTH="22" nowrap align="center">
+			 e12</td>
+			<td WIDTH="22" nowrap align="center">
+			 2e5</td>
+			<td WIDTH="22" nowrap align="center">
+			 g20</td>
+			<td WIDTH="22" nowrap align="center">
+			 τ60</td>
+			<td WIDTH="22" nowrap align="center">
+			 μ10</td>
+			<td WIDTH="34" nowrap align="center">
+			 2mu4</td>
+			<td WIDTH="41" nowrap align="center">
+			 e10_μ6</td>
+			<td WIDTH="27" nowrap align="center">
+			 j120</td>
+			<td WIDTH="22" nowrap align="center">
+			 4j23</td>
+			<td WIDTH="21" nowrap align="center">
+			 2b23</td>
+		</tr>
+		<tr VALIGN="TOP">
+			<td WIDTH="40" HEIGHT="13" nowrap align="center">
+			 Поток, Гц</td>
+			<td WIDTH="22" nowrap align="center">
+			<p LANG="en-US" CLASS="western">19</td>
+			<td WIDTH="22" nowrap align="center">
+			<p LANG="en-US" CLASS="western">7</td>
+			<td WIDTH="22" nowrap align="center">
+			<p LANG="en-US" CLASS="western">7</td>
+			<td WIDTH="22" nowrap align="center">
+			<p LANG="en-US" CLASS="western">10</td>
+			<td WIDTH="22" nowrap align="center">
+			<p LANG="en-US" CLASS="western">18</td>
+			<td WIDTH="34" nowrap align="center">
+			<p LANG="en-US" CLASS="western">2,3</td>
+			<td WIDTH="41" nowrap align="center">
+			<p LANG="en-US" CLASS="western">0,5</td>
+			<td WIDTH="27" nowrap align="center">
+			<p LANG="en-US" CLASS="western">9</td>
+			<td WIDTH="22" nowrap align="center">
+			<p LANG="en-US" CLASS="western">7</td>
+			<td WIDTH="21" nowrap align="center">
+			<p LANG="en-US" CLASS="western">3</td>
+		</tr>
+	</table>
+	</center></div>
+<p>&nbsp;&nbsp;&nbsp; На рисунке 8.4 графически показаны скорости счета на выходе фильтра 
+событий для разных типов триггеров, а также суммарный поток событий (сumulative 
+rates) после нового триггера.</p>
+<div align="center">
+	<table border="1" cellpadding="5" style="border-collapse: collapse" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="0" id="table7" width="560">
+		<tr>
+			<td>
+			<img border="0" src="images/atlas8_4.gif" width="541" height="391"><br>
+			Рис.8.4. Графически показаны скорости счета на выходе фильтра событий для 
+разных типов триггеров (темные полосы), а также суммарный поток событий (сumulative 
+rates, светлые полосы) с последовательным включением каждого триггера HLT.</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Отобранные триггером события формируют потоки выходных данных. Детектор 
+ATLAS использует инклюзивную модель формирования потоков, когда одно событие 
+может быть записано в несколько потоков в зависимости от метки решения триггера. 
+На начальном этапе будет сформировано четыре основных потока данных, 
+обозначаемых как egamma для электронов и фотонов, jetTauЕtmiss, включающий 
+струи, τ-лептоны с адронными распадами и потерянную поперечную энергию, поток 
+мюонов muons и полный поток событий minbias. События в каждом потоке могут иметь 
+несколько меток триггера. События с метками отдельных сложных триггеров могут 
+входить в несколько потоков. Например, для триггера для е + μ события входят в 
+поток egamma и muons, или события с триггером е + Етmis входят в поток egamma и 
+, jetTauЕtmiss.<br>
+&nbsp;&nbsp;&nbsp; Потоки сформированы так, чтобы иметь близкие количества событий в каждом, 
+вклад повторяющихся событий не должен превышать 10% . Реальные данные внесут 
+поправки в формирование потоков, как и переход к более высоким светимостям 
+изменит критерии триггеров. Основные типы объектов триггера, имеющие важное 
+значение для физики коллайдера, рассмотрены в следующих разделах. </p>
+<p align="center"><a href="atlas8.htm"><img src="../images/prev.gif" alt="previous"
+border="0" width="24" height="24"></a><a href="index.html"><img src="../images/rtop.gif" alt="home" border="0" width="24" height="24"></a><a href="atlas10.htm"><img src="../images/next.gif" alt="next" border="0" width="24" height="24"></a></p>
+		<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+	</tr>
+</table>
+
+</div>
+
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+
+
+</html>
