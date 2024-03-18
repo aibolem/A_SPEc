@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Электромагнитные взаимодействия ядер (гл.8)</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛAнg?Age©///?Ang?Age® Ekohomei©A TALKiNg ?.?.м.?.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<p><b>ГЛАВА 8 </b></p>
+
+<h3 align="center">Общие принципы организации системы
+сбора и обработки данных. <br>
+Формирование триггера. <br>
+Структура NTPL – файла, основные переменные
+записи. <br>
+Понятие элемента детектора и кластера,
+предварительная обработка событий </h3><article>
+
+<p><b>&nbsp;</b>&nbsp;&nbsp;&nbsp; Система сбора данных
+эксперимента служит для сбора сигналов
+со всех детекторов установки, оцифровки сигналов
+и их записи на постоянные носители информации, а
+так же для настройки и контроля работы
+экспериментальной установки. В настоящее время в
+ядерной физике и физике элементарных частиц в
+качестве стандарта для построения систем сбора
+данных приняты стандарты САМАС (Computer Automated Measurement
+And Control) и VME. (VERSA Module Europe). Они представляют собой
+модульные системы, состоящие из различных
+приборов, а также цифровой стандартизованный
+интерфейс, используемый для компьютерной
+автоматизации и управления измерениями.
+Электроника системы сбора данных
+(Амплитудно-цифровые и время-цифровые
+преобразователи, счётчики и т.д.) выполняется в
+виде отдельных сменных модулей с интерфейсами
+САМАС или VME в зависимости от выбранного
+стандарта. Эти модули помещаются в один или
+несколько контейнеров (крейтов), которые
+предоставляют возможность обмена данными между
+различными модулями по внутренней шине. Одним из
+модулей в крейте обязательно является
+контроллер крейта. Общий вид крейтов САМАС и VME с
+помещёнными в них модулями показан на рис. 8.1. Как
+правило, один или несколько модулей системы
+имеют интерфейс для связи с персональным
+компьютером или же сами являются ЭВМ,
+выполненным в виде отдельного модуля. Важным
+элементом системы является программное
+обеспечение, посредством которого
+осуществляется управление экспериментальной
+установкой.</p>
+<div align="center"><center>
+
+<table border="1" cellpadding="3" cellspacing="0">
+  <tr>
+    <td><p align="center"><img src="images/eint08_01a.jpg" alt="eint08_01a.jpg (114135 bytes)" width="386" height="221">
+    &nbsp;&nbsp; <img src="images/eint08_01b.jpg" alt="eint08_01b.jpg (33615 bytes)" width="120" height="214"><br>
+    Рис. 8.1. Общий вид крейтов САМАС (слева) и VME
+    (справа).</td>
+  </tr>
+</table>
+</center></div>
+
+<p> В качестве примера
+рассмотрим систему сбора данных уже
+упоминавшегося эксперимента GRAAL (рис. 8.2).
+Электроника реализована в модулях как системы
+САМАС, так и VME. Связь между модулями системы
+САМАС и VME осуществляется через модуль FASIC. Данные
+с каждого из детекторов установки поступают
+в модули САМАС и VME по шинам стандарта FERA (Fast Encode
+Readout ADC) и ASIC (Application Specific Integrated Circuit). </p>
+<div align="center"><center>
+
+<table border="1" cellpadding="3" cellspacing="0">
+  <tr>
+    <td><p align="center"><img src="images/eint08_02.gif" width="483" height="354">
+    &nbsp;&nbsp; <br>
+    <br>
+    Рис. 8.2. Система сбора данных эксперимента GRAAL</td>
+  </tr>
+</table>
+</center></div>
+
+<p ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp; Управление оптической
+системой лазера осуществляется с персонального
+компьютера (PC), через модуль PCAS1C, связанного с PC по
+шине стандарта GPIB (IEEE bus). Управление всей
+установкой осуществляется с рабочей станции SUN,
+связанной с модулем MVME167 посредством ETHERNET
+соединения. Модуль MVME167 представляет собой
+одноплатный компьютер, который служит для
+управления модулями VME по запросам с компьютера
+SUN. При помощи программы AKIGRAAL, запускаемой с SUN,
+контролируется работа установки и организуется
+сбор данных и их запись на DLT ленту. Объем одной
+ленты DLT равен 10 Гб. Система сбора данных GRAAL может
+обработать событие с объёмом ~3200 бит за время ~17.5
+мксек без передачи по ETHERNET и записи на DLT ленту,
+что соответствует загрузке (потоку данных) ™ 23
+Мб/сек. Скорость ETHERNET составляет 600 Кб/сек,
+скорость записи на DLT ленту ~ 300 Кб/сек.<br>
+&nbsp;&nbsp;&nbsp; В эксперименте, поток данных и объём
+одного события зависят от настроек установки и
+интенсивности пучка гамма-квантов и составляет в
+среднем<i> </i>100-150 Кб/сек и ~ 700 байт, соответственно.<br>
+&nbsp;&nbsp;&nbsp; Сигналом, указывающим системе сбора
+данных начать запись события, является так
+называемый триггер. Различают физический или
+жесткий триггер, соответствующий жестко
+заданным условиям отбора, и компьютерный или
+мягкий триггер, формируемым программным
+способом. Физический триггер в установке GRAAL
+формируется при выполнении следующих условий: BGO
+- калориметр срабатывает в совпадении с системой
+мечения. При этом для того, чтобы отрезать
+события, не соответствующие рождению мезонов,
+порог срабатывания BGO калориметра (минимальное
+суммарное энерговыделение) устанавливается на
+уровне 200 МэВ. Этот порог задается
+дискриминатором и не может меняться программным
+способом.<br>
+&nbsp;&nbsp;&nbsp; Число “мягких” триггеров зависит от
+конкретного алгоритма анализа. Например, для
+изучения фоторождения 3 заряженных частиц в
+конечном состоянии используется отбор событий,
+когда двойная стена пластиковых сцинтилляторов
+и “Barrel” срабатывают в совпадении с системой
+мечения. При этом, количество событий в двойной
+стене пластиковых сцинтилляторов должно быть
+более двух, а в детекторе “Barrel” - более одного.
+Триггер монитора пучка формируется при
+совпадении сигнала от системы мечения с сигналом
+от детектора “Spaghetty” или тонкого монитора.</p>
+<i>
+
+<p></i><strong>Дополнительная литература:</strong>
+
+<ol>
+  <li>GRAAL homepage: <a HREF="http://www.infn.it/levisand/graal/graal.html">http://www.infn.it/levisand/graal/graal.html</a><i></li>
+</ol>
+</i>
+<hr noshade width="50%" size="1">
+<p align="center"><a href="eint07.htm"><img src="../images/prev.gif" alt="previous"
+border="0" width="24" height="24"></a><a href="index.html"><img src="../images/rtop.gif" alt="home"
+border="0" width="24" height="24"></a><a href="eint09.htm"><img src="../images/next.gif" alt="next" border="0" width="24" height="24"></a></p>
+<p><sub><!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%d.%m.%Y" startspan -->24.04.2014<!--webbot bot="Timestamp" i-checksum="12523" endspan --></sub></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+</tr>
+</table>
+</div>
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>
