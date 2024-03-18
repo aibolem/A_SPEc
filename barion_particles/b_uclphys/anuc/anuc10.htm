@@ -1,0 +1,1161 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Калькулятор свойств ядер и характеристик ядерных процессов</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+
+<div align="center">
+	<table border="0" cellpadding="0" style="border-collapse: collapse" width="700">
+		<tr>
+			<td>
+<h3>10. База
+данных основных
+состояний атомных ядер. <br>
+Калькулятор
+свойств ядер и
+характеристик ядерных процессов</h3><article>
+<P>&nbsp;&nbsp;&nbsp; В Центре данных
+фотоядерных экспериментов НИИЯФ МГУ имеется постоянно обновляемая
+база данных (БД) [11] по параметрам основных и изомерных состояний
+атомных ядер (рис. 20). В ней содержится информация [12] обо всех
+ядрах, обнаруженных к последнему обновлению базы. БД содержит (см.
+рис. 21 и Раздел 11) следующие параметры атомного ядра:</P>
+<ul>
+	<li>А &ndash; массовое число ядра;</li>
+	<li>Z &ndash; число
+протонов в ядре;</li>
+	<li>N - число нейтронов в
+ядре;</li>
+	<li>T<SUB>1/2</SUB> -
+период полураспада радиоактивного ядра, Г &ndash;
+ширина распада радиоактивного ядра, распространенность стабильного
+ядра;</li>
+	<li>J<SUP>P</SUP>-
+спин J и чётность P
+основного или изомерного состояния ядра;</li>
+	<li>масса атома M, а.е.м.
+- масса атома в атомных единицах массы;</li>
+	<li>масса атома M, МэВ
+&ndash; масса атома в МэВ;</li>
+	<li>избыток (дефект) массы &#916;
+= M - А в кэВ;</li>
+	<li>энергия связи - энергия связи ядра в кэВ;</li>
+	<li>моды распада радиоактивного ядра.</li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; С использованием информации,
+представленной в БД по параметрам основных состояний ядер, может быть
+рассчитан ряд величин, характеризующих как свойства атомных ядер, так
+и процессы их превращений друг в друга в реакциях и распадах.</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table34">
+		<tr>
+			<td align="center"><b>
+			<a style="text-decoration: none" href="http://cdfe.sinp.msu.ru/services/gsp.ru.html">
+			http://cdfe.sinp.msu.ru/services/gsp.ru.html</a></b></td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="600" bordercolorlight="#000000" bordercolordark="#000000" id="table35">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc20.gif" width="585" height="561"><br>
+			Рис. 20. Пример заполнения поисковой формы БД для нахождения параметров основных состояний ядер в диапазоне Z
+= 80 - 100.</td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="610" bordercolorlight="#000000" bordercolordark="#000000" id="table36">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc21.gif" width="600" height="480"><br>
+			Рис. 21. Выходная форма БД
+с параметрами основных состояний ядер с Z
+= 80 &ndash; 100.</td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;&nbsp;&nbsp; Для расчета различных параметров
+атомных ядер, энергетических характеристик ядерных реакций и
+радиоактивных распадов ядер была реализована специальная компьютерная
+программа - интерактивный калькулятор
+[<A HREF="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html">http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html</A>],
+состоящий из пяти поисковых форм:</P>
+
+<blockquote>
+	<P>&laquo;<B><a href="#1">1.
+Энергии связи ядер</a></B>&raquo; (рис. 22, 25);<br>&laquo;<B><a href="#2">2.
+Энергии отделения нуклонов и ядер</a></B>&raquo;
+(рис. 27, 29, 31);<br>
+	&laquo;<B><a href="#3">3.
+Энергии распадов</a></B>&raquo; (рис. 33, 35);<br>
+	&laquo;<B><a href="#4">4.
+Пороги и энергии реакций</a></B>&raquo; (рис. 37);<br>
+	&laquo;<B><a href="#5">5.
+Энергия деления</a></B>&raquo; (рис. 39).</P>
+</blockquote>
+<P>&nbsp;&nbsp;&nbsp; В каждой поисковой форме присутствуют кнопки &laquo;<B>Вычислить</B>&raquo;
+и &laquo;<B>Очистить</B>&raquo;:</P>
+<ul>
+	<li>
+	при нажатии кнопки 
+	&laquo;<B>Вычислить</B>&raquo;
+(см. далее рис. 22 и др.) появляется таблица, содержащая
+запрашиваемую числовую информацию (используются данные, приведённые в
+таблице атомных ядер [11]); 
+	</li>
+	<li>
+	кнопка 
+	&laquo;<B>Очистить</B>&raquo;
+возвращает все поля формы в исходное состояние (состояние по
+умолчанию).</li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; В первых трех (1, 2, 3) поисковых формах присутствуют кнопки
+&laquo;<B>Построить график</B>&raquo; и
+панель &ldquo;<B>На оси абсцисс</B>&rdquo;, с помощью которых
+возможно воспроизвести в нужном виде графики зависимостей
+запрашиваемых величин от одного из выбранных чисел Z,
+N, A.<br>
+&nbsp;&nbsp;&nbsp; В двух последних формах (4, 5) эти кнопка и панель отсутствуют,
+поскольку при расчетах порогов и энергий реакций, а также энергии
+деления диапазон параметров не предусмотрен. 
+<br>
+&nbsp;&nbsp;&nbsp; Ниже приведено несколько примеров того, какая информация о
+свойствах атомных ядер и характеристиках ядерных взаимодействий может
+быть получена из анализа масс атомных ядер.</P>
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" style="border-collapse: collapse" width="700">
+		<tr>
+			<td>
+
+<h4>&nbsp;</h4>
+<h4><a name="1">Энергия
+связи ядра E<SUB>св</SUB>(A,Z)</a></h4>
+<P>&nbsp;&nbsp;&nbsp; Энергия связи ядра
+E<SUB>св</SUB>(A,Z)
+может быть выражена через массу ядра M(A,Z),
+массу протона M<SUB>p</sub> и массу 
+нейтрона M<sub>n</sub></P>
+<P align="center">E<SUB>св</SUB>(A,Z)
+= 
+[ZM<SUB>p</sub> + (A &#8722; Z)M<sub>n</sub> &#8722; M(A,Z)]c<sup>2</sup>,</P>
+<P>&nbsp;&nbsp;&nbsp; Сравнение удельных
+энергий связи лёгких и тяжёлых ядер показывает энергетическую
+выгодность слияния легких ядер и деления тяжелых ядер. Эта информация
+даёт прекрасный иллюстративный материал при изучении вопросов деления
+тяжёлых ядер и ядерного нуклеосинтеза лёгких ядер. Более точные
+представления о величине энергии связи ядер можно получить, сравнивая
+различные сечения энергетической зависимости удельной энергии связи
+ядра &epsilon;(A,Z)
+= E<SUB>св</SUB>(A,Z)/A
+от массового числа A, числа
+нейтронов N в различных
+изотопах (ядрах с одинаковым значением Z)
+или числа протонов Z в
+различных изотонах (ядрах с одинаковым значением N).<br>
+&nbsp;&nbsp;&nbsp; Для нахождения энергии
+связи ядра разработана 1-я поисковая форма
+калькулятора &ndash; &laquo;<B>1.
+Энергии связи ядер</B>&raquo;. Она
+позволяет рассчитывать для произвольного ядра или группы ядер
+следующие параметры:</P>
+<ul>
+	<li>энергия связи ядра E<SUB>св</SUB>(A,Z);</li>
+	<li>удельная энергия связи &epsilon;(A,Z);</li>
+	<li>разность &#948; между
+энергией связи E<SUB>св</SUB>(A,Z)<SUB>exp</SUB>,
+полученной экспериментально, и энергией связи E<SUB>св</SUB>(A,Z)<SUB>theor</SUB>,
+полученной с помощью формулы Вайцзеккера (см. Глава 4, стр. 20 - 25):</li>
+</ul>
+<P ALIGN=CENTER>&#948;(A,Z)
+= E<SUB>св</SUB>(A,Z)<SUB>exp</SUB>
+- E<SUB>св</SUB>(A,Z)<SUB>theor</SUB>.</P>
+<P>&nbsp;&nbsp;&nbsp; На рис. 22 представлена
+поисковая форма &laquo;<a target="_blank" href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html">1.
+Энергии связи ядер</a>&raquo; калькулятора с примером ее заполнения
+для формирования предписания по запросу &laquo;Определить энергии
+связи ядер в области значений Z = 80 &ndash;
+82&raquo;.<br>
+&nbsp;&nbsp;&nbsp; Формирование этого запросного предписания осуществлено путем
+внесения конкретных данных в соответствующие разделы поисковой формы
+следующим образом:</P>
+<ul>
+	<li>
+	«<B>Входные параметры</B>&raquo; - в раздел &ldquo;<B>Z</B>&rdquo;
+введен диапазон значений &laquo;80 - 82&raquo;, разделы &ldquo;<B>N</B>&rdquo;
+и &ldquo;<B>A</B>&rdquo; оставлены
+пустыми;</li>
+	<li>
+	«<B>Варианты расчета</B>&raquo;- выбран вариант &laquo;<B>Энергия
+связи</B>&raquo;;</li>
+	<li>
+	«<B>На оси абсцисс</B>&raquo; - по умолчанию оставлен вариант
+&ldquo;<B>A</B>&rdquo;.</li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; Нажатие кнопки &laquo;<B>Вычислить</B>&raquo; позволяет рассчитать
+и получить в виде таблицы соответствующие числовые данные. Фрагмент
+соответствующей таблицы приведен на рис. 23.<br>
+&nbsp;&nbsp;&nbsp; Нажатие кнопки &laquo;<B>Построить график</B>&raquo; позволяет
+получить графическое изображение рассчитанных зависимостей E<SUB>св</SUB>(A,Z)
+от массового числа ядра A для изотопов c Z
+= 80 &ndash; 82. Графические представления этих зависимостей
+приведены на рис. 24 вместе с обозначениями использованных программой
+символов.</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table37">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html</a></b></td>
+		</tr>
+	</table>
+</div>
+<P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="540" bordercolorlight="#000000" bordercolordark="#000000" id="table38">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc22.gif" width="527" height="534"><br>
+			Рис. 22. Пример заполнения
+поисковой формы калькулятора &ldquo;<B>1. Энергии связи ядер</B>&rdquo;:
+формирование 
+запросного
+предписания для получения энергии связи E<SUB>св</SUB>
+(подробности см. в тексте) различных ядер в области Z
+= 80 - 82.</td>
+		</tr>
+	</table>
+</div>
+<P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="410" bordercolorlight="#000000" bordercolordark="#000000" id="table39">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc23.gif" width="397" height="602"><br>
+			Рис. 23. Результат работы
+поисковой формы калькулятора &ldquo;<B>1. Энергии связи ядер</B>&rdquo;:
+в таблице &ndash; соответствующие числовые значения
+энергии связи E<SUB>св</SUB>
+в зависимости от массового числа A для ядер с Z
+= 80 &ndash; 82.</td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="630" bordercolorlight="#000000" bordercolordark="#000000" id="table40">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc24.gif" width="620" height="460"><br>
+			Рис. 24. Результат работы
+поисковой формы калькулятора &ldquo;<B>1. Энергии связи ядер</B>&rdquo;:
+на графике
+представлены
+зависимости энергий связи E<SUB>св </SUB>от массового числа A для ядер с Z&nbsp;=&nbsp;80 &ndash;
+82.</td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;&nbsp;&nbsp; Созданный интерактивный
+калькулятор позволяет также получать разности значений энергии связи
+ядер, рассчитываемых по экспериментальным значениям масс и по
+классической формуле Вайцзеккера. <br>
+&nbsp;&nbsp;&nbsp; Кроме того, возможен и расчет значений удельной энергии связи &epsilon;.<br>
+&nbsp;&nbsp;&nbsp; Эти возможности иллюстрируются с помощью рис. 25 и 26.<br>
+&nbsp;&nbsp;&nbsp; На рис. 25 представлен пример формирования с помощью той же
+поисковой формы &laquo;<A HREF="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html">1.
+Энергии связи ядер</A>&raquo; калькулятора предписания для запроса на
+определение удельной энергии связи и разности экспериментальных и
+теоретических значений для энергии связи: 
+</P>
+<ul>
+	<li>
+	&laquo;<B>Входные параметры</B>&raquo; - в раздел &ldquo;<I><B>Z</B></I>&rdquo;
+введен диапазон значений &laquo;30 - 70&raquo;;</li>
+	<li>
+	&laquo;<B>Варианты расчета</B>&raquo; - одновременно выбраны
+варианты:<br>
+	&laquo;<B>Удельная энергия связи</B>&raquo;
+и 
+<br>
+	&laquo;<B>Разность энергий связи
+(Эксперимент &ndash; Вайцзеккер)</B>&raquo;;</li>
+	<li>
+	&laquo;<B>На оси абсцисс</B>&raquo; - выбран вариант &ldquo;<I><B>N</B></I>&rdquo;.</li>
+</ul>
+<P>На рис. 26 представлены полученные в результате обработки запроса
+зависимости величин &epsilon;(A,Z)
+и <br>
+&#948;(A,Z)
+= E<SUB>св</SUB>(A,Z)<SUB>exp</SUB>
+- E<SUB>св</SUB>(A,Z)<SUB>theor</SUB>.
+(Эксперимент - Вайцзеккер) от числа нейтронов N для изотопов Z = 30 -
+70. Хорошо видны характерные максимумы величины &#948;(A,Z),
+проявляющиеся для магических чисел N
+= 50 и N = 82.
+<br>
+&nbsp;&nbsp;&nbsp; Следует отметить, что данный рисунок
+представляет собой по существу &laquo;зеркальное отражение&raquo;
+данных для зависимости &#916; =
+E<SUB>св</SUB>(A,Z)<SUB>theor</SUB>,
+- E<SUB>св</SUB>(A,Z)<SUB>exp</SUB>,
+приведенных на рис. 8.</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table41">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html</a></b></td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="530" bordercolorlight="#000000" bordercolordark="#000000" id="table42">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc25.gif" width="512" height="493"><br>
+			Рис. 25. Пример заполнения
+поисковой формы калькулятора &laquo;<B>1. Энергии связи ядер</B>&raquo;:
+формирование запросного
+предписания для получения величин удельной энергии связи &epsilon;(A,Z)
+и разности &#948;(A,Z)
+между экспериментальным и теоретическим значениями энергии связи
+(подробности см. в тексте) для различных ядер с Z
+= 30 - 70.</td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="635" bordercolorlight="#000000" bordercolordark="#000000" id="table43">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc26.gif" width="625" height="666"><br>
+			Рис. 26. Результат работы
+поисковой формы калькулятора &ndash; &ldquo;<B>1. Энергии связи
+ядер</B>&rdquo;: зависимости величин &epsilon;(A,Z)
+и &#948;(A,Z)
+от числа нейтронов N.</td>
+		</tr>
+	</table>
+</div>
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" style="border-collapse: collapse" width="700">
+		<tr>
+			<td>
+
+<h4>&nbsp;</h4>
+<h4><a name="2">Энергии
+отделения нуклонов и ядер от ядра (A,Z)</a></h4>
+
+<P><I><B>&nbsp;&nbsp;&nbsp; Энергии отделения протона 
+</B></I> <I><B>B</B></I><SUB><I><B>p</B></I></SUB><I><B>
+и нейтрона B</B></I><SUB><I><B>n</B></I></SUB></P>
+<P>&nbsp;&nbsp;&nbsp; Энергии отделения
+протонов и нейтронов от ядра (A,Z)
+могут быть выражены через массы ядра и нуклонов следующим образом:</P>
+<P ALIGN=CENTER>
+B<sub>p</sub>(A,Z) = [M(A-1,Z-1) + M<sub>p</sub> &#8722; M(A,Z)]c<sup>2</sup> = E<sub>св</sub>(A,Z) &#8722;&nbsp; 
+E<sub>св</sub>(A-1,Z-1);<br>
+B<sub>n</sub>(A,Z) = [M(A-1,Z) + M<sub>n</sub> &#8722; M(A,Z)]c<sup>2</sup> = E<sub>св</sub>(A,Z) &#8722;&nbsp; 
+E<sub>св</sub>(A-1,Z).</P>
+<P>&nbsp;&nbsp;&nbsp; Ядро перестаёт быть связанным и,
+следовательно, перестает существовать, когда энергия отделения
+нуклона становится меньше нуля:</P>
+<P ALIGN=CENTER>
+B<sub>n</sub> &lt; 0, B<sub>p</sub> &lt; 0,
+</P>
+<P>т.е. тогда, когда существование ядра (A,Z)
+энергетически не выгодно.</P>
+<P>На рис. 27 приведена поисковая форма
+калькулятора &laquo;<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2">2.
+Энергии отделения нуклонов и ядер</a>&raquo; с примером формирования
+запросного предписания для определения энергий отделения нейтрона и
+протона от различных изотопов ядра La
+с <B>Z</B>
+= 57:</P>
+<ul>
+	<li>
+	&laquo;<B>Входные
+параметры</B>&raquo; - введено значение
+&laquo;<B>Z</B>
+= 57&raquo;;</li>
+	<li>
+	&laquo;<B>Варианты
+отделения</B>&raquo; - введено значение
+&ldquo;<B>n</B>,<B>p</B>&rdquo;;</li>
+	<li>
+	&laquo;<B>Тип
+атомных ядер</B>&raquo; - выбраны &ldquo;<B>Все ядра</B>&rdquo;;</li>
+	<li>
+	&laquo;<B>На
+оси абсцисс</B>&raquo; - по умолчанию оставлен вариант &laquo;<B>А</B>&raquo;;</li>
+	<li>
+	остальные параметры оставлены по
+умолчанию. </li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; На рис. 28 показаны зависимости
+величин энергии отделения нейтрона B<sub>n</sub>(A,Z)&nbsp;и
+протона B<sub>p</sub>(A,Z)&nbsp;от
+атомной массы ядра A для
+изотопов лантана La (Z
+= 57). 
+</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table44">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2</a></b></td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="411" bordercolorlight="#000000" bordercolordark="#000000" id="table45">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc27.gif" width="529" height="406"><br>
+			Рис. 27. Пример заполнения
+поисковой формы калькулятора&nbsp; &ldquo;<B>2. Энергии отделения
+нуклонов и ядер</B>&rdquo;: формирование запросного
+предписания для определения энергии отделения нейтрона и протона от различных изотопов лантана La
+(Z = 57).</td>
+		</tr>
+	</table>
+</div>
+<P>&nbsp;</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="630" bordercolorlight="#000000" bordercolordark="#000000" id="table46">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc28.gif" width="617" height="414"><br>
+			Рис. 28. Результаты работы
+поисковой формы калькулятора &ndash; &ldquo;<B>2.
+Энергии отделения нуклонов и ядер</B>&rdquo;: зависимости энергии отделения нейтрона 
+			B<sub>n</sub>(A,Z)&nbsp;и
+протона B<sub>p</sub>(A,Z)&nbsp;от
+массового числа ядра A 
+для различных изотопов лантана La
+(Z = 57).</td>
+		</tr>
+	</table>
+</div>
+
+<P>&nbsp;&nbsp;&nbsp; Сравнивая
+экспериментальные данные с результатами расчётов на основе различных
+теоретических моделей, можно изучать применимость этих моделей к
+описанию характеристик атомных ядер. Приведённые на Рис. 28 данные
+наглядно демонстрируют эффект спаривания в атомных ядрах.</P>
+<P><I><B>&nbsp;&nbsp;&nbsp; Энергия отделения двух нейтронов</B></I></P>
+<P>&nbsp;&nbsp;&nbsp; В соответствии с
+приведенными выше соотношениями для энергии отделения протонов и
+нейтронов от ядра (A,Z)
+энергия отделения двух нейтронов может быть выражена через массы
+начального и конечных ядер, а также нуклонов следующим образом:</P>
+<P align="center">B<sub>2n</sub>(A,Z)[M(A-2,Z) &#8722; M(A,Z) + 2M<sub>n</sub>]c<sup>2</sup> 
+= E<sub>св</sub>(A,Z) &#8722;&nbsp; E<sub>св</sub>(A-2,Z).</P>
+<P>Рис. 29 иллюстрирует использование той
+же поисковой формы калькулятора &ldquo;<a target="_blank" href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2">2.
+Энергии отделения нуклонов и ядер</a>&rdquo;
+для формирования запросного предписания по определению энергий
+отделения двух нейтронов от атомного числа ядра <I><B>A </B></I>для различных изотонов ядер с определенными Z:</P>
+<ul>
+	<li>&laquo;<B>Входные параметры, </B><I><B>Z</B></I>&raquo;
+- введены значения &laquo;55, 57, 59, 61, 63, 65&raquo;;</li>
+	<li>&laquo;<B>Варианты отделения</B>&raquo; - введено
+значение &ldquo;<b>2n</b>&rdquo;;</li>
+	<li>&laquo;<B>Тип атомных ядер</B>&raquo; - выбраны &ldquo;<B>Все ядра</B>&rdquo;;</li>
+	<li>&laquo;<B>На оси абсцисс</B>&raquo; - по умолчанию выбран вариант
+&laquo;<B>А</B>&raquo;;</li>
+	<li>остальные
+параметры оставлены по умолчанию. </li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; Результат обработки
+запроса по сформированному предписанию приведен на рис. 30.</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table47">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2</a></b></td>
+		</tr>
+	</table>
+</div>
+
+<P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="540" bordercolorlight="#000000" bordercolordark="#000000" id="table48">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc29.gif" width="529" height="403"><br>
+			Рис. 29. Пример заполнения поисковой
+формы калькулятора &ndash; &ldquo;<B>2.
+Энергии отделения нуклонов и ядер</B>&rdquo;:
+формирование запросного предписания для определения энергии отделения двух нейтронов от различных изотопов ядер с Z
+= 55, 57, 59, 61, 63, 65.</td>
+		</tr>
+	</table>
+</div>
+
+</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="630" bordercolorlight="#000000" bordercolordark="#000000" id="table49">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc30.gif" width="612" height="432"><br>
+			Рис. 30. Результаты работы
+поисковой формы калькулятора &ndash; &ldquo;<B>2.
+Энергии отделения нуклонов и ядер</B>&rdquo;: зависимости энергии отделения двух нейтронов B<SUB>2n</SUB>(A,Z)
+от массового числа ядра A для различных изотопов ядер с Z
+= 55, 57, 59, 61, 63, 65.</td>
+		</tr>
+	</table>
+</div>
+
+<P><I><B>&nbsp;&nbsp;&nbsp; Энергия отделения любого
+количества нуклонов, сложных частиц и ядер от ядра (A,Z)</B></I></P>
+<P>&nbsp;&nbsp;&nbsp; Рис. 31 иллюстрирует использование той
+же поисковой формы калькулятора &laquo;<A HREF="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2">2.
+Энергии отделения нуклонов и ядер</A>&raquo;
+для формирования запросного предписания по определению энергий
+отделения сложных комбинаций ядер и частиц.<br>
+&nbsp;&nbsp;&nbsp; В рассматриваемом конкретном примере
+иллюстрируется формирование запроса на определение энергии отделения
+комбинации ядра <SUP>13</SUP>C и протона от
+различных изотопов ядра Ca:</P>
+<ul>
+	<li>&laquo;<B>Входные параметры</B>&raquo; - введено значение &laquo;<B>Z</B>
+= 20&raquo;;</li>
+	<li>&laquo;<B>Варианты отделения</B>&raquo; - заданы значения для
+комбинации ядра <SUP>13</SUP>C и частицы
+(протона) - &ldquo;<b>13С+p</b>&rdquo;;</li>
+	<li>&laquo;<B>Тип атомных ядер</B>&raquo; - выбраны &ldquo;<B>Все ядра</B>&rdquo;;</li>
+	<li>&laquo;<B>На оси абсцисс</B>&raquo; - по умолчанию выбран вариант
+&laquo;<I><B>А</B></I>&raquo;;</li>
+	<li>остальные параметры оставлены по умолчанию.</li>
+</ul>
+<P>На рис. 32 показаны энергии отделения
+комбинации ядра и частицы <SUP>13</SUP>С + p для
+различных изотопов Ca (Z =
+20) в зависимости от массового числа ядра A.</P>
+&nbsp;<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table50">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#2</a></b></td>
+		</tr>
+	</table>
+</div>
+
+<P>&nbsp;</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="540" bordercolorlight="#000000" bordercolordark="#000000" id="table51">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc31.gif" width="528" height="407"><br>
+			Рис. 31. Пример заполнения поисковая форма
+калькулятора &ndash; &ldquo;<B>2. Энергии отделения нуклонов и ядер</B>&rdquo;:
+формирование запросного предписания по определению энергии отделения комбинации ядра <SUP>13</SUP>С
+и протона p от различных изотопов Ca (Z
+= 20).</td>
+		</tr>
+	</table>
+</div>
+
+<P>&nbsp;</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="610" bordercolorlight="#000000" bordercolordark="#000000" id="table52">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc32.gif" width="608" height="477"><br>
+			Рис. 32. Энергии отделения 
+комбинации ядра <SUP>13</SUP>С и протона p
+от различных изотопов Ca (Z
+= 20) 
+в зависимости от массового числа A.</td>
+		</tr>
+	</table>
+</div>
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" style="border-collapse: collapse" width="700">
+		<tr>
+			<td>
+
+<h4>&nbsp;</h4>
+<h4><a name="3">Энергии
+радиоактивных распадов</a></h4>
+<P><I><B>&nbsp;&nbsp;&nbsp; Энергия &#945;-распада Q<sub>&#945;</sub>(A,Z)</B></I></P>
+<P>&nbsp;&nbsp;&nbsp; Зависимость величины
+энергии a-распада Q<sub>&#945;</sub>(A,Z)
+от A, Z
+и N</P>
+<P ALIGN=CENTER>
+Q<sub>&#945;</sub>(A,Z) = [M(A,Z) &#8722; M(A-4,Z-2) &#8722; M(4,2)]c<sup>2</sup>,</P>
+<P>позволяет получить информацию об оболочечной структуре атомных
+ядер.<br>
+&nbsp;&nbsp;&nbsp; На рис. 33 приведена поисковая форма &laquo;<a target="_blank" href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#3">3.
+Энергии распадов</a>&raquo; калькулятора с примером формирования
+запросного предписания на определение энергий &#945;-распада:</P>
+<ul>
+	<li>&laquo;<B>Входные параметры</B>&raquo; - введены значения &laquo;<I><B>Z</B></I>
+= 85, 87, 89, 91, 93&raquo;;</li>
+	<li>&laquo;<B>Тип распада</B>&raquo; - в меню выбрано значение &ldquo;<b>&#945;<I>
+	</I>(альфа-распад)</b>&rdquo;.</li>
+	<li>&laquo;<B>На оси абсцисс</B>&raquo;
+- выбран вариант &ldquo;<B>N</B>&rdquo;.</li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; Рассчитанные зависимости энергии &alpha;-распада от числа нейтронов N
+приведены на рис. 34. Точки, соответствующие различным изотопам,
+соединены. Данные показывают поведение величины энергии &alpha;-распада
+Q<sub>&alpha;</sub>(A,Z)
+для различных изотопов с Z =
+85, 87, 89, 91, 93, 95 в районе магического числа нейтронов N
+= 126. Эта характерная особенность в районе N
+= 126 (рис. 34)</P>
+<P ALIGN=CENTER>
+Q<sub>&alpha;</sub>(A,Z)
+= E<sub>св</sub>(A-4,Z-2) + E<sub>св</sub>(4,2) &#8722; 
+E<sub>св</sub>(A,Z) </P>
+<P>является следствием заполнения нейтронной оболочки. <br>
+&nbsp;&nbsp;&nbsp; Используя эмпирическое
+соотношение, связывающее период полураспада T<SUB>1/2</SUB>
+и энергию &alpha;-частицы E<sub>&alpha;</sub></P>
+<P ALIGN=CENTER>
+<img border="0" src="images/anuc9_05.gif" width="184" height="48">&nbsp;</P>
+<P>где величины C
+= 150 и D = 55 мало
+изменяются для тяжёлых ядер, можно оценить периоды &alpha;-распада
+и сравнить их с экспериментально измеренными значениями.</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table53">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#3">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#3</a></b></td>
+		</tr>
+	</table>
+</div>
+
+<P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="540" bordercolorlight="#000000" bordercolordark="#000000" id="table54">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc33.gif" width="529" height="391"><br>
+			Рис. 33. Пример заполнения поисковой
+формы калькулятора &ndash; &laquo;<B>3.
+Энергии распадов</B>&raquo;: 
+формирование запросного предписания на определение энергий &alpha;-распада
+Q<SUB>&alpha;</SUB>(A,Z)
+ядер с Z =
+85, 87, 89, 91, 93 в зависимости от числа нейтронов N.</td>
+		</tr>
+	</table>
+</div>
+
+&nbsp;<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="630" bordercolorlight="#000000" bordercolordark="#000000" id="table55">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc34.gif" width="615" height="465"><br>
+			Рис. 34. Зависимости энергии &alpha;-распада
+Q<SUB>&alpha;</SUB>(A,Z) изотопов с Z
+= 85, 87, 89, 91, 93 
+от числа нейтронов N.</td>
+		</tr>
+	</table>
+</div>
+
+<P><b><i>&nbsp;&nbsp;&nbsp;
+Энергия &#946;-распада</i></b></P>
+<P>&nbsp;&nbsp;&nbsp; Явление &#946;-распада
+состоит в том, что ядро (A,Z)
+самопроизвольно испускает лептоны 1-го поколения - электрон (или
+позитрон), электронное нейтрино (или антинейтрино), переходя при этом
+в ядро-изобару с тем же массовым числом A,
+но с атомным номером Z, на
+единицу большим или меньшим. <br>
+&nbsp;&nbsp;&nbsp; Существуют три типа &#946;-распада, схемы которых
+выглядят следующим образом: 
+</P>
+<ul>
+	<li>&beta;<SUP>-</SUP>-распад:	(A,Z) &rarr; (A,Z+1) + e<sup>-</sup> +
+	<img src="../simages/aneutrino.gif"
+    alt="антинейтрино" width="11" height="14"><sub>e</sub>,</li>
+	<li>&beta;<SUP><I><B>+</B></I></SUP>-распад:	(A,Z) &rarr; (A,Z–1) + e<sup>+</sup> 
+	+ &nu;<sub>e</sub>,</li>
+	<li>e-захват:	.(A,Z) + e<sup>-</sup> &rarr; (A,Z–1) + &nu;<sub>e</sub>,</li>
+</ul>
+<P>&nbsp;&nbsp;&nbsp; Главной особенностью &#946;-распада является то, что
+он обусловлен слабым взаимодействием. Бета-распад &ndash; процесс не
+внутриядерный, а внутринуклонный. В ядре распадается одиночный
+нуклон. <br>
+&nbsp;&nbsp;&nbsp; Происходящие при этом
+внутри ядра превращения нуклонов и энергетические условия
+соответствующего типа &#946;-распада
+выглядят так (массу нейтрино полагаем нулевой):</P>
+<ul>
+	<li>&beta;<SUP>-</SUP>-распад
+	– M<sub>N</sub>(A,Z) &gt; M<sub>N</sub>(A,Z+1) + m<sub>e</sub>,
+	<li>&beta;<SUP><I><B>+</B></I></SUP>-распад
+	– M<sub>N</sub>(A,Z) &gt; M<sub>N</sub>(A,Z–1) + m<sub>e</sub>,
+	<li>e-захват – M<sub>N</sub>(A,Z) + m<sub>e</sub> &gt; M<sub>N</sub>(A,Z–1),</li>
+</ul>
+<P>
+где M<sub>N</sub>(A,Z), M<sub>N</sub>(A,Z+1) и M<sub>N</sub>(A,Z–1) &ndash; массы ядер.<br>
+&nbsp;&nbsp;&nbsp;
+При e<I>-</I>захвате
+ядро (A,Z) поглощает один из электронов атомной оболочки (обычно ближайшей к
+нему K-оболочки), испуская электронное
+нейтрино.<br>
+&nbsp;&nbsp;&nbsp;
+Из приведенных соотношений для энергий &beta;<SUP><I><B>+</B></I></SUP>-распада
+и e-захвата видно,  что  во
+всех случаях,  когда возможен &beta;<SUP><I><B>+</B></I></SUP>-распад,
+одновременно возможен и e-захват.
+Это &ndash; два конкурирующих между собой процесса. Если
+массы начального ядра M<sub>N</sub>(A,Z)
+и конечного ядра M<sub>N</sub>(A,Z–1) одновременно удовлетворяют неравенствам </P>
+<P align="center">
+M<sub>N</sub>(A,Z) + m<sub>e</sub> &gt; M<sub>N</sub>(A,Z–1),<br>
+M<sub>N</sub>(A,Z) &lt; M<sub>N</sub>(A,Z–1) + m<sub>e</sub>, </P>
+<P>
+то e-захват
+разрешен, а &beta;<SUP><I><B>+</B></I></SUP>-распад
+запрещен.<br>
+&nbsp;&nbsp;&nbsp; В
+масс-спектроскопических измерениях обычно приводятся не массы ядер M<sub>N</sub>(A,Z), 
+M<sub>N</sub>(A,Z+1), M<sub>N</sub>(A,Z–1), а массы атомов M(A,Z), M(A,Z+1), 
+M(A,Z–1). Масса атома связана с массой ядра следующим образом 
+(энергия связи электронов здесь не учитывается):</P>
+<P align="center">M(A,Z)	=
+M<sub>N</sub>(A,Z)
++ Zm<SUB>e</SUB>,</P>
+<P>Энергия,
+выделяющаяся при &beta;-распаде
+ядра (A,Z),
+выражается через параметры ядер и атомов:</P>
+
+<div align="center">
+	<table border="1" cellpadding="4" cellspacing="1" style="border-collapse: collapse" bordercolorlight="#000000" bordercolordark="#000000" id="table56" width="690">
+		<tr>
+			<td>Через<br>
+			массы<br>
+			ядер</td>
+			<td>Q<sub>&beta;-</sub> = M<sub>N</sub>(A,Z) – M<sub>N</sub>(A,Z+1) 
+			– m<sub>e</sub><br>
+			Q<sub>&beta;+</sub> = M<sub>N</sub>(A,Z) – M<sub>N</sub>(A,Z–1) – m<sub>e</sub><br>
+			Q<sub>e</sub> = M<sub>N</sub>(A,Z) + m<sub>e</sub> – M<sub>N</sub>(A,Z–1)<PSTYLE="text-indent: 0.32cm; font-weight: normal"><PALIGN=JUSTIFY STYLE="text-indent: 0.32cm; font-weight: normal"></td>
+		</tr>
+		<tr>
+			<td>Через<br>
+			массы<br>
+			атомов</td>
+			<td>Q<sub>&beta;-</sub> = M(A,Z) – M(A,Z+1)<br>
+			Q<sub>&beta;+</sub> = M(A,Z) – M(A,Z–1) – 2m<sub>e</sub> = M(A,Z) – M(A,Z–1) – 1.022 МэВ<br>
+			Q<sub>e</sub> = M(A,Z) – M(A,Z–1)</td>
+		</tr>
+		<tr>
+			<td>Через<br>
+			избытки масс<br>
+			атомов</td>
+			<td>Q<sub>&beta;-</sub> = &Delta;(A,Z) – &Delta;(A,Z+1)<br>
+			Q<sub>&beta;+</sub> = &Delta;(A,Z) – &Delta;(A,Z–1) – 2m<sub>e</sub>= &Delta;(A,Z) 
+			– &Delta;(A,Z–1) – 1.022 МэВ<br>
+			Q<sub>e</sub> = &Delta;(A,Z) – &Delta;(A,Z–1)</td>
+		</tr>
+		<tr>
+			<td>Через<br>
+			энергии связи<br>
+			ядер</td>
+			<td>Q<sub>&beta;-</sub> = E<sub>св</sub>(A,Z+1) – E<sub>св</sub>(A,Z) 
+			+ (m<sub>n</sub> – m<sub>p</sub> – m<sub>e</sub>)c<sup>2</sup><sub>-</sub> 
+			= E<sub>св</sub>(A,Z+1) – E<sub>св</sub>(A,Z) + 0.783 МэВ&nbsp;<br>
+			Q<sub>&beta;+</sub> = E<sub>св</sub>(A,Z–1) – E<sub>св</sub>(A,Z) + 
+			(m<sub>p</sub> – m<sub>n</sub> – m<sub>e</sub>)c<sup>2</sup> = E<sub>св</sub>(A,Z–1) 
+			– E<sub>св</sub>(A,Z) – 1.805 МэВ<br>
+			Q<sub>e</sub> = E<sub>св</sub>(A,Z–1) – E<sub>св</sub>(A,Z) + (m<sub>p</sub> 
+			– m<sub>n</sub> + m<sub>e</sub>)c<sup>2</sup> = E<sub>св</sub>(A,Z–1) 
+			– E<sub>св</sub>(A,Z) – 0.783 МэВ</td>
+		</tr>
+	</table>
+</div>
+
+<P>&nbsp;&nbsp;&nbsp; На рис. 35 приведена поисковая форма
+калькулятора &laquo;<A HREF="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#3">3.
+Энергии распадов</A>&raquo; с примером формирования запросного
+предписания на определение энергий Q<sub>&beta;-</sub>(A,Z)
+&#946;<sup>-</sup>-распада нескольких ядер:</P>
+<ul>
+	<li>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&laquo;<B>Входные параметры, Z</B>&raquo;
+- заданы значения &laquo;81 &ndash; 83&raquo;;</li>
+	<li>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&laquo;<B>Тип распада</B>&raquo; - задано значение &ldquo;<b>&#946;<sup>-
+	</sup>(бета-распад)</b>&rdquo;;</li>
+	<li>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&laquo;<B>На оси абсцисс</B>&raquo; - выбран вариант &laquo;<B>N</B>&raquo;;</li>
+	<li>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+остальные параметры оставлены по умолчанию.</li>
+</ul>
+<P>На рис. 36, приведены величины Q<sub>&beta;-</sub>(A,Z)
+энергии &#946;<sup>-</sup>-распада
+для различных ядер с Z = 81 &ndash;
+83. Изотопы с одинаковым значением Z
+соединены сплошной линией.</P>
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table57">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#3">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#3</a></b></td>
+		</tr>
+	</table>
+</div>
+
+</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="530" bordercolorlight="#000000" bordercolordark="#000000" id="table58">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc35.gif" width="517" height="341"><br>
+			Рис. 35. Пример заполнения поисковой
+формы калькулятора &ndash; &ldquo;<B>3.
+Энергии распадов</B>&rdquo;: 
+запросное предписание по определению энергий &#946;<sup>-</sup>-распада
+			<br>
+			Q<sub>&beta;-</sub>(A,Z)
+ядер c Z
+= 81 &ndash; 83.</td>
+		</tr>
+	</table>
+</div>
+
+<P>&nbsp;</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="550" bordercolorlight="#000000" bordercolordark="#000000" id="table59">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc36.gif" width="537" height="486"><br>
+			Рис. 36. Зависимости энергии &#946;<sup>-</sup>-распада 
+			Q<sub>&beta;-</sub> от числа нейтронов N
+для ядер с Z = 81 &ndash; 83.</td>
+		</tr>
+	</table>
+</div>
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" style="border-collapse: collapse" width="700">
+		<tr>
+			<td>
+
+<h4>&nbsp;</h4>
+<h4><a name="4">Порог
+ядерной реакции</a></h4>
+<P>&nbsp;&nbsp;&nbsp; Порог
+ядерной реакции Е<SUB>пор</SUB> – минимальная
+кинетическая энергия налетающих частицы или атомного ядра, при
+которой осуществляется реакция, идущая с поглощением энергии.<br>
+&nbsp;&nbsp;&nbsp; В
+случае, когда ядро массы M<SUB>1</SUB>
+налетает на покоящееся ядро массы M<SUB>2</SUB>
+и образуются частицы с массами m<SUB>i</SUB>,
+порог реакции:</P>
+<P align="center">
+<img border="0" src="../an/images/aneq2_02.gif" width="328" height="104"></P>
+<P>
+или</P>
+<p align="center">
+<img border="0" src="../an/images/aneq2_03.gif" width="200" height="46"></p>
+<p>где Q = (M<sub>1</sub> + M<sub>2</sub> –
+&sum;m<sub>i</sub>)c<sup>2</sup> –
+энергия реакции, а &nbsp;&sum;m<sub>i</sub>
+– сумма масс частиц, образующихся в результате 
+ядерной реакции.<br>
+&nbsp;&nbsp;&nbsp; В ядерной физике |Q| &lt;&lt; 2M<sub>2</sub>c<sup>2</sup>,
+</p>
+<P align="center">
+<img border="0" src="../an/images/aneq2_05.gif" width="128" height="45"></P> 
+<P>
+&nbsp;&nbsp;&nbsp;
+На рис. 37 приведена поисковая форма
+калькулятора &ndash; &ldquo;<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#4">4.
+Пороги и энергии реакций</a>&rdquo; для
+определения значений порога Е<SUB>порог</SUB> и энергии
+Q для ядерной реакции
+<SUP>12</SUP>C(&gamma;,p)<SUP>11</SUP>B:</P>
+			<ul>
+				<li>&laquo;<B>Ядро &ndash; мишень</B>&raquo; - <SUP>12</SUP>C
+(выбраны значения <I><B>Z</B></I> = 6, <I><B>A</B></I>
+= 12);</li>
+				<li>&laquo;<B>Налетающая частица</B>&raquo; - в выпадающем меню выбран
+				<B>гамма&ndash;квант</B>;</li>
+				<li>&laquo;<B>Вылетающая частица 1</B>&raquo; - <B>p</B>,
+протон (выбраны значения <I><B>Z</B></I> =
+1, <I><B>A</B></I> = 1, &laquo;<B>Число
+частиц</B>&raquo; &ndash; 1); при необходимости могут быть выбраны
+&laquo;<B>Вылетающая частица 2</B>&raquo;, а также &ndash; большее
+число (до 6) частиц (следует использовать специальную кнопку &laquo;<B>&gt;&gt;</B>&raquo;,
+повторное нажатие кнопки приводит к возврату в исходную форму с двумя
+налетающими частицами);</li>
+				<li>&laquo;<B>Ядро-продукт реакции</B>&raquo; &ndash; <SUP>11</SUP>B
+(<I><B>Z </B></I>= 5 (6 &ndash;
+1), <I><B>A</B></I> = 11 (12 - 1) &ndash;
+определяются программой).</li>
+			</ul>
+<P>&nbsp;&nbsp;&nbsp; На рис. 38 приведена выходная форма запроса: приведены результаты
+расчета порога и энергии реакции 
+<SUP>12</SUP>C(&gamma;,p)<SUP>11</SUP>B,
+а кроме того указаны все заданные характеристики ядра-мишени,
+налетающей и вылетающих частиц и рассчитанные программой
+характеристики ядра-продукта реакции.<br>
+&nbsp;&nbsp;&nbsp; Полученные результаты
+можно распечатать с помощью кнопки &ldquo;Печать&rdquo; (значок
+принтера в левом верхнем углу экрана &ndash; например, на рис. 38).</P>
+			
+			<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table60">
+		<tr>
+			<td align="center"><b>
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#4">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#4</a></b></td>
+		</tr>
+	</table>
+</div>
+
+&nbsp;<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="550" bordercolorlight="#000000" bordercolordark="#000000" id="table61">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc37.gif" width="523" height="312"><br>
+			Рис. 37. Пример заполнения поисковой
+формы калькулятора &ndash; &ldquo;<B>4.
+Пороги и энергии реакций</B>&rdquo;:
+формирование запроса на определение порога Е<SUB>пор</SUB>
+и энергии Q
+реакции 
+<SUP>12</SUP>C(&gamma;,p)<SUP>11</SUP>B.</td>
+		</tr>
+	</table>
+</div>
+
+<P>&nbsp;</P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="640" bordercolorlight="#000000" bordercolordark="#000000" id="table62">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc38.jpg" width="624" height="519"><br>
+			Рис. 38. Результаты
+работы поисковой
+формы калькулятора &ndash; &ldquo;4.
+Пороги и энергии реакций&rdquo; по
+определению порога Е<SUB>пор</SUB> и энергии Q реакции<SUP> </SUP>
+
+<SUP>12</SUP>C(&gamma;,p)<SUP>11</SUP>B.</td>
+		</tr>
+	</table>
+</div>
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" style="border-collapse: collapse" width="700">
+		<tr>
+			<td>
+
+<h4>&nbsp;</h4>
+<h4><a name="5">Энергия
+деления ядер</a></h4>
+			
+<P>&nbsp;&nbsp;&nbsp; То, что при делении
+тяжёлых ядер выделяется энергия, непосредственно следует из
+зависимости удельной энергии связи 
+&epsilon; = E<SUB>св</SUB>(A,Z)/A
+от массового числа А (рис. 7). При делении тяжёлого
+ядра образуются более лёгкие ядра, в которых нуклоны связаны сильнее,
+и часть энергии&nbsp; при делении высвобождается. 
+<br>
+&nbsp;&nbsp;&nbsp; Как правило,&nbsp;
+деление ядер&nbsp; сопровождается вылетом 1 &ndash; 4 нейтронов.<br>
+&nbsp;&nbsp;&nbsp; Выразим энергию деления
+Q<SUB>дел</SUB> через энергии
+связи начального и конечных ядер. Энергию начального ядра, состоящего
+из Z протонов и N
+нейтронов, и имеющего массу M&nbsp;(A,Z)
+и энергию связи E<SUB>св</SUB>(A,Z),
+запишем в следующем виде:</P>
+<P ALIGN=CENTER STYLE="margin-top: 0.21cm">
+M(A,Z)c<sup>2</sup> = (Zm<sub>p</sub> + Nm<sub>n</sub>)c<sup>2</sup> 
+- E<sub>св</sub>(A,Z).</P>
+<P>
+&nbsp;&nbsp;&nbsp;
+Деление ядра (A,Z)
+на 2 осколка (A<SUB>1</SUB>,Z<SUB>1</SUB>)
+и (А<SUB>2</SUB>,Z<SUB>2</SUB>)
+сопровождается образованием N<SUB>n</SUB><I> =<B> </B></I>A – A<SUB>1 </SUB>– A<SUB>2<I> </I></SUB>мгновенных нейтронов. Если ядро (A,Z)
+разделилось на осколки с массами M<sub>1</sub>(A<sub>1</sub>,Z<sub>1</sub>), 
+M<sub>2</sub>(A<sub>2</sub>,Z<sub>2</sub>) и энергиями связи E<sub>св1</sub>(A<sub>1</sub>,Z<sub>1</sub>), 
+E<sub>св2</sub>(A<sub>2</sub>,Z<sub>2</sub>),
+то для энергии деления имеем выражение:</P>
+<P align="center">
+Q<sub>дел</sub> = {M(A,Z) – [M<sub>1</sub>(A<sub>1</sub>,Z<sub>1</sub>) 
++ M<sub>2</sub>(A<sub>2</sub>,Z<sub>2</sub>) + (A – A<sub>1</sub> – A<sub>2</sub>)m<sub>n</sub>]}c<sup>2</sup> 
+= E<SUB>св1</SUB>(A<sub>1</sub>,Z<sub>1</sub>) 
++ E<SUB>св</SUB>(A<sub>2</sub>,Z<sub>2</sub>) – E<SUB>св</SUB>(A,Z),</P>
+<PALIGN=CENTER STYLE="margin-top: 0.21cm; margin-bottom: 0.21cm; font-weight: normal">
+причём 
+<P>A = A<sub>1</sub> + A<sub>2</sub> + N<sub>n</sub>, Z = Z<sub>1</sub> +
+Z<sub>2</sub>.
+</P>
+<P>&nbsp;&nbsp;&nbsp; На рис. 39 приведена поисковая форма калькулятора &ldquo;<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#5">5.
+Деление ядер</a>&rdquo; с примером формирования поискового
+предписания по определению энергетического порога и энергии реакции
+спонтанного деления ядра <SUP>235</SUP>U с
+образованием осколка <SUP>139</SUP>Xe и
+вылетом одного нейтрона. 
+<br>
+&nbsp;&nbsp;&nbsp; Формирование запросного предписания осуществлено следующим
+образом:</P>
+			<ul>
+				<li>&laquo;<B>Ядро &ndash; мишень</B>&raquo; - <SUP>235</SUP>U
+(выбраны значения <B>Z</B> = 92, <B>A</B>
+= 235);</li>
+				<li>&laquo;<B>Налетающая частица</B>&raquo; - налетающих частиц нет &ndash;
+спонтанное деление (в выпадающем меню выбрано &laquo;<B>Нет
+налетающих частиц</B>&raquo;);</li>
+				<li>&laquo;<B>Выбираемый (пользователем) осколок</B>&raquo; &ndash;
+ядро-осколок, например, <SUP>95</SUP>Sr
+(выбраны значения <B>Z</B> = 38, <B>A</B>
+= 95);</li>
+				<li>&laquo;<B>Определяемый (программой) осколок</B>&raquo; &ndash;
+ядро-осколок <SUP>140</SUP>Xe (<B>Z</B>
+= 92 &ndash; 38 = 54, <B>A</B> = 235
+&ndash; 95 = 140);</li>
+				<li>&laquo;<B>Мгновенная частица 1, сопровождающая деление</B>&raquo; -
+				<B>n</B>, нейтрон (выбраны значения
+<B>Z</B> = 0, <B>A</B>
+= 1, &laquo;<B>Число частиц</B>&raquo; - 1); при этом меняются
+характеристики определяемого программой осколка &ndash; <SUP>139</SUP>Xe
+(<B>Z</B> = 54, <B>A</B>
+= 140 &ndash; 1 = 149);</li>
+			</ul>
+<P>&nbsp;&nbsp;&nbsp; На рис. 40 приведена
+выходная форма данного запроса: видно, что энергетический порог при
+делении ядра <SUP>235</SUP>U отсутствует
+(согласно данным Таблицы, приведенной в Приложении, ядро <SUP>235</SUP>U
+имеет моду распада &ndash; &ldquo;Испускание нейтрона&rdquo;).</P>
+			
+			<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="400" bordercolorlight="#0000FF" bordercolordark="#0000FF" id="table63">
+		<tr>
+			<td align="center">
+			<a href="http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#5">
+			http://cdfe.sinp.msu.ru/services/calc_thr/calc_thr_ru.html#5</a></td>
+		</tr>
+	</table>
+</div>
+
+			<P>
+&nbsp;<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="530" bordercolorlight="#000000" bordercolordark="#000000" id="table64">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc39.gif" width="512" height="359"><br>
+			
+			Рис. 39. Пример заполнения поисковой
+формы калькулятора &ndash; &ldquo;<B>5.
+Деление ядер</B>&rdquo;: 
+формирование запроса для определения энергии порога
+Е<SUB>пор</SUB> и энергии 
+			Q
+реакции спонтанного деления ядра <SUP>235</SUP>U
+с образованием осколков <SUP>139</SUP>Xe
+(выбран пользователем) и <SUP>95</SUP>Sr
+(определен программой) и вылетом одного нейтрона.</td>
+		</tr>
+	</table>
+</div>
+
+			<P>
+
+<div align="center">
+	<table border="1" cellpadding="2" style="border-collapse: collapse" width="530" bordercolorlight="#000000" bordercolordark="#000000" id="table65">
+		<tr>
+			<td>
+			<img border="0" src="images/anuc40.jpg" width="624" height="574"><br>
+			
+			Рис. 40. Результаты
+работы поисковой
+формы калькулятора &ndash; &ldquo;5.
+Деление ядер&rdquo; по
+определению порога Е<SUB>пор</SUB> и энергии Q спонтанного деления ядра <SUP>235</SUP>U
+с образованием
+осколков <SUP>95</SUP>Sr
+(выбран пользователем) и<SUP>
+139</SUP>Xe
+(определен программой) и вылетом
+одного нейтрона.</td>
+		</tr>
+	</table>
+</div>
+
+			
+
+<p align="center"><a href="anuc09.htm"><img src="../images/prev.gif" alt="previous"
+border="0" width="24" height="24"></a><a href="index.html"><img src="../images/rtop.gif" alt="home" border="0" width="24" height="24"></a><a href="table.pdf"><img src="../images/next.gif" alt="next" border="0" width="24" height="24"></a></p>
+			<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+		</tr>
+	</table>
+</div>
+
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+
+</html>
