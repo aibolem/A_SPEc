@@ -1,0 +1,1043 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Разложение по парциальным волнам</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table1">
+		<tr>
+			<td>
+
+<h3>Лекция 3. Рассеяние на сферически-симметричном потенциале. Разложение по парциальным волнам</h3><article>
+<h4>§ <a name="3.1.">3.1.</a> Дифференциальное и интегральное уравнения для радиальных волновых функций</h4>
+<p>&nbsp;&nbsp;&nbsp; В сферически-симметричном поле орбитальный момент частицы 
+сохраняется. Применительно к задаче рассеяния это означает, что если 
+представить падающий поток частиц как совокупность <font color="#800000"><b>парциальных волн</b></font>, 
+соответствующих определенным значениям орбитального момента частицы, то 
+каждая такая волна рассеивается на силовом центре независимо от других 
+парциальных волн. С математической точки зрения это создает упрощение 
+задачи, поскольку, решая волновое уравнение для каждой парциальной волны
+ в отдельности, легко разделить переменные волновой функции и, в отличие
+ от общего случая (1.4) или (1.9), свести дело к одномерным 
+дифференциальным или интегральным уравнениям. С физической точки зрения 
+важнейшим новым для нас аспектом при решении задачи рассеяния методом 
+парциальных волн является вопрос о том, как интерферируют между собой 
+разные парциальные волны, попадая в детектор рассеянных частиц. Рассмотрев взаимное поведение 
+парциальных волн на больших расстояниях от рассеивающего центра, мы 
+увидим, что вклад каждой из них в амплитуду рассеяния (а следовательно, в
+ дифференциальное и полное сечения рассеяния) определяется всего лишь 
+одним вещественным параметром − <font color="#800000"><b>фазой рассеяния</b></font>. Величина и энергическая
+ зависимость фаз рассеяния определяются видом потенциальной энергии 
+V(r).<br>
+&nbsp;&nbsp;&nbsp; Перейдем к последовательному изложению метода парциальных волн.<br>
+&nbsp;&nbsp;&nbsp; Из симметрийных соображений вполне ясно, что в случае рассеяния 
+частицы сферически-симметричным потенциалом амплитуда рассеяния /(<b>k</b>,<b>k</b><i>'</i>) зависит лишь от модуля импульса
+<br>
+k = |<b>k</b>| = |<b>k</b><i>'</i>| (т. е. от энергии 
+частицы Е) и от угла Э между векторами <b>k</b> и <b>k</b><i>'</i> −
+<font color="#800000"><b>угла рассеяния</b></font>. Волновая функция задачи рассеяния
+<img border="0" src="images/eqqti01_25e.gif" width="26" height="23" align="middle">(<b>r</b>) удовлетворяет теперь уравнению</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table73">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_01.gif" width="290" height="29"></td>
+			<td align="right" width="40">(3.1)</td>
+		</tr>
+	</table>
+</div>
+<p>где, в отличие от (1.32), вместо V(<b>r</b><i>&#39;</i>) стоит V(r&#39;) и поэтому она тоже 
+зависит лишь от r и угла θ<sub>r</sub> между <b>k</b> и <b>r</b>, но не зависит от азимутального 
+угла. Представим
+<img border="0" src="images/eqqti01_25e.gif" width="26" height="23" align="middle">(<b>r</b>) в виде разложения по полиномам Лежандра от 
+косинуса угла θ<sub>r</sub>:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table74">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_02.gif" width="190" height="48"></td>
+			<td align="right" width="40">(3.2)</td>
+		</tr>
+	</table>
+</div>
+<p>Функции R<sub>ℓ</sub>(r) будем называть <font color="#800000"><b>радиальными функциями задачи рассеяния</b></font>. 
+Они, конечно, удовлетворяют тому же дифференциальному уравнению −
+<font color="#800000"><b>радиальному уравнению Шредингера</b></font>, что и радиальные волновые функции в 
+задаче о связанных состояниях частицы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table75">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_03.gif" width="301" height="53"></td>
+			<td align="right" width="40">(3.3)</td>
+		</tr>
+	</table>
+</div>
+<p>Однако, имея дело с задачей рассеяния, где более тонко стоит вопрос о
+ дополнительных условиях к решению волнового уравнения, удобно наряду с 
+дифференциальным уравнением (3.3) построить также и интегральное 
+уравнение для функции R^(r), соответствующее интегральному уравнению 
+(3.1).<br>
+&nbsp;&nbsp;&nbsp; Для этого подставим (3.2) в (3.1), разложим по парциальным волнам плоскую волну [1, с. 271]:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table76">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_04.gif" width="224" height="38"></td>
+			<td align="right" width="40">(3.4)</td>
+		</tr>
+	</table>
+</div>
+<p>где j<sub>ℓ</sub>(kr) − сферическая функция Бесселя, и, умножив правую и левую 
+части уравнения на P<sub>ℓ</sub>(cosθ<sub>r</sub>), воспользуемся свойством 
+ортонормированности полиномов Лежандра:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table77">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_05.gif" width="248" height="41"></td>
+			<td align="right" width="40">(3.5)</td>
+		</tr>
+	</table>
+</div>
+<p>В результате</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table78">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_06.gif" width="481" height="77"></td>
+			<td align="right" width="40">(3.6)</td>
+		</tr>
+	</table>
+</div>
+<p>Воспользуемся вьфажением (1.21) для функции Грина, а также известным в теории специальных функций разложением [3]:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table79">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_07.gif" width="374" height="150"></td>
+			<td align="right" width="40">(3.7)</td>
+		</tr>
+	</table>
+</div>
+<p>где r<sub>&lt;</sub> − меньшее, a r<sub>&gt;</sub> − большее из значений r и 
+r<i>'</i>, <img border="0" src="images/n.gif" width="10" height="12"> и
+<img border="0" src="images/n.gif" width="10" height="12"><i>'</i> − единичные векторы в направлении векторов
+<b>r</b> и <b>r</b><i>'</i>, а n<sub>λ</sub>(x) − сферическая 
+функция Неймана. Подставляя (3.7) в (3.6) и используя известные формулы</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table80">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_08.gif" width="221" height="48"></td>
+			<td align="right" width="40">(3.8)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table81">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_09.gif" width="185" height="46"></td>
+			<td align="right" width="40">(3.9)</td>
+		</tr>
+	</table>
+</div>
+<p>получаем    интегральное    уравнение    для    радиальных функций R<sub>ℓ</sub>(r) в окончательном виде:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table82">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_10.gif" width="365" height="53"></td>
+			<td align="right" width="40">(3.10)</td>
+		</tr>
+	</table>
+</div>
+<p>где</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table83">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_11.gif" width="292" height="42"></td>
+			<td align="right" width="41">(3.11)</td>
+		</tr>
+	</table>
+</div>
+<p>функция Грина для ℓ-й парциальной волны свободной частицы.<br>
+&nbsp;&nbsp;&nbsp; Рассмотрим асимптотику радиальных функций R<sub>ℓ</sub>(r) при больших 
+r. Для 
+этого нам понадобятся асимптотические выражения сферических функций 
+Бесселя и Неймана, входящих в (3.10) и <br>
+(3.11) [1, с. 269]:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table84">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_12.gif" width="170" height="64"></td>
+			<td align="right" width="40">(3-12)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table85">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_13.gif" width="176" height="64"></td>
+			<td align="right" width="40">(3-13)</td>
+		</tr>
+	</table>
+</div>
+<p>Подставляя их в (3.11), получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table86">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_14.gif" width="480" height="70"></td>
+			<td align="right" width="40">(3.14)</td>
+		</tr>
+	</table>
+</div>
+<p>Здесь мы ограничились случаем потенциала конечного радиуса. Введем обозначение</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table87">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_15.gif" width="260" height="53"></td>
+			<td align="right" width="40">(3.15)</td>
+		</tr>
+	</table>
+</div>
+<p>и запишем с его помощью асимптотическое выражение (3.14) более компактно:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table88">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_16.gif" width="282" height="64"></td>
+			<td align="right" width="40">(3.16)</td>
+		</tr>
+	</table>
+</div>
+<p>Подставляя это выражение в (3.2) и снова используя (3.4), получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table89">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_17.gif" width="246" height="49"></td>
+			<td align="right" width="40">(3.17)</td>
+		</tr>
+	</table>
+</div>
+<p>Отсюда видно, что ƒ<sub>ℓ</sub> − это коэффициент разложения амплитуды рассеяния по полиномам Лежандра:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table90">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_18.gif" width="201" height="48"></td>
+			<td align="right" width="40">(3.18)</td>
+		</tr>
+	</table>
+</div>
+<p>Мы будем называть их <font color="#800000"><b>парциальными  амплитудами рассеяния</b></font>.
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table203">
+		<tr>
+			<td>&nbsp;<h4>§ <a name="3.2.">3.2.</a> Фазы рассеяния</h4>
+<p>&nbsp;&nbsp;&nbsp; Перестроим асимптотическое выражение (3.16), придав ему вид суперпозиции сходящейся и расходящейся сферических волн:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table204">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_19.gif" width="421" height="173"></td>
+			<td align="right" width="40">(3.19)</td>
+		</tr>
+	</table>
+</div>
+<p>При движении частиц в поле, описываемом вещественным потенциалом, 
+число частиц сохраняется. Это значит, что на асимптотически большом 
+расстоянии от силового центра (r &gt;&gt; d) интенсивности сходящейся к центру 
+сферической волны e<sup>-ikr</sup>/r и расходящейся из центра сферической волны e<sup>ikr</sup>/r равны
+ друг другу. В свою очередь это означает, что на коэффициент перед 
+расходящейся волной в (3.19) наложено условие:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table205">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_20.gif" width="108" height="45"></td>
+			<td align="right" width="40">(3.20)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Условие (3.20) позволяет ввести для описания каждой парциальной 
+амплитуды рассеяния ƒ<sub>ℓ</sub>(k), являющейся, вообще говоря, комплексной 
+функцией энергии (импульса) частицы, одну вещественную функцию δ<sub>ℓ</sub>(k), 
+называемую <font color="#800000"><b>фазой рассеяния</b></font>:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table206">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_21.gif" width="140" height="41"></td>
+			<td align="right" width="40">(3.21)</td>
+		</tr>
+	</table>
+</div>
+<p>To же соотношение полезно записать и по-другому:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table207">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_22.gif" width="184" height="41"></td>
+			<td align="right" width="40">(3.22)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; При каждом значении энергии (импульса) частицы фазы рассеяния δ<sub>ℓ</sub> полностью определяют асимптотический вид радиальной функции R<sub>ℓ</sub>(r) 
+соответствующей парциальной волны. Подставляя (3.21) в (3.19), получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table208">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_23.gif" width="289" height="64"></td>
+			<td align="right" width="40">(3.23)</td>
+		</tr>
+	</table>
+</div>
+<p>Как видно из (3.15), при «выключении» взаимодействия частицы с 
+силовым центром (V→0) обращаются в нуль все парциальные амплитуды 
+рассеяния ƒ<sub>ℓ</sub>, а вместе с ними, согласно (3.21), и все фазы δ<sub>ℓ</sub>. При этом 
+асимптотическое выражение (3.23) превращается в асимптотику ℓ-й составляющей волновой функции свободной частицы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table209">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_24.gif" width="397" height="64"></td>
+			<td align="right" width="40">(3.24)</td>
+		</tr>
+	</table>
+</div>
+<p>Сравнение выражений (3.24) и (3.23), отличающихся фазовым сдвигом в 
+аргументе синуса, позволяет лучше понять смысл термина «фаза рассеяния».<br>
+&nbsp;&nbsp;&nbsp; Выразив через фазы рассеяния&nbsp; δ<sub>ℓ</sub> парциальные амплитуды ƒ<sub>ℓ</sub>, мы можем, 
+пользуясь соотношениями (3.18) и (1.41), выразить через них полную 
+амплитуду рассеяния, дифференциальное сечение, а затем и полное сечение 
+рассеяния:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table210">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_25.gif" width="369" height="48"></td>
+			<td align="right" width="40">(3.25)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table211">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_26.gif" width="285" height="50"></td>
+			<td align="right" width="40">(3.26)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table212">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_27.gif" width="161" height="48"></td>
+			<td align="right" width="40">(3.27)</td>
+		</tr>
+	</table>
+</div>
+<p>(при получении последней формулы мы воспользовались свойством 
+ортонормированности полиномов Лежандра (3.5)). Формула (3.26) 
+показывает, что угловое распределение рассеянных частиц зависит от 
+интерференции между парциальными волнами с разными значениями 
+орбитального момента частицы. Однако в полном сечении рассеяния а после 
+интегрирования по всем углам вьшета рассеянной частицы эффект 
+интерференции пропадает.<br>
+&nbsp;&nbsp;&nbsp; Сравнение формул (3.25) и (3.27) позволяет установить интересное 
+соотношение между мнимой частью амплитуды рассеяния вперёд и полным 
+сечением рассеяния:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table213">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_28.gif" width="106" height="41"></td>
+			<td align="right" width="40">(3.28)</td>
+		</tr>
+	</table>
+	</div>
+<p>Это так называемая <font color="#800000"><b>оптическая теорема</b></font>. Доказанная нами для случая 
+потенциального рассеяния, она (мы увидим это в дальнейшем) справедлива и
+ в общем случае многоканального рассеяния. Мы будем обращаться к 
+оптической теореме как к строгому и модельно независимому соотношению 
+при оценке качества приближенных методов теории столкновений.</p>
+			</td>
+		</tr>
+	</table>
+</div>
+<p></p>
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table152">
+		<tr>
+			<td>
+<h4>§ <a name="3.3.">3.3.</a> Энергетическая зависимость фаз рассеяния при низких энергиях</h4>
+<p>&nbsp;&nbsp;&nbsp; При низких энергиях, когда импульс падающих частиц много меньше 
+обратного радиуса взаимодействия (kd &lt;&lt; 1), зависимость фаз рассеяния от 
+энергии носит универсальный характер. Чтобы установить эту зависимость, 
+обратимся сначала к формулам (3.15) и (3.21). Исключив из них ƒ<sub>ℓ</sub>(k), 
+получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table153">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_29.gif" width="348" height="53"></td>
+			<td align="right" width="40">(3.29)</td>
+		</tr>
+	</table>
+</div>
+<p>Это строгое соотношение, связывающее фазу рассеяния ℓ-й парциальной 
+волны с соответствующей радиальной функцией R<sub>ℓ</sub>(r) во внутренней области 
+r
+ &lt; d, аналогично соотношению (1.34) в общей формулировке задачи 
+потенциального рассеяния. Рассмотрим правую часть соотношения (3.29) при
+ kd &lt;&lt; 1. Для этого нам понадобятся предельные выражения сферических 
+функций Бесселя и сферических функций Неймана при малых значениях 
+аргумента:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table154">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_30.gif" width="145" height="48"></td>
+			<td align="right" width="40">(3.30)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table155">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_31.gif" width="146" height="42"></td>
+			<td align="right" width="40">(3.31)</td>
+		</tr>
+	</table>
+</div>
+<p>Рассматривая с учетом этих свойств функций j<sub>ℓ</sub>(х) и n<sub>ℓ</sub>(х) соотношение (3.11), видим, что функция Грина
+<img border="0" src="images/gl.gif" width="32" height="25" align="middle">(E,r,r<i>'</i>) при 
+k → 0 теряет зависимость от энергии (импульса) частицы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table156">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_32.gif" width="229" height="50"></td>
+			<td align="right" width="40">(3.32)</td>
+		</tr>
+	</table>
+</div>
+<p>Обращаясь теперь к интегральному уравнению (3.10), получаем, что при k → 0 решение этого уравнения R<sub>ℓ</sub>(r) ведет себя в зависимости от к так 
+же, как сферическая функция Бесселя j<sub>ℓ</sub>(kr), т.е. пропорционально k<sup>ℓ</sup>. Следовательно, из (3.29) вытекает</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table157">
+		<tr>
+			<td align="center">
+			δ(k)|<sub>k→0</sub> ~ k<sup>2ℓ+1</sup> ~ E<sup>ℓ+1/2 </sup>.</td>
+			<td align="right" width="40">(3.33)</td>
+		</tr>
+	</table>
+</div>
+<p>Это и есть искомая зависимость фаз рассеяния от энергии (импульса) 
+частиц при малых энергиях. Она носит универсальный характер и присуща 
+рассеянию на любом потенциале конечного радиуса.</p>
+<h4>§ <a name="3.4.">3.4.</a> Методы вычисления фаз рассеяния</h4>
+<p>&nbsp;&nbsp;&nbsp; Точное решение задачи рассеяния с целью вычисления фаз рассеяния 
+возможно лишь для отдельных искусственно придуманных потенциалов. На 
+практике, когда приходится иметь дело с реалистическими потенциалами, 
+фазы рассеяния всегда вычисляются приближенно, что связано либо с 
+использованием тех или иных физических аппроксимаций, либо с проведением
+ численного счета. Мы познакомимся с методами и того и другого родов.</p>
+<h4>а) Метод решения радиального уравнения Шредингера</h4>
+<p>Перепишем уравнение (3.3) в виде</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table158">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_33.gif" width="262" height="53"></td>
+			<td align="right" width="40">(3.34)</td>
+		</tr>
+	</table>
+</div>
+<p>Здесь, как и при решении задачи о связанных состояниях частицы [1, с.114], функции 
+u<sub>ℓ</sub>(r) связаны с R<sub>ℓ</sub>(r) соотношением</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table159">
+		<tr>
+			<td align="center">
+			u<sub>ℓ</sub>(r) = rR<sub>ℓ</sub>(r)</td>
+			<td align="right" width="40">(3.35)</td>
+		</tr>
+	</table>
+</div>
+<p>и при малых r ведут себя согласно степенному закону:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table160">
+		<tr>
+			<td align="center">
+			u<sub>ℓ</sub>(r)|<sub>r→0</sub> ~ r<sup>ℓ+1</sup> </td>
+			<td align="right" width="40">(3.36)</td>
+		</tr>
+	</table>
+</div>
+<p>Поведение
+			u<sub>ℓ</sub>(r) при асимптотически больших г получаем из (3.23):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table161">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_34.gif" width="197" height="45"></td>
+			<td align="right" width="40">(3.37)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; В общем случае уравнение (3.34) интегрируется численно, начиная от 
+r =
+ 0; для «разгонки» численного интегрирования удобно использовать 
+свойство (3.36). Мы не будем вдаваться в чисто вычислительные аспекты 
+этой процедуры. Для нас важно, что задачей интегрирования является 
+построение всего «профиля» функции u<sub>ℓ</sub>(r) с выходом при r → ∞ на 
+асимптотику (3.37); при этом должно быть соблюдено условие непрерывности
+ функции u<sub>ℓ</sub>(r) и ее первой производной u<i>&#39;</i><sub>ℓ</sub>(r) во всей области 0 &lt; 
+r 
+&lt; ∞.<br>
+&nbsp;&nbsp;&nbsp; При рассеянии на потенциале конечного радиуса (пусть d − размеры 
+области взаимодействия) в задаче имеются два масштаба измерения 
+расстояний r: параметр d и длина волны
+<img src="../simages/lambdar.gif" alt="lambda/" width="12" height="16"> = 1/k. Соотношение (3.37), как и
+ соотношение (3.23), из которого оно получено, справедливы, если 
+выполняются два неравенства: kr &gt;&gt; 1, r &gt; d. Если энергия частицы Е и 
+размеры области взаимодействия d таковы, что условие kr &gt;&gt; 1 не 
+выполняется, то асимптотическое поведение (3.37) начинается далеко за 
+границей области взаимодействия (r &gt;&gt; d). В этом случае не рационально 
+доводить численное интегрирование до асимптотически больших значений r &gt;&gt;
+ d, поскольку уже при r &gt; d частица движется свободно и уравнение 
+(3.3) переходит в уравнение движения свободной частицы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table162">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_03.gif" width="301" height="53"></td>
+			<td align="right" width="40">(3.38)</td>
+		</tr>
+	</table>
+</div>
+<p>При Е &gt; 0 его линейно независимыми решениями являются сферическая 
+функция Бесселя j<sub>ℓ</sub>(kr) и сферическая функция Неймана n<sub>ℓ</sub>(kr), а общее 
+решение уравнения (3.34) при r &gt; d имеет вид</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table163">
+		<tr>
+			<td align="center">
+			R<sub>ℓ</sub>(r) =   u<sub>ℓ</sub>(r)/r = A<sub>ℓ</sub>j<sub>ℓ</sub>(kr) + B<sub>ℓ</sub>n<sub>ℓ</sub>(kr);&nbsp;&nbsp; r&gt;d . </td>
+			<td align="right" width="40">(3.39)</td>
+		</tr>
+	</table>
+</div>
+<p>Вместо констант интегрирования А<sub>ℓ</sub> и В<sub>ℓ</sub> удобно выбрать две другие:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table164">
+		<tr>
+			<td align="center">
+			A<sub>ℓ</sub> = C<sub>ℓ </sub>cos<sub> </sub>δ<sub>ℓ</sub>; В<sub>ℓ</sub> = −C<sub>ℓ </sub>sin<sub>
+			</sub>δ<sub>ℓ</sub>.</td>
+			<td align="right" width="40">(3.40)</td>
+		</tr>
+	</table>
+</div>
+<p>Следовательно,</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table165">
+		<tr>
+			<td align="center">
+			R<sub>ℓ</sub>(r) =   u<sub>ℓ</sub>(r)/r = C<sub>ℓ</sub>{cos<sub>
+			</sub>δ<sub>ℓ</sub> j<sub>ℓ</sub>(kr) − sin<sub> </sub>δ<sub>ℓ </sub>
+			n<sub>ℓ</sub>(kr)}; r &gt; d . </td>
+			<td align="right" width="40">(3.41)</td>
+		</tr>
+	</table>
+</div>
+<p>С учетом (3.12) и (3.13) отсюда видно, что общее решение (3.39) имеет требуемую асимптотику (3.37).<br>
+&nbsp;&nbsp;&nbsp; Таким образом, практическая задача интегрирования уравнения (3.34) 
+заключается в том, чтобы, начиная с r = 0, выйти в область свободного 
+движения частицы r &gt; d и «сшить» волновую функцию, найденную для 
+внутренней области, с функцией (3.41). Пусть
+<img border="0" src="images/rint.gif" width="26" height="25" align="middle">(r) 
+= <img border="0" src="images/uint.gif" width="22" height="22" align="middle">/r 
+− решение 
+уравнения (3.3), (3.34), удовлетворяющее условию (3.36) и справедливое 
+во всей внутренней области 0 &lt; r &lt; d. Его «сшивание» с (3.41) 
+означает:</p>
+			<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table166">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/rint.gif" width="26" height="25" align="middle">(d) 
+			= C<sub>ℓ</sub>{cos<sub> </sub>δ<sub>ℓ</sub> j<sub>ℓ</sub>(kd) − sin<sub>
+			</sub>δ<sub>ℓ </sub>n<sub>ℓ</sub>(kd)}, <br>
+			d<img border="0" src="images/rint.gif" width="26" height="25" align="middle">/dr|<sub>r=d</sub> 
+			= kC<sub>ℓ</sub>{cos<sub> </sub>δ<sub>ℓ</sub> j<i>&#39;</i><sub>ℓ</sub>(kd) 
+			− sin<sub> </sub>δ<sub>ℓ </sub>n<i>&#39;</i><sub>ℓ</sub>(kd)},</td>
+			<td align="right" width="40">(3.42)</td>
+		</tr>
+	</table>
+</div>
+<p>где j<i>&#39;</i><sub>ℓ</sub>(x) ≡ dj<sub>ℓ</sub>(x)/dx. Введем
+<font color="#800000"><b>логарифмическую производную волновой функции</b></font>
+<img border="0" src="images/rint.gif" width="26" height="25" align="middle">(r) на границе области взаимодействия:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table167">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_35.gif" width="128" height="54"></td>
+			<td align="right" width="40">(3.43)</td>
+		</tr>
+	</table>
+</div>
+<p>Исключая из (3.42) константу C<sub>ℓ</sub> (а вместе с ней и произвольно 
+выбираемый при интегрировании уравнения (3.3) нормировочный множитель в
+<img border="0" src="images/rint.gif" width="26" height="25" align="middle">(r)), выражаем фазу рассеяния δ<sub>ℓ</sub> через логарифмическую производную ƒ<sub>ℓ</sub>:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table168">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_36.gif" width="180" height="80"></td>
+			<td align="right" width="40">(3.44)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; В  качестве примера рассчитаем  фазы рассеяния частицы на прямоугольной яме:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table169">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_37.gif" width="128" height="48"></td>
+			<td align="right" width="40">(3.45)</td>
+		</tr>
+	</table>
+</div>
+<p>В этом случае для получения волновой функции R<sub>ℓ</sub>(r) во внутренней области не требуется численного интегрирования:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table170">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/rint.gif" width="26" height="25" align="middle">(r) = const · 
+			j<sub>ℓ</sub>(Kr) ,</td>
+			<td align="right" width="40">(3.46)</td>
+		</tr>
+	</table>
+</div>
+<p>где</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table171">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_38.gif" width="120" height="46"></td>
+			<td align="right" width="40">(3.47)</td>
+		</tr>
+	</table>
+</div>
+<p>Отсюда находим логарифмическую производную (3.43):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table172">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_39.gif" width="102" height="45"></td>
+			<td align="right" width="40">(3.48)</td>
+		</tr>
+	</table>
+</div>
+<p>а далее по формуле (3.44) и фазу рассеяния:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table173">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_40.gif" width="266" height="45"></td>
+			<td align="right" width="40">(3.49)</td>
+		</tr>
+	</table>
+</div>
+<p>В   качестве   другого   примера   рассмотрим   рассеяние частицы абсолютно твердой сферой. На поверхности такой сферы (r = d) «внешняя» волновая функция обращается в нуль:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table174">
+		<tr>
+			<td align="center">
+			R<sub>ℓ</sub>(d) = 0 .</td>
+			<td align="right" width="40">(3.50)</td>
+		</tr>
+	</table>
+</div>
+<p>Подставляя сюда (3.41), находим</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table175">
+		<tr>
+			<td align="center">
+			tg<sub> </sub>δ<sub>ℓ</sub> = j<sub>ℓ</sub>(kd)/n<sub>ℓ</sub>((kd) .</td>
+			<td align="right" width="40">(3.51)</td>
+		</tr>
+	</table>
+</div>
+<p>В частности, при малых энергиях частицы отсюда получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table176">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_41.gif" width="185" height="48"></td>
+			<td align="right" width="40">(3.52)</td>
+		</tr>
+	</table>
+</div>
+<h4>б) Теория возмущений</h4>
+<p>&nbsp;&nbsp;&nbsp; Если V(r) мало, то радиальную функцию R<sub>ℓ</sub>(r), входящую в формулу 
+(3.29) для фазы и удовлетворяющую уравнению (3.10), можно заменить во 
+внутренней области (r &lt; d) выражением <br>
+R<sub>ℓ</sub>(r) → i<sup>ℓ</sup>(2ℓ + 1)j<sub>ℓ</sub>(kr). 
+Тогда получаем приближенное выражение для фазы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table177">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_42.gif" width="249" height="53"></td>
+			<td align="right" width="40">(3.53)</td>
+		</tr>
+	</table>
+</div>
+<p>а вместе с ним и для парциальной амплитуды рассеяния:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table178">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_43.gif" width="240" height="53"></td>
+			<td align="right" width="40">(3.54)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Согласно (3.54), амплитуда рассеяния ƒ(0) вещественна. С точки зрения
+ оптической теоремы (3.28) такой результат, на первый взгляд, 
+бессмыслен: мнимая часть амплитуды рассеяния вперед Im ƒ(0) равна нулю, а
+ полное сечение σ, конечно, нет. Правда, если фазы рассеяния малы, то и
+ мнимые части парциальных амплитуд Im ƒ<sub>ℓ</sub> = (2ℓ + l)k<sup>-1 </sup>sin<sup>2
+</sup>δ<sub>ℓ</sub>, интегральные парциальные сечения <sub><br>
+</sub>σ<sub>ℓ</sub> = (4π/k<sup>2</sup>)(2ℓ + l)<sup> </sup>sin<sup>2 </sup>δ<sub>ℓ</sub> квадратичны относительно δ<sub>ℓ</sub>; поэтому можно сказать, что при малых δ<sub>ℓ</sub>, оптическая 
+теорема выполняется <i>приближённо</i> − с точностью до членов, 
+пропорциональных δ<sub>ℓ</sub><sup>2</sup>.</p>
+<p>Таким   образом,   условие   применимости   теории возмущений для фаз − это малость фаз:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table179">
+		<tr>
+			<td align="center">
+			|δ<sub>ℓ</sub>| &lt;&lt; 1.</td>
+			<td align="right" width="40">(3.55)</td>
+		</tr>
+	</table>
+</div>
+<p>Приближение (3.53) для фаз при соблюдении требования (3.55) будем 
+называть <font color="#800000"><b>борновским приближением для фаз рассеяния</b></font>. Согласно (3.53) и 
+(3.55), в этом приближении фазы вычисляются по формуле</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table180">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_44.gif" width="214" height="53"></td>
+			<td align="right" width="40">(3.56)</td>
+		</tr>
+	</table>
+</div>
+<p>Она показывает, в частности, что если V(r) везде отрицательно (потенциал притяжения), то все борновские фазы
+<img border="0" src="images/bph.gif" width="25" height="23" align="middle"> положительны; формула (3.23) показывает, что в этом случае 
+вся осцилляционная картина внешней волновой функции частицы как бы 
+«подтягивается» в области взаимодействия. При положительном V(r) все 
+борновские фазы отрицательны; волновая функция частицы в этом случае как
+ бы «выталкивается» из области взаимодействия.<br>
+&nbsp;&nbsp;&nbsp; Выясним условия, при которых соблюдается требование малости фаз 
+(3.55). Как и в §2.2, рассмотрим два предельных случая: длина волны 
+частицы <img src="../simages/lambdar.gif" alt="lambda/" width="12" height="16"> = 
+k<sup>-1</sup> много больше и много меньше, чем область взаимодействия.<br>
+&nbsp;&nbsp;&nbsp; Если
+<img src="../simages/lambdar.gif" alt="lambda/" width="12" height="16"> &gt;&gt; d, т.е. kd 
+&lt;&lt; 1, то, подставляя в (3.56) аппроксимацию (3.30), получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table181">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_45.gif" width="437" height="54"></td>
+			<td align="right" width="40">(3.57)</td>
+		</tr>
+	</table>
+</div>
+<p>где d − средний радиус области взаимодействия, a |<span style="text-decoration: overline">V</span>| 
+− средняя 
+амплитуда взаимодействия. Известно, что если сферически симметричный 
+потенциал притяжения аппроксимируется прямоугольной ямой, то условие 
+существования в нем связанного состояния − это</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table182">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_46.gif" width="90" height="46"></td>
+			<td align="right" width="40">(3.58)</td>
+		</tr>
+	</table>
+</div>
+<p>Если же в потенциальной яме имеются два-три уровня, то параметр (2μ|<span style="text-decoration: overline">V</span>|d<sup>2</sup>)/ћ<sup>2</sup>, которому пропорциональна величина 
+|<img border="0" src="images/bph.gif" width="25" height="23" align="middle">| составляет несколько единиц. Формула (3.57) показывает, что условие применимости борновского приближения (3.55) 
+может выполняться для фаз с большими ℓ и не выполняться для фаз с 
+малыми ℓ. Хуже всего борновское приближение годится для фазы s-волны. С
+ другой стороны, как видно из (3.25), относительный вклад s-волны в 
+амплитуду рассеяния меньше всего при самых малых углах рассеяния. Отсюда
+ следует важный качественный вывод: если энергия частицы и протяженность
+ потенциала конечного радиуса таковы, что kd &lt;&lt; 1, то при рассеянии на 
+малые углы условия применимости борновского приближения всегда в среднем
+ более благоприятны, чем при рассеянии на большие углы.<br>
+&nbsp;&nbsp;&nbsp; Если <img src="../simages/lambdar.gif" alt="lambda/" width="12" height="16"> 
+&lt;&lt; d, т. е. kd &lt;&lt; 1, то для оценки фаз рассеяния следует подставить в (3.56) аппроксимацию (3.12):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table183">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_47.gif" width="306" height="90"></td>
+			<td align="right" width="40">(3.59)</td>
+		</tr>
+	</table>
+</div>
+<p>В   этом   случае   условие   применимости   борновского приближения</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table184">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_48.gif" width="97" height="48"></td>
+			<td align="right" width="40">(3.60)</td>
+		</tr>
+	</table>
+</div>
+<p>не содержит ℓ и полностью совпадает с тем, что для случая kd &gt;&gt; 1 было получено в § 2.2.</p>
+			<p>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table185">
+		<tr>
+			<td>
+<h4>в) Метод фазовых функций</h4>
+<p>&nbsp;&nbsp;&nbsp; С точки зрения математики метод фазовых функций 
+представляет собой особый способ решения радиального уравнения Шредингера (3.3), 
+являющегося линейным дифференциальным уравнением второго порядка, или 
+соответствующего ему интегрального уравнения (3.10). Он очень удобен для 
+получения фаз рассеяния, так как по этому методу не требуется сначала вычислять 
+в широкой области радиальные волновые функции задачи рассеяния и уже лишь потом, 
+по их асимптотике, находить фазы. Сводя дело к решению нелинейного 
+дифференциального уравнения первого порядка, метод фазовых функций очень удобен 
+также с точки зрения выполнения численных расчетов на ЭВМ. Ниже мы изложим лишь 
+основную идею этого метода.<br>
+&nbsp;&nbsp;&nbsp; Будем отправляться от интегрального уравнения (3.10), куда 
+подставим функции Грина
+<img border="0" src="images/gl.gif" width="32" height="25" align="middle">(E,r,r<i>&#39;</i>) 
+в форме (3.11). Тогда радиальную функцию R<sub>ℓ</sub>(r) можно представить в 
+виде</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table186">
+		<tr>
+			<td align="center">
+			R<sub>ℓ</sub>(r) =&nbsp; c<sub>ℓ</sub>(r)j<sub>ℓ</sub>(kr) + s<sub>ℓ</sub>(r)n<sub>ℓ</sub>(kr) 
+			,</td>
+			<td align="right" width="40">(3.61)</td>
+		</tr>
+	</table>
+</div>
+<p>где c<sub>ℓ</sub>(r) и s<sub>ℓ</sub>(r) - две новые вспомогательные функции, 
+определённые соотношениями</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table187">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_49.gif" width="345" height="106"></td>
+			<td align="right" width="40">(3.62)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table188">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_50.gif" width="272" height="53"></td>
+			<td align="right" width="40">(3.63)</td>
+		</tr>
+	</table>
+</div>
+<p>Используя (3.29), легко показать, что отношение этих функций при 
+асимптотически больших г дает фазу рассеяния:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table189">
+		<tr>
+			<td align="center">
+			&nbsp;tg<sub> </sub>δ<sub>ℓ</sub> = s<sub>ℓ</sub>(∞)/c<sub>ℓ</sub>(∞).</td>
+			<td align="right" width="40">(3.64)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; <font color="#800000"><b>Фазовой функцией</b></font>   
+называется функция δ<sub>ℓ</sub>(r), определенная соотношением</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table190">
+		<tr>
+			<td align="center">
+			tg<sub> </sub>δ<sub>ℓ</sub>(r) = s<sub>ℓ</sub>(r)/c<sub>ℓ</sub>(r)</td>
+			<td align="right" width="40">(3.65)</td>
+		</tr>
+	</table>
+</div>
+<p>Как видно из (3.64), ее предел при r → ∞ есть фаза рассеяния:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table191">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_51.gif" width="96" height="33"></td>
+			<td align="right" width="40">(3.66)</td>
+		</tr>
+	</table>
+</div>
+<p>Легко убедиться путем непосредственной подстановки выражения (3.65), что 
+фазовая функция δ<sub>ℓ</sub>(r) удовлетворяет при всех r уравнению</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table192">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_52.gif" width="393" height="45"></td>
+			<td align="right" width="40">(3.67)</td>
+		</tr>
+	</table>
+</div>
+<p>которое надо решать с дополнительным условием:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table193">
+		<tr>
+			<td align="center">
+			δ<sub>ℓ</sub>(r=0) =0</td>
+			<td align="right" width="40">(3.68)</td>
+		</tr>
+	</table>
+</div>
+<p>Конечно, для получения предельного значения δ<sub>ℓ</sub>(∞) достаточно 
+интегрировать уравнение (3.67) от нуля до границы области взаимодействия. Это 
+хорошо видно также, если уравнению (3.67) придать вид интегрального уравнения:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table194">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_53.gif" width="425" height="53"></td>
+			<td align="right" width="40">(3.69)</td>
+		</tr>
+	</table>
+</div>
+<p>Уравнения (3.68) и (3.69) раскрывают физический смысл функции δ<sub>ℓ</sub>(r): 
+фазовая функция δ<sub>ℓ</sub>(r), соответствующая заданному потенциалу V(r), − 
+это фаза рассеяния частицы потенциалом, который «обрезан» в точке r, а на 
+меньших расстояниях совпадает с V(r).</p>
+			<p>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table195">
+		<tr>
+			<td>
+
+<h4><a name="p"></a>Упражнения</h4>
+<p><b>3.1.</b>&nbsp;Найти связь между функцией Грина
+<img border="0" src="images/eqqti01_11.gif" width="28" height="23" align="middle">(Е,<b>r</b>,<b>r</b><i>&#39;</i>) 
+и функциями Грина<span lang="en-us"> </span>
+<img border="0" src="images/gl.gif" width="32" height="25" align="middle">(E,<b>r</b>,<b>r</b><i>&#39;</i>).<table border="0" cellpadding="2" style="border-collapse: collapse" width="190" id="table220" align="right">
+	<tr>
+		<td align="center"><img border="0" src="images/fqti03_00.gif" width="171" height="146">
+		</td>
+	</tr>
+</table>
+
+<b>3.2.</b>&nbsp;Получить общую формулу для фаз рассеяния δ<sub>ℓ</sub> частицы 
+потенциальной ямой глубины V<sub>0</sub> радиуса d с бесконечной отталкивающей 
+серединой paдиуса а в центре ямы (см. рис.).<p><b>3.3.</b>&nbsp;Вычислить борновскую 
+фазу s-волны
+<img border="0" src="images/bph.gif" width="25" height="23" align="middle">(k) 
+при рассеянии частицы прямоугольной потенциальной ямой (3.45). Сравнить с точным 
+решением (3.49). В случае kd &lt;&lt; 1 выяснить, при каком соотношении параметров V<sub>0</sub> 
+и d различие между точным и борновским значениями фазы δ<sub>0</sub> 
+максимально; что означает такое соотношение?</p>
+<p><b>3.4.</b>&nbsp;С помощью уравнения (3.69) для фазовых функций получить формулу 
+борновского приближения для фаз.</p>
+<p><b>3.5.</b>&nbsp;Пользуясь методом фазовых функций, показать, что если V(r) везде 
+отрицательно (положительно), то не только борновская фаза δ<sub>ℓ</sub>, но и 
+точно значение фазы δ<sub>ℓ</sub> положительны (отрицательны).</p>
+<p><b>3.6.</b>&nbsp;Используя соотношения (3.2) и (3.23), показать, что волновую 
+функцию
+<img border="0" src="images/eqqti01_25e.gif" width="26" height="23" align="middle">(<b>r</b>) 
+можно записать в виде</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table218">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_54.gif" width="277" height="48"></td>
+			<td align="right" width="40">(3.70)</td>
+		</tr>
+	</table>
+</div>
+<p>где
+<img border="0" src="images/eqqti03_57.gif" width="38" height="21" align="middle">  
+- вещественное решение уравнения (3.3) с асимптотикой</p>
+			<p align="center">
+			<img border="0" src="images/eqqti03_56.gif" width="213" height="45"></p>
+<p>Показать, что тогда для волновой функции
+<img border="0" src="images/eqqti01_25c.gif" width="26" height="23" align="middle">(<b>r</b>) 
+справедливо выражение:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table219">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti03_55.gif" width="284" height="48"></td>
+			<td align="right" width="40">(3.71)</td>
+		</tr>
+	</table>
+</div>
+			<hr>
+			<p align="center"><a href="qti_02.htm"><img src="../images/prev.gif"
+
+border="0" width="24" height="24"></a><a href="index.html"><img src="../images/rtop.gif"
+alt="Содержание" border="0" width="24" height="24"></a><a href="qti_04.htm"><img src="../images/next.gif"
+border="0" width="24" height="24"></a></p>
+			<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --><p>
+
+</td></tr></table></div>
+<p>&nbsp;
+
+
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+
+</html>
