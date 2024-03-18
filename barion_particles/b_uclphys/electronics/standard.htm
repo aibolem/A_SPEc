@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Модульные системы в ядерной радиоэлектронике</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<h2>Модульные системы в ядерной радиоэлектронике</h2>
+
+<p>&nbsp;&nbsp;&nbsp; Современная радиоэлектронная система в ядерной физике 
+обычно имеет модульную структуру, т.е. состоит из модулей, каждый из которых 
+выполняет определенную задачу. Механические и электрические параметры модулей 
+стандартизованы. Таким образом, собирая измерительную систему из модулей одного 
+стандарта, можно быть уверенным, что они будут хорошо сочетаться друг с другом, 
+а при изменений требований эксперимента установку можно легко перестроить, 
+добавив и/или заменив модули.<br>
+&nbsp;&nbsp;&nbsp; В ядерной физике низких и средних энергий до сих пор в 
+основном применяются модульные системы NIM (<strong>N</strong>uclear <strong>I</strong>nstrumentation
+<strong>M</strong>odules) и CAMAC (<strong>С</strong>omputer-<strong>A</strong>ided <strong>
+M</strong>easurement
+<strong>A</strong>nd <strong>C</strong>ontrol). Несмотря на то, что это старые 
+стандарты (NIM появился в 1964&nbsp;г.) они удовлетворяют требованиям большинства 
+экспериментов в этой области ядерной физики. В физике высоких энергий 
+применяется аппаратура в стандартах FASTBUS и VMEbus - VERSA Module Europe.<br>
+&nbsp;&nbsp;&nbsp; Модули NIM и CAMAC вставляются в корзины (bin в стандарте NIM 
+и crate в стандарте CAMAC), которые обеспечивают питание модулей. В крейте CAMAC 
+кроме шин питания есть и сигнальные шины. Модули CAMAC соединяются с компьютером 
+с помощью специального модуля крейт-контроллера. Типоразмеры NIM и CAMAC разные 
+и модуль NIM не вставить в крейт CAMAC без специального переходника. Некоторые 
+модули не вставляются в bin, например, предусилители.&nbsp; От него они получают 
+только питание.</p>
+
+<h3>Линейные и логические сигналы</h3><article>
+
+<p>&nbsp;&nbsp;&nbsp; В стандарте NIM различают 4 типа сигналов - медленные 
+линейные сигналы,&nbsp;&nbsp; быстрые линейные сигналы, медленные логические 
+сигналы&nbsp; и быстрые логические сигналы. Амплитуда линейных сигналов 
+варьируется в широком диапазоне. Логические сигналы имеют фиксированную 
+амплитуду и форму.</p>
+
+<h4>Медленные линейные сигналы</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Медленные линейные сигналы используются для передачи 
+амплитудной информации. Передние фронты медленных линейных сигналов обычно 
+&gt;50&nbsp;нс, их длительность может варьироваться от 0.5&nbsp;до 100&nbsp;мкс.&nbsp;&nbsp; Они 
+могут быть как положительными униполярными, так и биполярными с лидирующей 
+положительной частью. Амплитуда в диапазоне от 0 до +10&nbsp;В. Полярность линейных 
+сигналов от предусилителей может быть как положительной, так и отрицательной. 
+Для передачи медленных сигналов используются кабели с волновым сопротивлением 50 
+или 93&nbsp;Ом.</p>
+
+<h4>Быстрые линейные сигналы</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Быстрые линейные сигналы используются во временных 
+измерениях. Длительность быстрых линейных сигналов обычно меньше 1&nbsp;мкс при 
+&nbsp;длительности передних фронтов несколько наносекунд. Рекомендованный диапазон 
+для быстрых линейных сигналов&nbsp;&nbsp; от 0 до -1&nbsp;В. Обычно это токовые 
+сигналы от 0 до -20&nbsp;мА на нагрузку 50&nbsp;Ом. Они имеют отрицательную полярность. 
+Соединение между модулями всегда производится кабелями с волновым сопротивлением 
+50&nbsp;Ом. Кабель должен быть согласован на приемном конце. Устройства, генерирующие 
+быстрые линейные сигналы могут иметь как очень большое выходное сопротивление 
+(источники тока), так и очень малое. Очень большое выходное сопротивление имеют 
+анодные выходы ФЭУ, быстрые же усилители обычно имеют выходное сопротивление 
+&lt;1&nbsp;Ом.<br>
+&nbsp;&nbsp;&nbsp; Для сигналов с длительностями передних фронтов в 
+наносекундной области используют специальные высокочастотные кабели и разъемы 
+типа SMA. Длина кабеля также влияет на качество передачи коротких фронтов. Так 
+заметное увеличение длительности переднего фронта t<sub>r</sub>
+для сигналов, имевших t<sub>r</sub>&nbsp;=&nbsp;2&nbsp;нс становится ощутимым при длине кабеля 
+&gt;4&nbsp;м. Величина этого эффекта пропорциональна квадрату длины кабеля.</p>
+
+<h4>Медленные логические сигналы</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Медленные логические сигналы в NIM обычно имеют амплитуду 
+~5&nbsp;В (логическая &quot;1&quot;), длительность ~0.5&nbsp;мкс, фронты ~10&nbsp;-&nbsp;100&nbsp;нс. Они, как 
+правило, нормально воспринимаются устройствами использующими&nbsp;&nbsp; на 
+выходе стандарт TTL (комплементарный). Однако, строго говоря, стандарты не 
+совпадают (см. рис.&nbsp;1), и иногда совместимость устройств по этой причине может 
+отсутствовать.&nbsp; </p>
+<div align="center"><center>
+
+<table border="1" cellspacing="5" id="table1" width="720" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+  <tr>
+    <td><img border="0" src="images/nim01.gif" width="494" height="298"><br>
+    Рис. 1. Медленные логические сигналы в стандартах TTL и NIM. Уровни указаны 
+	в вольтах.</td>
+    <td><br>
+    <img border="0" src="images/nim02.gif" width="208" height="338"><br>
+    Рис. 2. Уровни быстрых логических сигналов.</td>
+  </tr>
+</table>
+</center></div>
+
+<h4>Быстрые логические сигналы</h4>
+
+<p>&nbsp;&nbsp; Быстрые логические сигналы - токовые сигналы на нагрузку 50&nbsp;Ом 
+(см. рис.2). Обычно это отрицательные сигналы с амплитудой ~-0.5&nbsp;В (логическая 
+&quot;1&quot;) и со временем нарастания 2 - 10&nbsp;нс. Требования к кабелям и согласованию 
+сигналов у них такое же, как и для быстрых линейных сигналов.</p>
+
+<h3>Прохождение сигналов по кабелям, согласование</h3><article>
+
+<p>&nbsp;&nbsp;&nbsp; Сигналы распространяются по кабелям со скоростью v, 
+которая связана с волновым сопротивлением Z и погонной емкостью C соотношением</p>
+
+<p align="center">v[нс/м] = Z[Ом] C[пФ/м].</p>
+
+<p align="left">Для кабеля RG58 (Z&nbsp;= 50&nbsp;Ом, C&nbsp;=&nbsp;100&nbsp;пФ/м) v&nbsp;=&nbsp;5&nbsp;нс /м, для RG62 
+(Z = 100&nbsp;Ом) v&nbsp;=&nbsp;4.3&nbsp;нс /м.</p>
+
+<p align="left">&nbsp;&nbsp;&nbsp; Сигнал, распространяющийся в кабеле, 
+отразится, если сопротивление нагрузки <nobr>R<sub>L</sub><img
+alt="noneqv" src="../simages/noneqv.gif" width="16" height="17">Z.</nobr> Этот 
+сигнал снова отразится, если выходное сопротивление источника сигнала R<sub>S</sub> 
+не равно Z.<br>
+&nbsp;&nbsp;&nbsp; Рассмотрим несколько случаев.</p>
+
+<ol>
+  <li><p align="left"><b>R<sub>S</sub> &lt;&lt; Z</b>.<br>
+    Обычно R<sub>S</sub>~1&nbsp;Ом. Низкоомный выход позволяет соединения с 
+	практически любыми нагрузками без потери амплитуды, в частности, 
+	параллельное соединение нескольких устройств. Такие выходы обычно 
+	используются для медленных линейных и логических сигналов. Если длина 
+	соединительного кабеля L&nbsp;&lt;&nbsp;1&nbsp;м, время распространения сигнала t<sub>L</sub>&nbsp;=&nbsp;vL&nbsp;&lt;&nbsp;t<sub>r</sub> 
+	- времени нарастания сигнала и неприятностей не будет. Однако, если 
+	L&nbsp;&gt;&nbsp;1.5&nbsp;м, даже в случае относительно медленных сигналов, t<sub>L</sub>&nbsp;может 
+	оказаться больше&nbsp;t<sub>r </sub>и возникнуть осцилляции. Во избежании этого 
+	эффекта нужно либо изменить R<sub>S</sub>, сделав его равным Z, либо 
+	согласовать конец кабеля.</p>
+  </li>
+  <li><p align="left"><b>R<sub>S</sub> = Z</b>.<br>
+    Такие выходы используются также как и в случае 1 для медленных линейных и 
+	логических сигналов. В этом случае согласование на конце кабеля не 
+	требуется. При R<sub>L</sub> &gt;&gt; R<sub>S</sub> потерь амплитуды сигнала не 
+	происходит. При R<sub>L</sub> = R<sub>S</sub>&nbsp;амплитуда уменьшается вдвое.</p>
+  </li>
+  <li><p align="left"><b>R<sub>S</sub> &gt;&gt; Z</b>.<br>
+    Токовый выход используется для быстрых линейных и логических сигналов. 
+	Кабель должен быть согласован на конце.</p>
+  </li>
+</ol>
+
+<hr align="left" width="300" noshade size="1">
+
+<p align="center"><a href="index.html"><small>[ОГЛАВЛЕНИЕ]</small></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --><p>&nbsp;</p>
+
+			</td>
+</tr>
+</table>
+</div>
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>

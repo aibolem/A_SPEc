@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<title>Режекция наложений</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛAнg?Age©///?Ang?Age® Ekohomei©A TALKiNg ?.?.м.?.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<h3>Режекция наложений</h3><article>
+
+<p>&nbsp;&nbsp;&nbsp; Статистический характер
+распределения сигналов во времени приводит к
+частичному их перекрытию, т.е. к наложению
+импульсов. Наложения могут возникать в
+детекторе, предусилителе, усилителе. </p>
+<table border="1" cellspacing="5" align="right" id="table3" width="250" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+	<tr>
+		<td>
+		<div align="right">
+			<table border="0" align="right" cellpadding="0"
+    id="table4">
+				<tr>
+					<td>
+					<img border="0" src="images/pileup01a.gif" width="126" height="100"></td>
+					<td>
+					<img border="0" src="images/pileup01b.gif" width="112" height="100"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Рис.1. Наложения импульсов в
+        спектрометрическом усилителе.</td>
+				</tr>
+			</table></div></td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; Обычно наибольший вклад в искажения
+амплитудных распределений вносят наложения в
+спектрометрических усилителях. На рис.&nbsp;1а
+показано наложение, когда неискаженная
+амплитудная информация, по крайней мере для
+одного из наложенных пиков, может быть извлечена.
+В случае, изображенном на рис.&nbsp;1б, информация
+полностью искажена.<br>
+&nbsp;&nbsp;&nbsp; В соответствии с законом Пуассона
+вероятность прихода очередного сигнала <nobr>P(t)</nobr>
+в интервале <img alt="дельта" src="../simages/delta.gif" width="13" height="13">t после
+предшествующего определяется соотношением</p>
+<div align="center"><center>
+
+<table border="0" cellspacing="1" width="400" id="table1">
+  <tr>
+    <td align="center">P = n<img alt="дельта" src="../simages/delta.gif" width="13" height="13">t exp(-n<img
+    alt="дельта" src="../simages/delta.gif" width="13" height="13">t),</td>
+    <td align="right" width="20">(1)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где n - средняя скорость поступления событий.
+Соответственно, для средней частоты наложений
+можно записать</p>
+<div align="center"><center>
+
+<table border="0" cellspacing="1" width="400" id="table2">
+  <tr>
+    <td align="center">n<sub>н</sub> = n<sup>2</sup>t<sub>p</sub>&nbsp; (при nt<sub>p</sub>
+    &lt;&lt; 1),</td>
+    <td align="right" width="20">(2)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где t<sub>p</sub> - длительность сигнала. Как видно из
+(2), частота наложений квадратично зависит от
+частоты событий и самый простой способ их
+минимизации - уменьшить входные загрузки. Однако
+это не всегда лучший выход, в частности, если нас
+интересуют ядерные реакции с малым выходом,
+которые идут на интенсивном фоне сопутствующих
+реакций. Так, если соотношение сечений такое, что
+на 10<sup>6</sup> зарегистрированных событий только
+одно представляет интерес, загрузка
+спектрометрического тракта 10<sup>4</sup>&nbsp;имп/с,
+длительность сигнала спектрометрического
+усилителя 10<sup>-6</sup>&nbsp;с, то средняя частота
+наложений будет 100&nbsp;с<sup>-1</sup>. В то же время
+средняя скорость исследуемых событий будет
+всего 10<sup>-2</sup>&nbsp;имп/с. В этих условиях полезная
+информация может быть искажена до
+неузнаваемости. Уменьшение длительности
+импульсов нежелательно, так как приводит к
+ухудшению отношения сигнал/шум. Остается только
+использовать методы детектирования, режекции и
+учета наложенных событий.<br>
+&nbsp;&nbsp;&nbsp; Рассмотрим некоторые способы
+детектирования и режекции наложений.</p>
+
+<h4>Режекция наложений методом фиксации нуля
+биполярного импульса</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Этот метод режекции наложений
+основан на изменении формы импульсов наложений
+по сравнению с импульсами от одиночных событий.
+По сути это метод дискриминации по форме
+импульса. Аналогичные схемы могут применяться,
+например, и для <a target="_blank" href="ng.htm">n-&#947;-дискриминации</a>.
+Пример реализации этого метода показан на
+рис.&nbsp;2.</p>
+<div align="center"><center>
+
+<table border="1" cellspacing="5" id="table5" width="640" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+  <tr>
+    <td><img border="0" src="images/pileup02.gif" width="633" height="289"><br>
+    Рис. 2. Блок-схема устройства детектирования и
+    режекции наложений методом фиксации нуля
+    биполярного импульса.</td>
+  </tr>
+</table>
+</center></div>
+<table border="1" cellspacing="5" align="right" id="table6" width="360" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+	<tr>
+		<td><img border="0" src="images/pileup03.gif" width="352" height="427"><br>Рис. 3. Выходные импульсы устройств, показанных на
+    рис. 2: а) биполярные импульсы
+    спектрометрического усилителя, б) быстрого
+    дискриминатора, в) временного одноканального
+    анализатора (1), г) ВАКа, д) временного
+    одноканального анализатора (2), е) задержанные
+    однополярные импульсы спектрометрического
+    усилителя, ж) импульсы с выхода линейных ворот.</td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; Момент пересечения нуля у
+биполярного импульса при наложении сигналов
+сдвинут на некоторое время, по сравнению с
+импульсом в отсутствии наложений (см. рис.&nbsp;3а).
+Это различие фиксируется время-амплитудным
+конвертором (ВАК), на стартовый вход которого
+поступают сигналы цепочки быстрый усилитель -
+быстрый дискриминатор (рис.&nbsp;2б). Быстрый
+дискриминатор осуществляет привязку по
+переднему фронту сигнала. На стоповый вход ВАКа
+поступают сигналы от одноканального анализатора
+(1) (рис.&nbsp;3в), временная привязка которого
+осуществляется по пересечению биполярным
+сигналом от спектрометрического усилителя
+нулевой линии. Амплитуда выходного сигнала ВАКа
+линейно зависит от времени между сигналами
+&quot;старт&quot; и &quot;стоп&quot; (рис.&nbsp;3г).&nbsp; Верхний
+порог дискриминации одноканального анализатора
+(2), на который поступают импульсы с ВАКа,
+устанавливается так, чтобы сигналы на его выходе
+генерировались только для событий без наложений.
+Эти сигналы (рис.&nbsp;3д) поступают на управляющий
+вход линейных ворот, которые этим сигналом
+открываются и пропускают задержанный
+спектрометрический сигнал. Задержка вводится
+для временного согласования между линейным и
+управляющим сигналами, поступающими на линейные
+ворота.<br>
+&nbsp;&nbsp;&nbsp; Эту систему можно упростить, заменив
+быстрые усилитель и дискриминатор одноканальным
+временным анализатором с привязкой по переднему
+фронту и подав на него сигналы
+спектрометрического усилителя. Однако
+эффективность режекции наложений в этом случае
+будет хуже из-за худшей фиксации времени. </p>
+
+<h4><a name="pileupinsp"></a>Режекция наложений с помощью
+инспекции временных интервалов между событиями</h4>
+
+<p>&nbsp;&nbsp;&nbsp; В этом методе используется то
+обстоятельство, что в быстрых цепях из-за
+существенно меньшей длительности импульсов
+вероятность их наложения меньше и анализируется
+(инспектируется) время между импульсами в
+быстром канале. На рис.&nbsp;4 показана блок-схема
+режекции наложений, в которой реализуется этот
+метод.</p>
+<div align="center"><center>
+
+<table border="1" cellspacing="5" id="table7" width="600" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+  <tr>
+    <td><img border="0" src="images/pileup04.gif" width="586" height="197"><br>
+    Рис. 4. Блок-схема режекции наложений с
+    использованием инспектора наложений.</td>
+  </tr>
+</table>
+</center></div>
+<table border="1" cellspacing="5" align="right" id="table8" width="530" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+	<tr>
+		<td><img border="0" src="images/pileup05.gif" width="522" height="416"><br>Рис. 5. Сигналы в системе режекций наложений с
+    испектором наложений.</td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; Короткие сигналы быстрого усилителя
+(рис.&nbsp;5б) поступают на быстрый дискриминатор,
+порог которого установлен чуть выше уровня
+шумов. Стандартные логические импульсы
+временной привязки (рис.&nbsp;5в) поступают на
+специальное устройство - инспектор наложений, в
+котором генерируется сигнал инспекции
+(рис.&nbsp;5г), длительность которого обычно
+устанавливается равной длительности сигнала
+спектрометрического усилителя&nbsp; T<sub>ins</sub>&nbsp;=&nbsp;T<sub>w</sub>.
+Если во время интервала инспекции на вход
+инспектора поступает следующий сигнал,
+вырабатывается сигнал наличия наложений
+(рис.&nbsp;5д), а сигнал инспекции продлевается на
+время между входными импульсами. Сигнал наличия
+наложений поступает на управляющий вход
+линейных ворот (нормально открытых) и служит
+сигналом запрета для наложений. <br>
+&nbsp;&nbsp;&nbsp; Относительно высокий уровень шумов
+быстрых усилителей ограничивает минимальный
+порог дискриминации. Это может приводить к тому,
+что в области малых амплитуд наложения не будут
+детектироваться и амплитудный спектр в этой
+области будет искажен.</p>
+
+<p>&nbsp;&nbsp;&nbsp; На рис. 6 в качестве примера показано
+влияние режекций наложений в измерениях с
+большими загрузками.</p>
+<div align="center"><center>
+
+<table border="1" cellspacing="5" id="table9" width="360" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+  <tr>
+    <td><img border="0" src="images/pileup06.gif" width="354" height="254"><br>
+    Рис. 6. Гамма-спектры<sup> 60</sup>Co измеренные
+    германиевым детектором при загрузке 50000 имп/c с
+    режекцией и без режекций наложений.</td>
+  </tr>
+</table>
+</center></div>
+
+<hr align="left" width="300" noshade size="1">
+
+<p align="center"><a href="index.html"><small>[ОГЛАВЛЕНИЕ]</small></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --><p>&nbsp;</p>
+
+			</td>
+</tr>
+</table>
+</div>
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>

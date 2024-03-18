@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Аналого-цифровые преобразователи</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<h3>Аналого-цифровые преобразователи (АЦП)<br>
+<sub>Analog-to-Digital convertors (ADC)</sub></h3><article>
+
+<p>&nbsp;&nbsp;&nbsp; АЦП служит для измерения напряжения, т.е. преобразования 
+аналоговой информации в цифру. Амплитудам в диапазоне <nobr>V<sub>n</sub> + <img
+src="../simages/delta.gif" alt="delta" width="13" height="13">V</nobr> ставится 
+в соответствие число n. Одной из характеристик АЦП является его разрядность, 
+т.е. количество дискретных значений напряжения, на которые может делиться весь 
+рабочий диапазон входных (анализируемых) напряжений. Когда АЦП используется для 
+амплитудного анализа, число, получаемое на выходе АЦП используется для адресации 
+памяти и называется номером канала, а <nobr><img
+src="../simages/delta.gif" alt="delta" width="13" height="13">V</nobr> - шириной 
+канала. Номер канала несет информацию об амплитудном значении сигнала. Амплитуда 
+в свою очередь связана с измеряемой физической величиной (энергией, временем и 
+т.п.). Максимальное количество каналов связано с разрядностью АЦП. АЦП нередко 
+служат интерфейсом между измерительной аппаратурой и компьютером. 
+(Многоканальные анализаторы, в состав которых входят АЦП, по сути, 
+специализированные ЭВМ.)<br>
+&nbsp;Современные АЦП обычно имеют до 14 двоичных разрядов (16384 каналов). В 
+зависимости от требований эксперимента измерения могут производиться при разных 
+диапазонах конверсии (512, 1024 и&nbsp;т.д.) вплоть до максимального, определяемого 
+разрядностью АЦП<br>
+&nbsp;&nbsp;&nbsp; Важными характеристиками АЦП, используемых для спектроскопии, 
+являются интегральная и дифференциальная нелинейности.</p>
+<table border="1" cellpadding="2" cellspacing="0" width="280" align="right" bordercolorlight="#000000" bordercolordark="#000000" style="border-collapse: collapse">
+	<tr>
+		<td><img src="images/adc01.gif" width="276" height="164"><br>Рис. 1. 
+		Идеальная (сплошная зеленая линия) и реальная функция преобразования АЦП</td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Интегральная нелинейность I<sub>int</sub>
+характеризует отклонение реальной функции преобразования (штрихпунктир) от 
+идеальной линейной (сплошная линия) (см. рис. 1). Интегральная нелинейность I<sub>int</sub> 
+определяется следующим образом </p>
+
+<p align="center">I<sub>int</sub>% = 100(V<sub>nom</sub> - V<sub>act</sub>)/V<sub>max</sub>,</p>
+
+<p align="left">где (V<sub>nom</sub> - V<sub>act</sub>) - максимальное 
+отклонение от линейности.<br>
+&nbsp;&nbsp;&nbsp; Дифференциальная нелинейность I<sub>dif</sub>
+характеризует неоднородность ширин каналов АЦП и определяется следующим образом.</p>
+
+<p align="center">I<sub>dif</sub>% = 50(W<sub>max</sub> - W<sub>min</sub>)/W<sub>avg</sub>,</p>
+
+<p align="left">где W<sub>max</sub>, W<sub>min</sub> и W<sub>avg</sub> - 
+максимальная, минимальная и средняя ширины каналов.<br>
+&nbsp;&nbsp;&nbsp; У качественных АЦП дифференциальная нелинейность ~1%, а 
+интегральная &lt;0.05% при 12-разрядном (4096 каналов) преобразовании.</p>
+
+<p>&nbsp;&nbsp;&nbsp; В промышленной электронике было разработано много методов 
+преобразования аналоговых величин в цифровой код. Однако в ядерной электронике 
+используются только некоторые из них. В основном используются АЦП 
+вилкинсоновского типа и АЦП поразрядного взвешивания. В последнее время в 
+ядерной электронике стали использоваться и параллельные АЦП, входящие в состав 
+цифровых процессоров сигналов.</p>
+<table border="1" cellspacing="5" style="border-collapse: collapse" align="right"
+id="table3" bordercolorlight="#000000" bordercolordark="#000000">
+	<tr>
+		<td valign="top" width="310" align="center">
+		<img border="0" src="images/adc03.gif" width="273" height="353"><br>Рис. 
+		<span lang="en-us">2</span>. Сигналы в АЦП во время измерения.</td>
+	</tr>
+	<tr>
+		<td valign="top" width="310" align="center">
+		<img border="0" src="images/adc02a.gif"
+    align="right" width="306" height="152">а)</td>
+	</tr>
+	<tr>
+		<td valign="top" width="310" align="center">
+		<img border="0" src="images/adc02b.gif"
+    align="right" width="289" height="152">б)</td>
+	</tr>
+	<tr>
+		<td align="center">
+		<table border="0" style="border-collapse: collapse" id="table5"
+    cellspacing="1">
+			<tr>
+				<td width="390">
+				<img border="0" src="images/adc02с.gif" align="right" width="381" height="152">в)</td>
+			</tr>
+		</table>
+		<p>Рис. 3. Циклы работы АЦП вилкинсоновского типа.</td>
+	</tr>
+</table>
+
+<h4>Аналого-цифровой преобразователь вилкинсоновского типа</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Принцип работы АЦП вилкинсоновского типа (D.H&nbsp;Wilkinson) 
+основан на преобразовании амплитуда - время. Входной импульс поступает на 
+дискриминатор нижнего уровня, уровень дискриминации которого обычно 
+устанавливается выше уровня шумов (см. рис.&nbsp;2). Когда уровень входного сигнала 
+достигнет уровня дискриминации, линейные ворота открываются, и накопительная 
+емкость C соединяется с входом (рис.&nbsp;3а). Начинается заряд емкости до 
+амплитудного значения&nbsp; входного сигнала. Когда емкость зарядится, линейные 
+ворота закрываются, накопительная емкость отсоединяется от входа и 
+присоединяется к источнику постоянного тока (рис.&nbsp;3б). Начинается линейный 
+разряд емкости. В это же время таймирующий (времязадающий) генератор 
+подключается к адресному счетчику, который начинает считать импульсы 
+таймирующего генератора. Частота генератора обычно 100 - 200 МГц. Когда емкость 
+полностью разрядится, накопительная емкость отсоединяется от источника 
+постоянного тока, а таймирующий генератор отсоединяется от адресного счетчика 
+(рис.&nbsp;3в) и начинается цикл записи в память. Число сосчитанных во время разряда 
+емкости импульсов определяет время разряда накопительной емкости, а время 
+линейного разряда пропорционально амплитуде анализируемого импульса. Полученное 
+в адресном счетчике число (код) используется для адресации соответствующей 
+ячейки памяти, куда добавляется единица.<br>
+&nbsp;&nbsp;&nbsp; <a target="_blank" href="deadtime.htm">Мертвое время</a> у 
+этого АЦП <img src="../simages/tau.gif" alt="tau" width="8" height="8"> 
+складывается из </p>
+
+<p align="center"><img src="../simages/tau.gif" alt="tau" width="8" height="8">&nbsp; 
+= T<sub>r</sub> + T<sub>c</sub>
++ T<sub>mc</sub>, </p>
+
+<p>где T<sub>r </sub>&nbsp;- время достижения максимума импульса, T<sub>c</sub> - 
+время конверсии, T<sub>mc</sub> - время цикла записи. Времена T<sub>r </sub>&nbsp;и T<sub>mc</sub>
+около 1&nbsp;мкс. Основной вклад в мертвое время вносит время конверсии, которое 
+зависит от амплитуды входного импульса или соответственно от номера канала n (T<sub>c</sub>&nbsp;=&nbsp;nT<sub>gen</sub>), 
+где T<sub>gen</sub>&nbsp;- период таймирующего генератора. Так T<sub>c</sub>&nbsp;=&nbsp;10&nbsp;мкс 
+при частоте генератора 100&nbsp;МГц и n&nbsp;=&nbsp;1000.<br>
+&nbsp;&nbsp;&nbsp; У АЦП вилкинсоновского типа малые интегральная и 
+дифференциальная нелинейности, однако относительно большое мертвое время, 
+которое к тому же зависит от амплитуды.</p>
+
+<h4>Аналого-цифровой преобразователь поразрядного взвешивания<br>
+Successive approximation ADC (Fixed Dead Time ADC)</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Принцип работы АЦП поразрядного взвешивания заключается в 
+последовательном сравнении амплитуды анализируемого сигнала (V<sub>in</sub>) с 
+напряжением цифро-аналогово преобразователя (V<sub>DAC</sub>), уровень которого 
+задается регистром. </p>
+<div align="center"><center>
+
+<table border="1" cellspacing="1" style="border-collapse: collapse" id="table1"
+cellpadding="2">
+  <tr>
+    <td align="center">Номер канала</td>
+    <td align="center">Состояние регистра</td>
+    <td align="center">Диапазон амплитуд</td>
+  </tr>
+  <tr>
+    <td align="center">8</td>
+    <td align="center">000</td>
+    <td align="center">V<sub>max</sub><u>&gt;</u>V&gt;7/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">7</td>
+    <td align="center">111</td>
+    <td align="center">7/8(V<sub>max</sub>)<u>&gt;</u>V&gt;6/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">6</td>
+    <td align="center">110</td>
+    <td align="center">6/8(V<sub>max</sub>)<u>&gt;</u>V&gt; 5/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">5</td>
+    <td align="center">101</td>
+    <td align="center">5/8(V<sub>max</sub>)<u>&gt;</u>V&gt; 4/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">4</td>
+    <td align="center">100</td>
+    <td align="center">4/8(V<sub>max</sub>)<u>&gt;</u>V&gt; 3/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">3</td>
+    <td align="center">011</td>
+    <td align="center">3/8(V<sub>max</sub>)<u>&gt;</u>V&gt; 2/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">2</td>
+    <td align="center">010</td>
+    <td align="center">2/8(V<sub>max</sub>)<u>&gt;</u>V&gt; 1/8(V<sub>max</sub>)</td>
+  </tr>
+  <tr>
+    <td align="center">1</td>
+    <td align="center">001</td>
+    <td align="center">1/8(V<sub>max</sub>)<u>&gt;</u>V</td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;&nbsp;&nbsp; Для простоты рассмотрим работу трехразрядного АЦП. В 
+начальном состоянии в старшем бите регистра установлена единица (100). Согласно 
+этой установке цифро-аналоговый преобразователь (ЦАП) устанавливает напряжение 
+равное половине динамического диапазона (V<sub>DAC</sub>&nbsp;=&nbsp;V<sub>max</sub>/2). 
+Это напряжение сравнивается с величиной измеряемой амплитуды V<sub>in</sub>. 
+Если V<sub>in</sub>&nbsp;&gt;&nbsp;V<sub>max</sub>/2, то в регистре следующий бит (110), а в 
+ЦАП соответственно устанавливается напряжение 6/8(V<sub>max</sub>). Если V<sub>in</sub>&nbsp;&lt;&nbsp;V<sub>max</sub>/2, 
+то в регистре старший бит зануляется, а единица устанавливается в следующем бите 
+(010), что соответствует напряжению ЦАП 2/8(V<sub>max</sub>). После еще одного 
+(третьего) сравнения преобразование заканчивается, при этом |V<sub>in</sub> &nbsp;-&nbsp;V<sub>DAC</sub>|&nbsp;&lt;&nbsp;V<sub>max</sub>/8, 
+а конечное состояние регистра определяет адрес ячейки памяти, куда добавляется 
+единица. В 12-разрядном АЦП (4096 каналов) проводится соответственно 12 
+сравнений. Время преобразования и, соответственно, мертвое время АЦП 
+поразрядного взвешивания не зависит от амплитуды как в АЦП вилкинсоновского 
+типа, а определяется количеством сравнений, т.е. разрядностью. Мертвое время АЦП 
+поразрядного взвешивания ~1&nbsp;мкс. Дифференциальная нелинейность таких АЦП 
+несколько хуже, чем у АЦП вилкинсоновского типа.<br>
+&nbsp;&nbsp;&nbsp; Улучшить дифференциальную нелинейность можно с помощью <b>
+метода сдвигающейся шкалы</b> (sliding scale linearization). Его также называют <b>
+методом статистического разравнивания</b>. Сущность этого метода заключается в 
+следующем. К входному сигналу добавляется ступенька напряжения примерно равная 
+ширине канала, к следующему входному сигналу -&nbsp; удвоенная ступенька и т.д. 
+m раз, после чего система возвращается в исходное состояние*. В адресном 
+регистре каждый раз формируется число, которое на m больше, чем должно было бы 
+быть без добавления &quot;ступенек&quot;. Затем из адресного регистра это число m 
+вычитается. Таким образом, происходит статистическое усреднение ширины каналов, 
+и дифференциальная нелинейность уменьшается в (m+1) раз.<br>
+__________________________________________________<br>
+* Это похоже на измерение расстояний при помощи линейки, нулевая отметка у 
+которой от измерения к измерению сдвигается на одно деление.</p>
+
+<h4><a name="Flash_ADC"></a>Параллельное АЦП<br>
+Flash ADC</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Успехи микроэлектроники позволили создать параллельные 
+АЦП, с помощью которых можно снимать профили аналоговых сигналов, т.е. получать 
+развертку сигнала во времени в цифрах. В параллельном АЦП содержится большое 
+количество (2<sup>k</sup>), где k - разрядность АЦП, параллельно включенных 
+дискриминаторов&nbsp; с последовательно увеличивающимися порогами дискриминации </p>
+
+<p align="center">V<sub>n</sub>&nbsp;=&nbsp;V<sub>n-1</sub>&nbsp;+ <img border="0"
+src="../simages/delta.gif" alt="дельта" width="13" height="13">V.</p>
+
+<p>Количество сработавших дискриминаторов собственно и есть результат 
+преобразования аналоговой информации (напряжения) в цифру. Неоспоримым 
+преимуществом таких АЦП является то, что они очень быстрые.&nbsp; Параллельные 
+АЦП в частности нашли применение в <a target="_blank"
+href="amp.htm#dig">цифровых процессорах спектрометрических сигналов</a>. Для 
+большинства применений такие АЦП должны иметь 12 разрядов и оцифровывать с 
+частотой ~100&nbsp;МГц. Для временных измерений с быстрыми сцинтилляторами требуются 
+8-разрядные АЦП с частотой ~1&nbsp;ГГц. </p>
+
+<hr align="left" width="300" noshade size="1">
+
+<p align="center"><a href="index.html"><small>[ОГЛАВЛЕНИЕ]</small></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+</tr>
+</table>
+</div>
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>

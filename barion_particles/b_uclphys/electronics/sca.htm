@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Одноканальные анализаторы</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+<h2>Одноканальные анализаторы</h2>
+<table border="1" cellspacing="5" style="border-collapse: collapse" align="right"
+id="table1" width="315" bordercolorlight="#000000" bordercolordark="#000000">
+	<tr>
+		<td><img border="0" src="images/sca01.gif" width="306" height="202"><br>
+		Рис. 1. Входные и выходные импульсы одноканального анализатора без 
+		временной привязки</td>
+	</tr>
+	<tr>
+		<td><img border="0" src="images/sca02.gif" width="306" height="202"><br>
+		Рис. 2. Входные и выходные импульсы временного одноканального 
+		анализатора с временной привязкой к максимуму входного импульса.</td>
+	</tr>
+	<tr>
+		<td><img border="0" src="images/sca03.gif" width="304" height="246"><br>
+		Рис. 3. Входные и выходные импульсы временного одноканального 
+		анализатора с временной привязкой к нулю входного биполярного импульса.</td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; Одноканальный анализатор или (медленный) дифференциальный 
+дискриминатор это устройство, которое анализирует амплитуду входного сигнала и, 
+если она находится в установленных пределах (между нижним и верхним уровнями 
+дискриминации), генерирует стандартный логический импульс (рис.&nbsp;1). Нижний (LLD) 
+и верхний (ULD) уровни дискриминации могут устанавливаться независимо. При 
+установке ULD на максимум одноканальный анализатор работает в интегральном 
+режиме. В одноканальных анализаторах также обычно есть режим, когда 
+устанавливается нижний уровень дискриминации и ширина окна <nobr><img alt="дельта" src="../simages/delta.gif" width="13" height="13">E.</nobr>
+Таким образом <nobr>ULD = LLD + <img alt="дельта"
+src="../simages/delta.gif" width="13" height="13">E.</nobr><br>
+&nbsp;&nbsp;&nbsp; Как видно из рис.&nbsp;1, время появления выходного импульса в 
+таких одноканальных анализаторах зависит от амплитуды и формы входного импульса. 
+Они в основном используются для счета событий. Одноканальные анализаторы 
+устанавливаются в &quot;медленных&quot; спектрометрических цепях. Входные импульсы они 
+обычно получают от <a target="_blank" href="amp.htm">спектрометрических 
+усилителей</a> и от <a target="_blank" href="counting_timing.htm">
+время-амплитудных конверторов</a>.</p>
+
+<p><a name="TSCA"></a>&nbsp;&nbsp;&nbsp; БОльшими возможностями обладают 
+одноканальные анализаторы с временной привязкой или <font color="#800000"><strong>
+временные одноканальные анализаторы</strong></font> (Timing Single Channel 
+Analyzers - TSCA). В них выходные сигналы привязаны по времени к моменту 
+появления входных импульсов. Существует несколько способов временной привязки (к 
+максимуму импульса, по переднему фронту импульса, по нулю биполярного импульса, 
+привязка со следящим порогом). Они рассмотрены в разделе &quot;<a target="_blank" href="timing.htm">Способы 
+временной привязки</a>&quot;. На рис.&nbsp;2, 3 и 4 показаны входные и выходные импульсы 
+временных одноканальных анализаторов, в которых реализованы различные способы 
+временной привязки.<br>
+&nbsp;&nbsp;&nbsp; Временные одноканальные анализаторы используются не только 
+для амплитудного, но и временного анализа. Их сигналы подаются на схемы 
+&quot;медленных&quot;&nbsp; совпадений/антисовпадений, на время-амплитудные конверторы, 
+линейные ворота.<br>
+&nbsp;&nbsp;&nbsp; Точность временной привязки во временных одноканальных 
+анализаторах зависит от применяемого способа привязки и особенностей входного 
+потока сигналов (динамического диапазона, изменения формы импульсов) и 
+варьируется от единиц наносекунд до ~100&nbsp;нс. Для временного согласования 
+временные анализаторы обычно имеют встроенную регулируемую задержку выходных 
+импульсов до ~10&nbsp;мкс.</p>
+<div align="center"><center>
+
+<table border="1" cellspacing="5" style="border-collapse: collapse" id="table3"
+width="250" bordercolorlight="#000000" bordercolordark="#000000">
+  <tr>
+    <td><img border="0" src="images/sca04.gif" width="240" height="183"><br>
+    Рис. 3. Входные и выходные импульсы временного одноканального анализатора с <a target="_blank"
+    href="timing.htm#Trailing">временной привязкой к определенной доле амплитуды 
+	на заднем фронте входного импульса.</a></td>
+  </tr>
+</table>
+</center></div>
+
+<hr align="left" width="30%" noshade size="1">
+
+<p align="center"><a href="index.html"><small>[ОГЛАВЛЕНИЕ]</small></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+</tr>
+</table>
+</div>
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>

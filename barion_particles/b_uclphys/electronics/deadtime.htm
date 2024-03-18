@@ -1,0 +1,677 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Мертвое время</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<h2>Мертвое время</h2>
+
+<p>&nbsp;&nbsp;&nbsp; Любое устройство затрачивает на измерение и регистрацию 
+события конечное время, в течение которого оно не способно &quot;правильно&quot; 
+обработать следующее событие. Это так называемое мертвое время (dead time). Под 
+мертвым временем для для детекторов, предусилителей и усилителей мы будем 
+понимать время, в течении которого информация о событиях искажается за счет <a href="pileup.htm" target="_blank">
+наложений</a>. Поскольку для случайных потоков вероятность появления событий за 
+конечный интервал времени может быть отлична от нуля, то потери событий при 
+регистрации в этом случае неизбежны.<br>
+&nbsp;&nbsp;&nbsp; Различают два типа мертвого времени.</p>
+
+<p>1. <strong><font color="#800000">Непродлевающееся</font></strong> (nonextending 
+or nonparalyzable) <font color="#800000"><strong>мертвое время</strong></font>.<br>
+Оно может быть постоянным или переменным, но оно не зависит от поступления 
+событий в его пределах. Для непродлевающегося мертвого времени средняя скорость 
+регистации определяется соотношением (1)</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376"><p align="center">r = n/(1 + nτ<sub>ne</sub>),</td>
+    <td width="16"><p align="right">(1)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где n - средняя скорость поступления событий, τ<sub>ne</sub> - 
+непродлевающееся мертвое время.<br>
+2. <strong><font color="#800000">Продлевающееся</font></strong> (extending or 
+paralyzable) <font color="#800000"><strong>мертвое время</strong></font>. Оно 
+возникает после любого поступившего события, не зависимо от того, регистрируется 
+оно или нет. Для продлевающегося мертвого времени средняя скорость регистрации 
+определяется соотношением (2)</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376"><p align="center"><img src="images/dteq02.gif" align="middle" width="69" height="18">,</td>
+    <td width="16"><p align="right">(2)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где τ<sub>e</sub> - продлевающееся мертвое время</p>
+<table border="1" cellpadding="2" cellspacing="0" align="right" width="420">
+	<tr>
+		<td><img src="images/dt01.gif" width="412" height="302"><br>Рис. 1. 
+		Счетные характеристики 
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; Счетные характеристики для таких регистраторов показаны на 
+рис.&nbsp;1. Временное распределение для выходных сигналов отличается от такового для 
+входных. Качественно выходное распределение характеризуется отсутствием пар 
+событий, разделенных интервалом, меньшим <img
+src="../simages/tau.gif" alt="тау" width="8" height="8">. При <nobr>n<img src="../simages/tau.gif"
+alt="тау" width="8" height="8"> &lt;&lt; 1</nobr> скорость счета у регистраторов с 
+продлевающимся и непродлевающимся мертвым временем практически одинаковы и могут 
+рассчитываться по (1). Погрешности при использовании этого приближения для 
+регистраторов продлевающегося типа составляют 1.8% для <nobr>n</nobr>τ<nobr> = 
+0.2</nobr> и 0.47% для <nobr>n</nobr>τ<nobr> = 0.1.</nobr><br>
+&nbsp;&nbsp;&nbsp; Максимальная скорость на выходе регистраторов 
+непродлевающегося типа</p>
+
+<p align="center">r<sub>max</sub>= 1/τ<sub>e</sub>
+при n → ∞.</p>
+
+<p>Максимальная скорость на выходе регистраторов продлевающегося типа</p>
+
+<p align="center">r<sub>max</sub>= 1/eτ<sub>ne</sub><nobr>
+при n</nobr> = 1/τ<sub>ne</sub>.</p>
+
+<p align="left">Потери счета при этом составляют 63.2%. При
+<nobr>n </nobr>→ ∞<nobr> r </nobr>→<nobr> 0.</nobr> Отсюда английский термин 
+paralyzable.</p>
+
+<h3 align="left">Мертвое время в амплитудной спектрометрии</h3><article>
+
+<p align="left">&nbsp;&nbsp;&nbsp; Рассмотрим спектрометр, состоящий из 
+детектора, <a target="_blank" href="preamp.htm">предусилителя</a>,
+<a target="_blank" href="amp.htm">усилителя</a> и <a target="_blank"
+href="adc.htm">АЦП</a>. Мертвое время усилителя - мертвое время продлевающегося 
+типа. Оно связано с наложением сигналов и равно</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table3">
+  <tr>
+    <td width="376"><p align="center">τ<sub>amp</sub>
+    = T<sub>w </sub>+ T<sub>p</sub>,</td>
+    <td width="16"><p align="right">(3)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где T<sub>w </sub>– длительность импульса усилителя, T<sub>p </sub>– 
+длительность переднего фронта импульса. Время T<sub>p </sub>здесь учитывается 
+дважды, так как, если второй импульс появится вслед за первым в течение этого 
+времени, первый также не должен регистрироваться из-за наложений (<a
+target="_blank" href="pileup.htm#pileupinsp">см. режекция наложений</a>). На 
+рис.&nbsp;2 показана счетная характеристика системы, когда АЦП не вносит вклада в 
+мертвое время.</p>
+<div align="center"><center>
+
+<table border="0" cellspacing="5" id="table5" width="460">
+  <tr>
+    <td><img border="0" src="images/dt02.gif" width="444" height="316"><br>
+    Рис. 2. Счетная характеристика спектрометра в случае, когда вклад в мертвое 
+	время вносят только наложения сигналов. Сплошные кривые - расчет,&nbsp; 
+	точки - эксперимент.</td>
+  </tr>
+</table>
+</center></div>
+<table border="0" cellspacing="5" align="right" id="table6" width="220">
+	<tr>
+		<td>
+		<p align="center">
+		<img border="0" src="images/dt03.gif" width="200" height="106"><br>Рис. 
+		3. 
+		</td>
+	</tr>
+</table>
+
+<p align="left">&nbsp;&nbsp;&nbsp; В общем случае пропускная способность системы 
+будет определяться продлевающимся мертвым временем усилителя и непродлевающимся 
+мертвым временем АЦП. Скорость регистрации для такой системы будет</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table1">
+  <tr>
+    <td width="376"><p align="center"><img src="images/dteq04.gif" align="middle" width="318" height="45">,</td>
+    <td width="16"><p align="right">(4)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где T<sub>w </sub>– длительность импульса усилителя, T<sub>r </sub>– 
+длительность переднего фронта импульса, <img src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>ADC </sub>
+– мертвое время АЦП, <span lang="en-us">&nbsp;</span>H - функция Хевисайда,</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table2">
+  <tr>
+    <td width="376"><p align="center"><img src="images/dteq05.gif" align="middle" width="224" height="50">,</td>
+    <td width="16"><p align="right">(5)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;&nbsp;&nbsp; Для АЦП с поразрядным взвешиванием <img
+src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>ADC</sub> - 
+константа. У АЦП вилкинсоновского типа мертвое время зависит от амплитуды 
+анализируемого импульса (см. аналого-цифровые преобразователи). При высоких 
+скоростях счета желательно, чтобы время конверсии + время записи в память было 
+меньше длительности анализируемого сигнала.</p>
+
+<p>&nbsp;&nbsp; Мертвое время является сложной функцией параметров измерительной 
+установки и измеряемого распределения. Определить его a&#39;priori, как правило, 
+трудно или практически невозможно. На практике используются различные методы 
+коррекции потерь за счет мертвого времени.</p>
+
+<h3 align="left">Некоторые методы учета мертвого времени</h3><article>
+
+<h4><a name="lclock"></a>Простые часы живого времени</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Этот тип учета мертвого времени используется в АЦП. Он 
+заключается в остановке часов на время обработки АЦП сигнала. Таким образом, 
+часы измеряют так называемое <font
+color="#800000"><strong>живое время</strong></font>. Учитывая то, что АЦП часто 
+оказывается самым медленным устройством, этот метод при относительно небольших 
+загрузках дает удовлетворительные результаты и может применяться, когда другие 
+факторы, в частности, наложения сигналов не вносят заметных искажений. </p>
+
+<h4>Метод опорного источника</h4>
+<table border="0" cellspacing="5" align="right" id="table7" width="220">
+	<tr>
+		<td>
+		<p align="center">
+		<img border="0" src="images/dt04.gif" width="214" height="184"><br>Рис. 
+		4. 
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; Этот метод заключается в одновременном измерении 
+изучаемого распределения и опорного источника с известной интенсивностью. 
+Коррекция проводится умножением количества отчетов в каналах измеренного 
+распределения на отношение зарегистрированного количества отсчетов в опорном 
+пике к количеству отсчетов, которые были бы зарегистрированы, если бы система не 
+имела мертвого времени. Эта величина может быть определена отдельным измерением 
+интенсивности радиоактивного источника в условиях пренебрежимо малых искажений 
+за счет мертвого времени регистратора. Либо, если такие условия невыполнимы, 
+измеренная интенсивность опорного источника должна быть откорректирована с 
+помощью расчетов.<br>
+&nbsp;&nbsp;&nbsp; Вместо радиоактивного источника может быть использован 
+генератор. Однако из-за проблем связанных с цепями <a target="_blank" href="amp.htm#pz">
+компенсации полюса нулем</a> генератор должен быть подключен не к предусилителю, 
+а к усилителю параллельно с предусилителем (рис.&nbsp;4). Причем, чтобы обеспечить 
+хорошую компенсацию полюса нулем, длительности заднего фронта сигнала у 
+генератора должна быть такой же, как у предусилителя. Амплитуда сигналов 
+генератора устанавливается большей, чем максимальная амплитуда сигналов 
+измеряемого спектра, чтобы не вносить в него искажений</p>
+
+<h4>Метод Гедке-Хейла<br>
+(Gedcke-Hale livetimer) </h4>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Этот метод позволяет компенсировать потери за счет 
+наложений без использования специального режектора наложений.&nbsp; Когда в АЦП 
+поступает сигнал, часы живого времени Гедке-Хейла начинают обратный отсчет 
+времени, который продолжается до достижения сигналом пикового значения. Затем 
+они стоят в течение времени спада импульса <nobr>(T<sub>w</sub>
+– T<sub>r</sub>)</nobr> или времени конверсии и записи в память, в зависимости 
+от того, какое время больше. После чего часы снова включаются.<br>
+&nbsp;&nbsp;&nbsp; Так как время нарастания сигнала с наложениями больше чем 
+одиночного, метод имеет тенденцию к перекомпенсации потерь. Режим обратного 
+отсчета при наличии наложений продолжается слишком долго. Использовав детектор 
+наложений, прекращая с его помощью режим обратного отсчета, можно компенсировать 
+этот эффект.</p>
+
+<h3>Мертвое время во временной спектрометрии</h3><article>
+
+<p>&nbsp;&nbsp;&nbsp; Рассмотрим источники мертвого времени во временном 
+спектрометре, включающем в себя <a target="_blank" href="counting_timing.htm">
+ВАК</a> и <a target="_blank"
+href="adc.htm">АЦП</a>. В рамках одного преобразования время - амплитуда ВАК 
+способен обработать лишь одну пару сигналов старт и стоп. Ежели один сигнал 
+старт воспринят ВАКом, все остальные стартовые сигналы будут им игнорироваться, 
+пока не закончатся процессы конверсии и возврата в исходное состояние. 
+Аналогично ВАК воспринимает первый сигнал стоп, который поступает на него после 
+принятого им стартового сигнала, и игнорирует все последующие сигналы стоп, пока 
+очередной стоповый сигнал не будет им воспринят. <br>
+&nbsp;&nbsp;&nbsp; Если мертвое время АЦП больше, чем мертвое время ВАКа, АЦП 
+также будет вносить вклад в потери счета. В этом случае для того, чтобы 
+использовать соотношения приведенные ниже, надо сигналом занятости АЦП 
+блокировать стартовый вход ВАКа.<br>
+&nbsp;&nbsp;&nbsp; Приведенные ниже соотношения связывают измеряемые временные 
+распределения с временными распределениями событий, регистрируемых детекторами. 
+Они позволяют прогнозировать искажения, вносимые мертвыми временами устройств, 
+определять пределы скорости счета, при которых искажениями можно пренебречь, 
+использовать алгоритмы коррекции.<br>
+&nbsp;&nbsp;&nbsp; Рассмотрим 4 наиболее часто встречающихся случая.</p>
+
+<h4>1. Периодический старт и случайный стоп, T<sub>s</sub>
+&gt; τ<nobr><sub>ta</sub></nobr></h4>
+
+<p>&nbsp;&nbsp;&nbsp; Рассмотрим случай, когда период повторения стартовых 
+сигналов T<sub>s</sub> больше комбинированного мертвого времени ВАК/АЦП <nobr><img
+src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>ta</sub>.</nobr> 
+Соответственно на стартовый вход ВАКа импульсы поступают только тогда, когда он 
+может их обработать. <br>
+&nbsp;&nbsp;&nbsp; В результате квантования амплитуды сигналов ВАК в АЦП, время 
+t связано с номером канала i соотношением</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table8">
+  <tr>
+    <td width="376"><p align="center">t = i<img alt="дельта" src="../simages/delta.gif" width="13" height="13">t,</td>
+    <td width="16"><p align="right">(6)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где <img alt="дельта" src="../simages/delta.gif" width="13" height="13">t - 
+ширина канала. Обозначим продлевающееся мертвое время, связанное с детектором и 
+дискриминатором как <nobr><img
+src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>e</sub>.</nobr> 
+Представим его в единицах каналов, округлив до ближайшего целого числа T<sub>e</sub></p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table9">
+  <tr>
+    <td width="376"><p align="center">T<sub>e</sub> = <img src="../simages/tau.gif"
+    alt="тау" width="8" height="8"><sub>e</sub>/<img alt="дельта" src="../simages/delta.gif" width="13" height="13">t,</td>
+    <td width="16"><p align="right">(7)</td>
+  </tr>
+</table>
+</center></div>
+
+<p><a name="eq8"></a>Если временной спектр набран для заданного числа 
+воспринятых ВАКом сигналов s<sub>1</sub>
+и количество зарегистрированных в n-ом канале событий R<sub>i</sub>, вероятность 
+регистрации события в i-ом канале будет</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table10">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq08.gif" align="middle" width="313" height="58">,</td>
+    <td width="16"><p align="right">(8)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где H - функция Хевисайда, </p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table15">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq09.gif" width="190"
+    height="50"></td>
+    <td width="16"><p align="right">(9)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Правая часть соотношения (8) - произведение трех вероятностей. Вероятность 
+того, что событие при отсутствии потерь было бы зарегистрировано i-ом канале - N<sub>i</sub>/s<sub>1</sub>. 
+Однако событие не будет зарегистрировано в i-ом канале, если стартовому сигналу 
+не будет соответствовать стоповый сигнал. Первый экспоненциальный множитель в 
+(8) - вероятность отсутствия импульсов стоп для номеров каналов с j&nbsp;=&nbsp;0 до i&nbsp;-&nbsp;1. 
+Если нет стоп сигналов, которые появляются раньше сигналов старт, что 
+эквивалентно тому, что скорость счета на входе стоп равна 0 для i&nbsp;&lt;&nbsp;0, то вторая 
+экспонента в (8) равна 1. Однако в интервале времени от t&nbsp;=&nbsp;-T<sub>e</sub> до t&nbsp;=&nbsp;0 
+на стоповый вход могут поступить фоновые сигналы от детектора. Соответственно 
+полезные сигналы, появившиеся на стоповом входе в промежуток времени от t&nbsp;=&nbsp;0 до 
+t&nbsp;=&nbsp;T<sub>e</sub>
+будут проигнорированы. Второй экспоненциальный множитель учитывает этот эффект. 
+Это вероятность непоявления стоповых импульсов в интервале времени от t&nbsp;=&nbsp;-T<sub>e</sub> 
+до t&nbsp;=&nbsp;0.<br>
+&nbsp;&nbsp;&nbsp; Соотношение (8) можно использовать для корректировки 
+измеренного распределения {R<sub>i</sub>} на потери за счет мертвого времени. 
+Откорректированное распределение {N<sub>i</sub>}получается следующим образом. По 
+формуле (8) рассчитывается N<sub>0</sub>
+в предположении, что N<sub>i</sub>&nbsp;=&nbsp;0 для i&nbsp;&lt;&nbsp;0. Далее последовательно 
+рассчитываются значения N<sub>i</sub>, используя уже рассчитанные значения N<sub>i-1</sub>. 
+Для того чтобы избежать влияния произвольного допущения, сделанного для расчета 
+N<sub>i</sub> в первых каналах, на физические результаты можно ввести 
+соответствующую задержку в стоп канал. Таким образом, представляющая интерес 
+часть спектра окажется в области бОльших номеров каналов.<br>
+&nbsp;&nbsp;&nbsp; Так как количество отсчетов в канале R<sub>i</sub>
+являются выборкой из количества импульсов старт s<sub>1</sub>, для дисперсии R<sub>i</sub>&nbsp; 
+можно записать</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table12">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq10.gif" align="middle" width="166" height="50">, 
+	для&nbsp; R<sub>i</sub>/s<sub>1</sub>&lt;&lt; 1.</td>
+    <td width="16"><p align="right">(10)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Дисперсия для суммы отсчетов в любых каналах будет</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq11.gif" width="110" height="50"></td>
+    <td width="16"><p align="right">(11)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Для дисперсии N<sub>i</sub> можно записать</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table14">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq12.gif" width="358" height="56"></td>
+    <td width="16"><p align="right">(12)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Выражение в квадратных скобках в большинстве случаев практически равно 1. 
+Представим (12) в следующем виде</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq13.gif" width="121" height="50"></td>
+    <td width="16">(13)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Другими словами стандартное отклонение для вычисленных N<sub>i</sub> 
+определяется стандартным отклонением измеренных R<sub>i</sub>.</p>
+
+<h4>2. Случайный старт и периодический стоп, T<sub>s</sub>
+&gt; <nobr><img src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>ta</sub></nobr></h4>
+
+<p>&nbsp;&nbsp;&nbsp; Такое подключение старт и стоп входов используется для <a target="_blank"
+href="counting_timing.htm#rev">уменьшения влияния мертвого времени ВАК</a>. 
+Периодические сигналы задерживаются на время t<sub>d</sub> и подаются на вход 
+стоп ВАКа. Задержка обычно составляет 90-95% выбранного диапазона конверсии. В 
+единицах номеров каналов, округленная до ближайшего целого числа эта задержка 
+будет равна</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center">d = t<sub>d</sub>/<img alt="дельта"
+    src="../simages/delta.gif" width="13" height="13">t.</td>
+    <td width="16">(14)</td>
+  </tr>
+</table>
+</center></div>
+
+<p><a name="eq15"></a>Если пренебречь эффектом, связанным с фоновыми сигналами, 
+физически некоррелированными с периодическими (стимулирующими) сигналами, для 
+вероятности зарегистрировать событие в i-ом канале можно записать</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq15.gif" align="middle" width="158" height="56">,</td>
+    <td width="16">(15)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где s<sub>2</sub> - количество задержанных периодических сигналов, 
+поступивших на вход стоп АЦП, обозначения остальных величин, такое же, как и для 
+(<a href="#eq8">8</a>). Правая часть соотношения (15) - произведение двух 
+вероятностей. Вероятность того, что событие при отсутствии потерь было бы 
+зарегистрировано i-ом канале - N<sub>i</sub>/s<sub>2</sub>. Экспоненциальный 
+множитель в (15) - вероятность того, что в промежуток времени между 
+незадержанным (стимулирующим) сигналом и временем появления полезного сигнала на 
+стартовом входе на нем не появится фоновой сигнал. Реально суммируются каналы от 
+j&nbsp;=&nbsp;i&nbsp;+&nbsp;1 до j&nbsp;=&nbsp;d. Так как в данном случае реализуется обратное подключение, и 
+каждому сигналу старт обязательно должен соответствовать сигнал стоп, все члены 
+суммы в (15) с&nbsp; j&nbsp;от&nbsp;d до i<sub>max </sub>нулевые.<br>
+&nbsp;&nbsp;&nbsp; Для того чтобы рассчитать откорректированное распределение {N<sub>i</sub>} 
+в данном случае начинают с максимального канала n<sub>max</sub>, последовательно 
+двигаясь к нулевому, используя для расчета N<sub>i-1</sub> уже полученные 
+значения N<sub>i</sub>.<br>
+&nbsp;&nbsp;&nbsp; К сожалению, учет вклада некоррелированных сигналов, который 
+был сделан в (8), в данном случае довольно сложен. Однако этого можно избежать, 
+открывая стартовый вход ВАКа только на время от t<sub>s</sub> до t<sub>s</sub>&nbsp;+&nbsp;t<sub>d</sub>, 
+где t<sub>s</sub> - время появления незадержанного периодического сигнала.<br>
+&nbsp;&nbsp;&nbsp; Статистические погрешности рассчитываются так же, как в 
+первом случае (13).</p>
+
+<h4>3. Случайный старт и периодический стоп, T<sub>s</sub>
+&lt; τ<nobr><sub>ta</sub></nobr></h4>
+
+<p>&nbsp;&nbsp;&nbsp; Этот случай похож на предыдущий, за исключением того, что 
+период повторения стимулирующих сигналов T<sub>s</sub>&nbsp; меньше, чем 
+комбинированное мертвое время τ<nobr><sub>ta</sub></nobr> ВАК/АЦП. Представим 
+мертвое время ВАК/АЦП в виде суммы</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center">τ<nobr><sub>ta</sub></nobr>
+    = t<sub>ss</sub> + t<sub>d</sub>,</td>
+    <td width="16">(16)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где t<sub>ss</sub> - время между сигналами старт и стоп, t<sub>d</sub> - 
+время обработки (предполагается, что используется АЦП с постоянным мертвым 
+временем), это время отсчитывается от момента прихода стопового импульса до 
+момента, когда ВАК/АЦП готовы принять следующий стартовый импульс. Представим 
+отношение t<sub>d</sub>/T<sub>s</sub> в виде</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center">t<sub>d</sub>/T<sub>s</sub> = b = b<sub>I</sub> 
+	+ b<sub>F</sub>,</td>
+    <td width="16">(17)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где b<sub>I</sub> и b<sub>F</sub> - целая и дробная части отношения t<sub>d</sub>/T<sub>s</sub> 
+соответственно.<br>
+&nbsp;&nbsp;&nbsp; Если пренебречь мертвым временем детектора и дискриминатора, 
+для вероятности зарегистрировать событие в <nobr>i-ом</nobr> канале можно 
+записать</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="470">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq18.gif" width="425"
+    height="56">.</td>
+    <td width="16">(18)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Здесь u - представленный в единицах каналов и округленный до ближайшего 
+целого числа период повторения стимулирующих импульсов,</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center">u = T<sub>s</sub>/<img alt="дельта"
+    src="../simages/delta.gif" width="13" height="13">t.</td>
+    <td width="16">(19)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;&nbsp;&nbsp; Левая часть соотношения (18) представляет произведение 
+трех вероятностей. Две первые такие же, как в (<a href="#eq15">15</a>), за 
+исключением предела суммирования. (Предполагается, что временной диапазон ВАКа 
+немного больше периода повторения u.) Сомножитель в квадратных скобках - 
+вероятность того, что очередной сигнал старт будет проигнорирован, т.к. ВАК/АЦП 
+еще не обработали предыдущее событие. Второй член в квадратных скобках - 
+вероятность того, что событие обрабатывалось в предыдущих b<sub>I</sub>
+интервалах T<sub>s</sub>, закрывая ВАК/АЦП для полезного стартового сигнала. 
+Третий член в квадратных скобках - аналогичная вероятность, только для интервала 
+b<sub>I</sub>&nbsp;+&nbsp;1, предшествующего полезному стартовому сигналу. Часть времени t<sub>d</sub> 
+(b<sub>F</sub>u) простирается на интервал, во время которого может появиться 
+полезный стартовый сигнал. Такой стартовый сигнал будет проигнорирован. Функция 
+Хевисайда описывает этот эффект</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq20.gif" align="middle"
+    width="253" height="50">.</td>
+    <td width="16">(20)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;&nbsp;&nbsp; Третий член в квадратных скобках ведет к искажениям 
+временного спектра, которые весьма трудно откорректировать, т.к. величину b<sub>F</sub>u 
+трудно измерить или предсказать. Практический выход из этого положения - 
+ограничить скорость счета до уровня, когда ошибка за счет этого фактора была бы 
+меньше 1%. Для этого требуется, чтобы</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq21.gif" align="middle" width="90" height="48">.</td>
+    <td width="16">(21)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Условие (21) также гарантирует, что искажения, описываемые экспоненциальным 
+членом в (18) будут меньше 1%, а эффекты, связанные с мертвым временем 
+дискриминатора будут незначительными, если мертвое время дискриминатора <nobr><img src="../simages/tau.gif"
+alt="тау" width="8" height="8"><sub>e</sub></nobr> будет меньше, чем период 
+повторения стимулирующих импульсов T<sub>s</sub>.<br>
+&nbsp;&nbsp;&nbsp; Для эффективной работы потери за счет мертвого времени ВАК/АЦП 
+должны быть ограничены 50%. Потери за счет мертвого времени в основном 
+определяются вторым членом в квадратных скобках. Таким образом, второе 
+ограничение можно записать следующим образом</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq22.gif" align="middle"
+    width="98" height="48">.</td>
+    <td width="16">(22)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Обычно для этого необходимо, чтобы b<sub>I</sub>
+&lt;&nbsp;50.<br>
+&nbsp;&nbsp;&nbsp; (21) и (22) лают возможность определить, позволяют ли 
+используемые в измерительной установке параметры избежать искажений. Если это 
+так, и интересует только форма спектра, можно использовать измеренные значения {N<sub>n</sub>}.<br>
+&nbsp;&nbsp;&nbsp; Если необходима информация об абсолютных значениях 
+интенсивности, можно воспользоваться <a href="#lclock">простыми часами живого 
+времени</a>. Для этого необходимо сигнал занятости ВАКа подать на часы живого 
+времени АЦП, а сигналом занятости АЦП стробировать стартовый вход ВАКа. Часы 
+живого времени будут корректировать основной вклад в мертвое время, который 
+вносит второй член в квадратных скобках в соотношении (18).<br>
+&nbsp;&nbsp;&nbsp; Откорректированные значения счета в каналах N<sub>i</sub> 
+можно получить из соотношения</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center">N<sub>i</sub>/t = R<sub>i</sub>/t<sub>L</sub>,</td>
+    <td width="16">(23)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где t и t<sub>L</sub> - реальное и живое время соответственно. Статистические 
+погрешности могут быть получены с помощью соотношения (13).</p>
+
+<h4>4. Случайный старт и случайный стоп</h4>
+
+<p>&nbsp;&nbsp;&nbsp; Типичный пример таких событий - измерение времени жизни 
+возбужденных состояний, которые образуются в результате радиоактивного распада. 
+Например, возбужденное состояние образуется в результате альфа-распада и 
+распадается с помощью гамма-эмиссии на основное состояние конечного ядра. 
+Детектор альфа-частиц используется для генерации стартового сигнала для ВАК, а 
+гамма-детектор - для стопового. Существует вероятность того, что 1) стартовое 
+событие будет детектировано без коррелированного с ним стопового события, 2) 
+стоповое событие будет детектировано без коррелированного с ним стартового 
+события, 3) будет зарегистрирована некоррелированная пара старт - стоп. Эти 
+факторы являются источником мертвого времени и некоррелированного фона в 
+измеряемом временном спектре.<br>
+&nbsp;&nbsp;&nbsp; Для скорости регистрации можно записать</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq24.gif" align="middle" width="234" height="45">,</td>
+    <td width="16">(24)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>где n - загрузка детектора, <nobr><img src="../simages/tau.gif"
+alt="тау" width="8" height="8"><sub>ta</sub></nobr> - непродлевающееся мертвое 
+время ВАК/АЦП, <nobr><img src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>e</sub></nobr>
+- продлевающееся мертвое время дискриминатора, <nobr>H(<img
+src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>ta</sub> - <img src="../simages/tau.gif"
+alt="тау" width="8" height="8"><sub>e</sub>)</nobr> - функция Хевисайда</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq25.gif" align="middle" width="208" height="50">.</td>
+    <td width="16">(25)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;&nbsp;&nbsp; Обычно <nobr><img src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>ta</sub>
+&gt;&gt; <img src="../simages/tau.gif" alt="тау" width="8" height="8"><sub>e</sub></nobr> 
+и (24) упрощается до выражения для непродлевающегося мертвого времени</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="0" width="400" id="table16">
+  <tr>
+    <td width="376" align="center"><img border="0" src="images/dteq26.gif" align="middle" width="74" height="45">.</td>
+    <td width="16">(26)</td>
+  </tr>
+</table>
+</center></div>
+
+<p>Абсолютные значения интенсивности можно получить, воспользовавшись <a href="#lclock">
+простыми часами живого времени</a>.</p>
+
+<hr align="left" width="300" noshade size="1">
+
+<p align="center"><a href="index.html"><small>[ОГЛАВЛЕНИЕ]</small></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --><p>&nbsp;</p>
+
+			</td>
+</tr>
+</table>
+</div>
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>
