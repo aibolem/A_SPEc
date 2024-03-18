@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Моделирование событий</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table1">
+		<tr>
+			<td>
+
+<h3>3. Моделирование событий</h3><article>
+
+<p>&nbsp;&nbsp;&nbsp; Для исследования отклика 
+детектора на различные физические процессы, созданы программы, позволяющие 
+перевести моделированное на уровне частиц событие&nbsp; взаимодействия протонов 
+при соударении в формат представления данных детекторов установки ATLAS. Алгоритмы моделирования 
+интегрированы в программную оболочку эксперимента&nbsp; ATLAS, именуемую Athena, использующую 
+программный пакет GEANT4 
+[1,2].<br>
+&nbsp;&nbsp;&nbsp; Генератор события создает 
+набор частиц, который направляется в программу быстрого или полного 
+моделирования детектора. Генераторы событий встроены в Athena. Используется большое 
+число других, поддерживаемых авторами, генераторов, которые имеют блоки связи 
+для использования в Athena. 
+Основной массив модельных событий создан с помощью генераторов PYTHIA [3], включая его версию
+
+PYTHIAВ [4,5],&nbsp; 
+предназначенную в&nbsp; ATLAS для моделирования событий с рождением В-адронов, HERWIG [6-8], Sherpa [9], Hijing [10], Alpgen [11], MC@NLO [12], AcerMC [13]. Генераторы Tauola [14] и Photos [15] используются для 
+моделирования распадов тау-лептонов и испускания фотонов. Генератор EVTGEN [16] применяется для 
+моделирования распадов В-адронов, свойства которых чувствительны к физике 
+процесса. Генератор ISAJET[17] в комбинации с HERWIG используется для моделирования рождения частиц в моделях суперсимметрии. 
+Применяются также обновленные версии генераторов, использующие 
+объектно-ориентированный язык&nbsp; С++, такие как PYTHIA8 [18] и HERWIG++ [19]. Генератор&nbsp;&nbsp; MadGraph [20] используется для 
+моделирования&nbsp; рассеяния векторных бозонов, генератор CHARYBDIS [21] для моделирования 
+рождения черных дыр, CompHep [22,23] для моделирования экзотических 
+физических процессов. Частицы созданного генератором события имеют координаты 
+вершины – точки взаимодействия протонов, которые приводятся в соответствие с 
+характеристиками пучков до введения события в GEANT4. Аналогично 
+моделируются и взаимодействия протонов и ядер с ядрами. Частицы с собственным 
+временем жизни cτ &gt; 10мм считаются в генераторе стабильными, они могут 
+распространяться в детекторе и взаимодействовать с его веществом до момента 
+распада. Распад частиц с cτ&lt; 10мм проводится генератором и их 
+взаимодействие с детектором не учитывается.&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; Генераторы общего назначения создают событие как 
+целое. Они используют много параметров, часть из которых относится к 
+фундаментальным параметрам, такие как константы связи квантовой хромодинамики 
+(КХД) и электрослабой теории, часть относится к моделям, описывающим 
+взаимодействия на больших расстояниях, с малыми передачами импульса, т.н. 
+«мягкой» КХД, и к электрослабым процессам.&nbsp; <br>
+&nbsp;&nbsp;&nbsp; Генераторы PYTHIA и HERWIG, написанные на языке FORTRAN, в течение многих лет 
+тестировались при описании взаимодействий на е<sup>+</sup>е<sup>-</sup> и 
+адронных коллайдерах. Моделирование события в них начинается с процесса жесткого 
+рассеяния в низшем порядке КХД. К ним добавляются процессы излучения КХД и 
+квантовой электродинамики (КЭД) в ливневом приближении, которое хорошо работает 
+для излучения под малым углом. Хуже всего описываются излучения многих объектов 
+в широком интервале углов&nbsp; со сравнимыми энергиями.&nbsp; В PYTHIA имеется модель для 
+описания жестких и мягких взаимодействий, соответствующих сопутствующим 
+событиям. Этот генератор используется для моделирования событий с минимальным 
+отбором (minimum bias), наиболее близким к 
+набору неупругих взаимодействий. В эксперименте ATLAS используется версия 
+генератора 
+PYTHIA 6.4. Из двух вариантов 
+модели ливней, существующих в PYTHIA, в ATLASиспользуется версия ливней, реализованная в 
+генераторе 
+PYTHIA 6.3, которая, как 
+ожидается, лучше соответствует теоретическому представлению ливней в КХД. На 
+завершающем этапе развития ливня используется модель адронизации, объединяющая 
+кварки и глюоны в адроны. Генератор PYTHIAсодержит множество параметров и моделей и 
+позволяет подключать новые модели процессов для описания выделенных групп 
+событий.&nbsp;&nbsp; Версия PYTHIAВ 
+позволяет эффективно получать события с рождением В-адронов. В большинстве 
+случаев рождение b-кварков 
+с большими р<sub>Т</sub> происходит в ливнях кварков и глюонов от жесткого 
+рассеяния и случается это очень редко. Генератор PYTHIAВ повторно использует 
+модели ливней, содержащих bи с кварки. Рождение конкретного В-адрона и его 
+распад могут моделироваться дополнительно с использованием PYTHIA или генератора EVTGEN.
+<br>
+&nbsp;&nbsp;&nbsp; Эксперимент ATLAS использует версию HERWIG 6.5 [6-8] в сочетании с 
+генератором 
+Jimmi [24] для включения 
+сопутствующих событий. Это очень гибкий генератор, настроенный на описание 
+данных Теватрона. <br>
+&nbsp;&nbsp;&nbsp; Генератор Sherpa написан на С++, 
+использует интерфейс к модели адронизации PYTHIA и в результате создает 
+полное событие. В генераторе имеются матричные элементы фиксированного порядка 
+КХД в дополнение к партонным ливням в PYTHIAи поэтому в нем должны лучше описываться 
+конечные состояния с большим количеством струй. <br>
+&nbsp;&nbsp;&nbsp; Генератор Hijing используется для 
+моделирования соударений ядер при любых прицельных параметров. Рожденные внутри 
+плотного ядерного вещества частицы при прохождении через нее могут несколько раз 
+повторно взаимодействовать в ядерной среде. Это единственный генератор для 
+моделирования протон-ядерных соударений, к которым относятся и соударения 
+протонов пучка с остаточным газом в среде. Генератор Hijingиспользует модель адронизации PYTHIA.
+<br>
+&nbsp;&nbsp;&nbsp; Специализированные 
+генераторы не моделируют полное событие. Физический процесс моделируется в виде
+
+ASCII файлов, содержащих 
+четырехимпульсы частиц-партонов в формате “Les Houches”. Этот формат читается в
+
+Athena и подготавливается для 
+входа в 
+PYTHIA или HERWIG для создания полного 
+события. <br>
+&nbsp;&nbsp;&nbsp; В стандартных генераторах 
+рожденные тау-лептоны рассматриваются как стабильные частицы.&nbsp; Для их 
+распада используется генератор Tauola, написанный на FORTRAN. Специальное внимание 
+уделяется поляризации тау-лептонов. Она различается в разных реакциях. Например, 
+она известна для распадов W, а в распадах Z → ττ поляризации 
+коррелированны. Для генерации электромагнитного излучения в Tauola применяется генератор Photos, т.е. они должны 
+использоваться совместно. При использовании Photos для лучшего описания 
+электромагнитного излучения в моделировании с PYTHIA или HERWIG необходимо отключать их 
+собственные программы генерации&nbsp; электромагнитного излучения для исключения 
+двойного счета. <br>
+&nbsp;&nbsp;&nbsp; Генератор Alpgen относится к генераторам 
+типа “Les Houches” и применяется для моделирования состояний с большим 
+количеством объектов с использованием матричных элементов КХД фиксированного 
+порядка, которые лучше описывают эти состояния, чем ливневый механизм в PYTHIA и HERWIG. К таким состояниям 
+относятся, например, события с рождением W и Z и большого числа струй. <br>
+&nbsp;&nbsp;&nbsp; Генератор MC@NLO также относится к 
+генераторам “Les Houches” и используется для моделирования процессов жесткого 
+рассеяния КХД в следующем за лидирующим порядке пертурбативной КХД. В частности, 
+MC@NLO применяется для 
+моделирования рождения топ-кварков. Он включает петлевые поправки и содержит 
+вклады событий с положительным и отрицательным весом, что должно учитываться при 
+моделировании. Генератор применяется также для моделирования событий с рождением 
+W и Z. <br>
+&nbsp;&nbsp;&nbsp; Генератор AcerMC применяется для 
+моделирования событий с рождением W и Z и нескольких струй, включая струи, образованные&nbsp; 
+b кварками. <br>
+&nbsp;&nbsp;&nbsp; Все эти и другие 
+генераторы используются для создания событий, отвечающих разным физическим 
+процессам. Далее эти события проходят стадию моделирования сигналов детекторов 
+от прохождения частиц через них и оцифровку этих сигналов. Полностью процедура 
+моделирования эксперимента ATLAS описана в [25]. Далее к ним применяются те же 
+программы реконструкции, что и для реальных событий.&nbsp; Анализ 
+экспериментальных данных происходит путем сравнения результатов эксперимента и 
+моделирования. </p>
+
+<p>Литература к разделу 3</p>
+
+<ol>
+	<li>S.Agostinelli 
+et al. NIM Phys. Res. A506 
+(2003) 250.</li>
+	<li>J.Allison et 
+al. IEEE Transactions on Nuclear Science 53 (2006) 270.</li>
+	<li>T. Sjöstrand, 
+S. Mrenna and P. Skands, PYTHIA6.4 physics and manual, JHEP 05 (2006) 026.</li>
+	<li>M. Smizanska, 
+S.P. Baranov, J. Hrivnac and E. Kneringer, Overview of Monte Carlo simulations 
+for ATLAS B-physics in the period 1996-1999, ATL-PHYS-2000-025 (2000).</li>
+	<li>C. 
+Anastopoulos et al., Physics analysis tools for beauty physics in ATLAS, in 
+Proceedings of Computing in High Energy and Nuclear Physics 2007 Conference 
+(CHEP2007), Victoria, BC, Canada, September 2-7, 2007, ed. R. Sobie, R. Tafirout 
+and J. Thomson, (J.Phys.: Conf. Ser. 119, 2007), p. 032003.</li>
+	<li>G. Marchesini, 
+B.R. Webber, G. Abbiendi, I.G. Knowles, M.H. Seymour and L. Stanco, HERWIG: A 
+Monte Carlo event generator for simulating hadron emission reactions with 
+interfering gluons. Version 5.1 - April 1991, Comput. Phys. Commun. 67 (1992) 
+465.</li>
+	<li>G. Corcella et 
+al., HERWIG 6: An event generator for hadron emission reactions with interfering 
+gluons (including supersymmetric processes), JHEP 01 (2001) 010, 
+[hep-ph/0011363].</li>
+	<li>G. Corcella 
+et al., HERWIG 6.5 Release Note, CERNTH/2002-270 (2005), [hep-ph/0210213v2].</li>
+	<li>T. Gleisberg 
+et al., SHERPA 1.alpha, a proof-of-concept version, JHEP 02 (2004) 056, 
+[hep-ph/0311263].</li>
+	<li>M. Gyulassy 
+and X.N. Wang, HIJING 1.0: A Monte Carlo program for parton and particle 
+production in high energy hadronic and nuclear collisions, Comput. Phys. Commun. 
+83 (1994) 307, [nucl-th/9502021].</li>
+	<li>M.L. Mangano 
+et al., ALPGEN, a generator for hard multiparton processes in hadronic 
+collisions, JHEP 07 (2003) 001, [hep-ph/0206293].</li>
+	<li>S. Frixione, 
+P. Nason and B.R. Webber, Matching NLO QCD and parton showers in heavy flavour 
+production, JHEP 08 (2003) 007, [hep-ph/0305252].</li>
+	<li>B.P. Kersevan 
+and E. Richter-Was, The Monte Carlo event generator AcerMC version 2.0 with 
+interfaces to PYTHIA 6.2 and HERWIG 6.5, 2004, [hep-ph/0405247].</li>
+	<li>S. Jadach, 
+J.H. Kuhn and Z. Was, TAUOLA: A Library of Monte Carlo programs to simulate 
+decays of polarized tau leptons, Comput. Phys. Commun. 64 (1990) 275–299.</li>
+	<li>E. Barberio, 
+B. van Eijk and Z.Was, PHOTOS: A Universal Monte Carlo for QED radiative 
+corrections in decays,Comput. Phys. Commun. 66 (1991) 115–128.</li>
+	<li>D.J. Lange, 
+The EvtGen particle decay simulation package, Nucl. Instrum. Meth. A462 (2001) 
+152–155.</li>
+	<li>F.E. Paige, 
+S.D. Protopopescu, H. Baer and X. Tata, ISAJET 7.69: A Monte Carlo event 
+generator for p p, anti-p p, and e+ e- reactions, (2003), [hep-ph/0312045].</li>
+	<li>T. Sjöstrand, 
+S. Mrenna and P. Skands, A Brief Introduction to PYTHIA 8.1, Comput. Phys. 
+Commun. 178 (2008) 852–867, [hep-ph/0710.3820].</li>
+	<li>M. Bahr et 
+al., Herwig++ Physics and Manual, Eur. Phys. J. C58 (2008) 639–707, 
+[hep-ph/0803.0883].</li>
+	<li>T. Stelzer and 
+W.F. Long, Automatic generation of tree level helicity amplitudes, Comput. Phys. 
+Commun. 81(1994) 357–371, [hep-ph/9401258].</li>
+	<li>C.M. Harris, 
+P. Richardson and B.R. Webber, CHARYBDIS: A black hole event generator, JHEP 08 
+(2003) 033, [hep-ph/0307305].</li>
+	<li>CompHep 
+Collaboration, E. Boos et al., CompHEP 4.4: Automatic computations from 
+Lagrangians to events, Nucl. Instrum. Meth. A 534 (2004) 250, [hep-ph/0403113].</li>
+	<li>A. Pukhov et 
+al., CompHEP - a package for evaluation of Feynman diagrams and integration over 
+multi-particle phase space. User’s manual for version 3.3, INP MSU report 
+98-41/542 (1999), [hep-ph/9908288], See also
+<a
+href="http://comphep.sinp.msu.ru/">http://comphep.sinp.msu.ru</a>.</li>
+	<li>J.M. 
+Butterworth, J.R. Forshaw and M.H. Seymour, Zeit.f¨ur Phys. C72 (1996) 637–646</li>
+	<li>The ATLAS 
+Simulation Infrastructure, ATLAS Collaboration, Eur.Phys.J. C70 (2010) 823</li>
+</ol>
+
+&nbsp;<p align="center"><a href="at02.htm"><img src="../images/prev.gif" alt="previous"
+border="0" width="24" height="24"></a><a href="index.html"><img src="../images/rtop.gif" alt="home" border="0" width="24" height="24"></a><a href="at04.htm"><img src="../images/next.gif" alt="next" border="0" width="24" height="24"></a></p>
+			<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+		</tr>
+	</table>
+</div>
+
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+
+</html>
