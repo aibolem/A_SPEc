@@ -1,0 +1,672 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Метод искаженных волн</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table1">
+		<tr>
+			<td>
+
+<h3>Лекция 11. Оптический потенциал в теории неупругого рассеяния. Метод искаженных волн</h3><article>
+<h4>§ <a name="11.1.">11.1.</a> Приближение искаженных волн</h4>
+<p>&nbsp;&nbsp;&nbsp; В данном параграфе, отправляясь от общих уравнений многоканальной 
+теории столкновений, мы сформулируем основные положения метода 
+искаженных волн − одного из известных приближенных методов теории 
+неупругих процессов в ядерной и атомной физике. Обратимся сначала к 
+уравнениям двухканальной задачи рассеяния, чтобы решить вопрос, 
+поставленный еще <br>
+в § 10.2: как, не пользуясь теорией возмущений, 
+рассчитать дифференциальное сечение неупругого рассеяния частиц? 
+Рассматривая в § 10.2 упругое рассеяние частиц, мы исключили из системы 
+связанных уравнений (10.17) канальную функцию неупругого канала u<sub>2</sub>. 
+Теперь нас интересует как раз эта функция − точнее, ее асимптотика при 
+больших r. Поэтому исключим из системы уравнений (10.17) канальную 
+функцию u<sub>1</sub>:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table28">
+		<tr>
+			<td align="center">
+			u<sub>2</sub> =
+			<img border="0" src="images/eqqti10_09b.gif" width="28" height="26" align="middle">(E)V<sub>21</sub>{<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle"> 
+			+
+			<img border="0" src="images/eqqti10_09c.gif" width="28" height="26" align="middle">V<sub>12</sub>u<sub>2</sub>}.</td>
+			<td align="right" width="45">(11.1)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Как и (10.19), это соотношение дает лишь формальное решение задачи; 
+по существу, формула (11.1) − это интегральное уравнение для функции 
+u<sub>2</sub>(<b>r</b>), способ решения которого следует обсуждать особо. Одним из них 
+может быть способ итераций:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table29">
+		<tr>
+			<td align="center">
+			u<sub>2</sub> ≈
+			<img border="0" src="images/eqqti10_09b.gif" width="28" height="26" align="middle">(E)V<sub>21</sub>{<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle"> 
+			+
+			<img border="0" src="images/eqqti10_09c.gif" width="28" height="26" align="middle">V<sub>12</sub><img border="0" src="images/eqqti10_09b.gif" width="28" height="26" align="middle">V<sub>21</sub><img border="0" src="images/eqqti10_04a.gif" align="middle" width="26" height="26"> 
+			+ ...}.</td>
+			<td align="right" width="45">(11.2)</td>
+		</tr>
+	</table>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp; Очевидно, итерационный ряд (11.2) сходится тем лучше, чем слабее 
+взаимодействие V<sub>21</sub>, связывающее упругий и неупругий каналы. Важно, 
+однако, подчеркнуть, что полученная таким способом канальная функция u<sub>2</sub>,
+ удовлетворяет требуемому асимптотическому условию (10.14) независимо от
+ того, с какой точностью вычисляется ряд, стоящий в фигурных скобках 
+соотношения (11.2). Это обеспечивается   асимптотическим   поведением   функции</p>
+<p>Грина
+<img border="0" src="images/eqqti10_09b.gif" width="28" height="26" align="middle">(E). Подставляя (10.10) в (11.2) мы видим, что при 
+r → ∞ канальная функция u<sub>2</sub>(<b>r</b>) имеет вид расходящейся волны:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table30">
+		<tr>
+			<td align="center">
+			u<sub>2</sub>(<b>r</b>)|<sub>r→∞</sub> = F<sub>21</sub>( <b>k</b><sub>2</sub>,
+			<b>k</b><sub>1</sub>)<img border="0" src="images/eqqti11_01.gif" width="34" height="35" align="middle">,</td>
+			<td align="right" width="45">(11.3)</td>
+		</tr>
+	</table>
+</div>
+
+<p>где <b>k</b><sub>2</sub> − импульс рассеянной частицы в канале 2. Функция F<sub>21</sub>(
+<b>k</b><sub>2</sub>, <b>k</b><sub>1</sub>) −
+ амплитуда неупругого рассеяния, точное вычисление которой требует 
+точного решения уравнения (11.1):</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table31">
+		<tr>
+			<td align="center">
+			F<sub>21</sub>( <b>k</b><sub>2</sub>, <b>k</b><sub>1</sub>) = −<img border="0" src="images/eqqti11_02.gif" width="40" height="34" align="middle"><font size="5">∫</font><img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">(<b>r</b>)V<sub>21</sub>{<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle"> 
+			+
+			<img border="0" src="images/eqqti10_09c.gif" width="28" height="26" align="middle">V<sub>12</sub>u<sub>2</sub>}d<sup>3</sup>r 
+			.</td>
+			<td align="right" width="45">(11.4)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Если нормировка искаженных волн
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">(<b>r</b>) и 
+<img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">(<b>r</b>), входящих в (11.4), выбрана в соответствии с (10.11):</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table32">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle"> 
+			= <img border="0" src="images/eqqti10_08.gif" width="26" height="15"> + расходящаяся волна,<br>
+			<img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle"> 
+			=
+			<img border="0" src="images/eqqti10_08a.gif" width="28" height="15"> 
+			+ сходящаяся волна,</td>
+			<td align="right" width="45">(11.5)</td>
+		</tr>
+	</table>
+</div>
+
+<p>то дифференциальное сечение неупругого рассеяния выражается через амплитуду (11.4) по общей формуле (10.32):</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table33">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_04.gif" width="162" height="45"></td>
+			<td align="right" width="45">(11.6)</td>
+		</tr>
+	</table>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp; До сих пор, кроме исходного ограничения двумя связанными каналами, мы
+ не сделали никаких дополнительных приближений; соотношения (11.6) и 
+(11.4) в рамках поставленной двухканальнои задачи являются точными. 
+<font color="#800000"><b>Приближение искаженных волн</b></font> для неупругого рассеяния состоит в том, что 
+при вычислении амплитуды    (11.4)    точная    канальная    функция u<sub>1</sub>
+ = = 
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle"> +
+<img border="0" src="images/eqqti10_09c.gif" width="28" height="26" align="middle">V<sub>12</sub>u<sub>2</sub> заменяется   волновой   функцией
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table34">
+		<tr>
+			<td align="center">
+			F<sub>21</sub>( <b>k</b><sub>2</sub>, <b>k</b><sub>1</sub>) = −<img border="0" src="images/eqqti11_02.gif" width="40" height="34" align="middle"><font size="5">∫</font><img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">*(<b>r</b>)V<sub>21</sub><img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">(<b>r</b>)d<sup>3</sup>r 
+			.</td>
+			<td align="right" width="45">(11.7)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Таким образом, приближение искаженных волн − это теория возмущений по
+ взаимодействию между каналами. Отличие формулы (11.7) от выведенной 
+ранее методами теории возмущений формулы (8.23) в том, что сейчас мы в 
+качестве волновых функций начального и конечного состояний берем не 
+плоские волны, а искажённые волны
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">(<b>r</b>) и 
+<img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">(<b>r</b>); согласно (10.11), они строятся с учётом диагональной части взаимодействия между частицей и мишенью:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table35">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_05.gif" width="212" height="53"><br>
+			<img border="0" src="images/eqqti11_06.gif" width="245" height="53"></td>
+			<td align="right" width="45">(11.8)</td>
+		</tr>
+	</table>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp; Итак, в приближении искаженных волн дифференциальное сечение неупругого рассеяния вычисляется по формуле</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table36">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_07.gif" width="404" height="49"></td>
+			<td align="right" width="45">(11.9)</td>
+		</tr>
+	</table>
+</div>
+
+<p>где Ф<sub>1</sub>(ξ) и Ф<sub>2</sub>(ξ) − волновые функции начального и конечного состояний
+ мишени. В частном случае, если пренебречь взаимодействием частицы с 
+мишенью в начальном и конечном состояниях, т.е. произвести замену
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">(<b>r</b>) →
+<img border="0" src="images/eqqti10_08.gif" width="26" height="15">,
+<img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">(<b>r</b>) →
+<img border="0" src="images/eqqti10_08a.gif" width="28" height="15">, мы получим из (11.9) формулы борновского приближения (8.22), (8.23).<br>
+&nbsp;&nbsp;&nbsp; Кажется, что и саму формулу (11.9) тоже легко получить методом, 
+изложенным в § 8.1, если взять в качестве исходных волновых функций 
+начального и конечного состояний частицы не плоские, а искаженные волны.
+ Не ясно, правда, чем бы диктовался при этом выбор функций ψ<sup>(+)</sup> и ψ<sup>(−)</sup> Отправляясь от общей формулировки многоканальной задачи рассеяния, мы 
+«автоматически», одновременно с выводом самих формул (11.7), (11.9), 
+решили вопрос о выборе искаженных волн ψ<sup>(+)</sup> в качестве волновых функций
+ начального состояния и искаженных волн ψ<sup>(−)</sup> − конечного состояния. 
+Полученный результат относится не только к теории неупругого рассеяния, 
+он справедлив и в других приложениях метода искаженных волн. Итак, 
+запомним − для описания падающих частиц следует использовать искажённую 
+волну ψ<sup>(+)</sup>(<b>r</b>) (на бесконечности это «плоская плюс расходящаяся волны»),
+ для описания вылетающих частиц − искаженную волну ψ<sup>(−)</sup>(<b>r</b>) (на 
+бесконечности «плоская плюс сходящаяся волна»).</p>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table3">
+		<tr>
+			<td>
+
+<h4>§ <a name="11.2.">11.2.</a> Метод искаженных волн и оптическая модель</h4>
+<p>&nbsp;&nbsp;&nbsp; В предыдущем параграфе мы получили основные формулы метода искаженных
+ волн, отвлекаясь от связи входного и выходного каналов с другими 
+каналами. Устраним этот недостаток. Забегая вперед, отметим, что 
+уточнение    полученных   выше    формул    (11.7),    (11.9) коснется искаженных волн
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">(<b>r</b>) и 
+<img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">(<b>r</b>). Физические соображения 
+подсказывают, в частности, что вместо этих функций, которые вычисляются с
+ учетом среднего взаимодействия между частицей и мишенью, более 
+оправданным было бы взять искаженные волны, рассчитанные для 
+соответствующих комплексных оптических потенциалов во входном и выходном
+ каналах. Это значит, что вместо уравнений (11.8) следует решать 
+уравнения</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table41">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_08.gif" width="242" height="53"><br>
+			<img border="0" src="images/eqqti11_09.gif" width="276" height="53"></td>
+			<td align="right" width="45">(11.10)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Входящие сюда оптические потенциалы V<sub>opt,l</sub> и V<sub>opt,2</sub> вообще говоря, 
+различаются между собой и по амплитуде и по форме как вещественной, так и
+ мнимой части. На практике при использовании метода искаженных волн для 
+описания неупругого рассеяния параметры оптического потенциала во 
+входном упругом канале чаще всего определяются путем подгонки под данные
+ об упругом рассеянии. Что касается оптического потенциала в неупругом 
+канале, то здесь подобная подгонка, разумеется, невозможна, и поэтому в 
+качестве V<sub>opt,2</sub>(<b>r</b>) обычно используется тот же потенциал <br>
+V<sub>opt,1</sub>(<b>r</b>). 
+Разберем, отправляясь от общих уравнений многоканальной теории 
+рассеяния, насколько обоснована вся эта процедура.<br>
+&nbsp;&nbsp;&nbsp; Пусть нам надо вычислить дифференциальное сечение процесса А(х,х<i>'</i>)А* с
+ переходом мишени из основного |1&gt; в некоторое возбужденное состояние 
+|2&gt;. Обращаясь к приему, использованному в <br>
+§ 10.4, выделим в исходной 
+системе уравнений (10.4) канальные функции входного u<sub>1</sub>(<b>r</b>) и выходного 
+u<sub>2</sub>(<b>r</b>) каналов, а из остальных функций составим столбец:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table42">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_10.gif" width="84" height="74"></td>
+			<td align="right" width="45">(11.11)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Введем также матрицу операторов
+<img border="0" src="images/op_hst.gif" width="9" height="19"> с теми же элементами 
+&lt;n|<img border="0" src="../simages/op_hsm.gif" width="9" height="15">|m&gt;, что 
+даются формулой (10.40), но с укороченным по сравнению с (10.40) базисом
+ − в него не входят каналы 1  и 2. По аналогии с (10.41) и (10.42) 
+введем также операторы, связывающие каждый из каналов 1 и 2 со всеми остальными каналами:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table43">
+		<tr>
+			<td align="center">
+			<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1</sub> = (V<sub>13</sub>(<b>r</b>),V<sub>14</sub>(<b>r</b>),...)  ,<br>
+			<img border="0" src="images/eqqti11_11.gif" width="105" height="74"></td>
+			<td align="right" width="45">(11.12)</td>
+		</tr>
+	</table>
+</div>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table44">
+		<tr>
+			<td align="center">
+			<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2</sub> = (V<sub>23</sub>(<b>r</b>),V<sub>24</sub>(<b>r</b>),...)  ,<br>
+			<img border="0" src="images/eqqti11_12.gif" width="104" height="74"></td>
+			<td align="right" width="45">(11.13)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Тогда систему уравнений (10.4) можно представить в виде</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table45">
+		<tr>
+			<td align="center">
+			(<img border="0" src="../simages/op_hsm.gif" width="9" height="15"><sub>1</sub> 
+			− E)u<sub>1</sub> = −<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1</sub><img border="0" src="images/fst.gif" width="14" height="14"><sub>
+			</sub>− V<sub>12</sub>u<sub>2</sub> ,<br>
+			(<img border="0" src="../simages/op_hsm.gif" width="9" height="15"><sub>2</sub> 
+			− E)u<sub>2</sub> = −<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2</sub><img border="0" src="images/fst.gif" width="14" height="14"><sub>
+			</sub>− V<sub>21</sub>u<sub>1</sub> ,<br>
+			(<img border="0" src="images/op_hst.gif" width="9" height="19"> − E)<img border="0" src="images/fst.gif" width="14" height="14"> 
+			= −<img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle">u<sub>1
+			</sub>−
+			<img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle">u<sub>2</sub> 
+			,</td>
+			<td align="right" width="45">(11.14)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Приступая   к   решению   этой   системы,   сначала исключим из нее столбец
+<img border="0" src="images/fst.gif" width="14" height="14">:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table46">
+		<tr>
+			<td align="center">
+			<font size="6">(</font><img border="0" src="../simages/op_hsm.gif" width="9" height="15"><sub>1</sub> 
+			+ <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle"> 
+			− E<font size="6">)</font>u<sub>1</sub> = −<font size="6">{</font><img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle"> 
+			+ V<sub>12</sub><font size="6">}</font>u<sub>2</sub> ,<br>
+			<font size="6">(</font><img border="0" src="../simages/op_hsm.gif" width="9" height="15"><sub>2</sub> 
+			+ <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle"> 
+			− E<font size="6">)</font>u<sub>2</sub> = −<font size="6">{</font><img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle"> 
+			+ V<sub>21</sub><font size="6">}</font>u<sub>1</sub> .</td>
+			<td align="right" width="45">(11.15)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Полученную систему уравнений надо решать с асимптотическим условием (10.14).<br>
+&nbsp;&nbsp;&nbsp; Будем искать приближенное решение этой системы, соответствующее низшему порядку теории возмущений по взаимодействию, связывающему входной и выходной каналы. Отметим 
+принципиальную разницу между уравнениями (11.15) и системой уравнений 
+(10.13) в схематической двухканальной задаче: в многоканальном случае 
+связь каналов 1 и 2 осуществляется не только прямо − благодаря оператору
+ V<sub>12</sub> = V<sup>*</sup><sub>21</sub>, но и косвенно, через все другие каналы 
+− благодаря 
+нелокальному оператору, стоящему в правой части уравнений (11.15). 
+Выпишем его в более явной форме, используя (11.12) и 11.13):</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table47">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_14.gif" width="308" height="48"></td>
+			<td align="right" width="45">(11.16)</td>
+		</tr>
+	</table>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp; Оператор (11.16) пропорционален произведению недиагональных матричных
+ элементов V<sub>1n</sub> и V<sub>n<i>&#39;</i>2</sub>, т.е. представляет собой член более высокого 
+порядка относительно межканального взаимодействия, чем V<sub>12</sub>. B низшем 
+порядке теории возмущений по межканальному взаимодействию оператор 
+(11.16) следовало бы из уравнений (11.15) исключить. Так мы, 
+действительно, и поступим, однако прежде разберем, не следует ли 
+одновременно исключить   из   уравнений   (11.15)   также   нелокальные операторы <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1</sub>(E<sup>(+)</sup> − 
+<img border="0" src="images/op_hst.gif" width="9" height="19">)<sup>-1</sup><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle"> 
+			и <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2</sub>(E<sup>(+)</sup> − 
+<img border="0" src="images/op_hst.gif" width="9" height="19">)<sup>-1</sup><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle">, поскольку они тоже пропорциональны произведению недиагональных матричных элементов 
+V<sub>1n</sub> и V<sub>n<i>&#39;</i>2</sub>, например:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table48">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_15.gif" width="306" height="48"></td>
+			<td align="right" width="45">(11.17)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Но тогда вообще пропадет связь каналов 1 и 2 со всеми другими 
+каналами, и задача сведется к двухканальной. Как же сохранить (хотя бы 
+приближенно) основные эффекты, обусловленные связью входного и выходного
+ каналов со всеми другими каналами?<br>
+&nbsp;&nbsp;&nbsp; Внимательное рассмотрение показывает, что для отбрасывания 
+недиагонального оператора <br>
+<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1</sub>(E<sup>(+)</sup> − 
+<img border="0" src="images/op_hst.gif" width="9" height="19">)<sup>-1</sup><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle">&nbsp; имеется больше оснований, 
+чем для отбрасывания диагональных      операторов <br>
+<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1</sub>(E<sup>(+)</sup> − 
+<img border="0" src="images/op_hst.gif" width="9" height="19">)<sup>-1</sup><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle"> 
+			или <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2</sub>(E<sup>(+)</sup> − 
+<img border="0" src="images/op_hst.gif" width="9" height="19">)<sup>-1</sup><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle">. Действительно, допустим, что матрица оператора
+<img border="0" src="images/op_hst.gif" width="9" height="19"> диагональна в пространстве каналов |n&gt;. Тогда двойное 
+суммирование по n и n<i>'</i> в (11.16) и (11.17) переходит в однократное. При 
+этом в диагональном операторе (11.17) фаза (знак) каждого матричного 
+элемента V<sub>1n</sub> компенсируется фазой (знаком) входящего с ним в одно 
+произведение матричного элемента V<sub>n1</sub> = V<sub>1n</sub><sup>*</sup>. Наоборот, в недиагональном 
+операторе (11.16) матричные элементы V<sub>1n</sub> и V<sub>n2</sub>, соответствующие каждому 
+отдельному n, могут иметь как совпадающие, так и противоположные знаки. 
+Учитывая, что сумма (11.16) фактически включает бесконечное число 
+членов, допустим, что относительные знаки (фазы) отдельных слагаемых 
+меняются хаотически, так что вклады разных каналов в оператор (11.16) 
+полностью погашают друг друга. Назовем это приближение <b>приближением 
+хаотических фаз</b>.<br>
+&nbsp;&nbsp;&nbsp; Итак, в приближении хаотических фаз мы пренебрегаем косвенной связью 
+входного и выходного каналов через другие каналы по сравнению с их 
+прямой связью. Тогда система уравнений (11.15) принимает вид</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table49">
+		<tr>
+			<td align="center">
+			<font size="6">(</font><img border="0" src="../simages/op_hsm.gif" width="9" height="15"><sub>1</sub> 
+			+ <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle"> 
+			− E<font size="6">)</font>u<sub>1</sub> = −V<sub>12</sub>u<sub>2</sub> ,<br>
+			<font size="6">(</font><img border="0" src="../simages/op_hsm.gif" width="9" height="15"><sub>2</sub> 
+			+ <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle"> 
+			− E<font size="6">)</font>u<sub>2</sub> = −V<sub>21</sub>u<sub>1</sub> .</td>
+			<td align="right" width="45">(11.18) </td>
+		</tr>
+	</table>
+</div>
+
+<p>Если теперь сделать замену</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table50">
+		<tr>
+			<td align="center">
+			V<sub>11</sub> 
+			+ <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle">&nbsp; → 
+			V<sub>opt,1</sub>(<b>r</b>) ,<br>
+			V<sub>22</sub> 
+			+ <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>2<img border="0" src="images/eqqti11_13.gif" width="57" height="46" align="middle"></sub><img border="0" src="images/op_v2pl.gif" width="21" height="22" align="middle"> 
+			→ V<sub>opt,2</sub>(<b>r</b>) ,</td>
+			<td align="right" width="45">(11.19)</td>
+		</tr>
+	</table>
+</div>
+
+<p>то мы приходим к задаче о двух каналах, однако, в отличие от задачи, 
+рассмотренной в § 10.2, в каждом из каналов 1 и 2 частица 
+взаимодействует с мишенью как с комплексным оптическим потенциалом:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table51">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_16.gif" width="265" height="53"><br>
+			<img border="0" src="images/eqqti11_17.gif" width="296" height="53"></td>
+			<td align="right" width="45">(11.20)</td>
+		</tr>
+	</table>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp; В предыдущем параграфе было показано, что в приближении искаженных 
+волн решение двухканальной задачи дается формулами (11.7), (11.9). 
+Теперь, в отличие от (11.8), мы должны подставить в эти формулы 
+искаженные волны падающей и рассеянной частиц, удовлетворяющие 
+одночастичному уравнению Шредингера (11.10) с оптическим потенциалом. 
+Обсудим условия, позволяющие сделать замену (11.19). Прежде всего, 
+сравнивая    (11.17)    и    (10.47),    легко    заметить,    что нелокальный оператор 
+V<sub>11</sub> + <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sub>1</sub>(E<sup>(+)</sup> − 
+<img border="0" src="images/op_hst.gif" width="9" height="19">)<sup>-1</sup><img border="0" src="images/op_v1pl.gif" width="21" height="22" align="middle"> 
+			− не совсем то же самое, 
+что обобщенный оптический потенциал <img src="../simages/op_v.gif" alt="op_V" width="11" height="17"><sup>eff</sup>, определяющий упругое рассеяние
+ во входном канале 1 и аппроксимируемый модельным оптическим потенциалом
+ (10.48); они совпадают между собой лишь с точностью до вклада в 
+оптический потенциал выходного канала 2. Соответствующее различие 
+существует также между оптическим потенциалом V<sub>opt,1</sub>(<b>r</b>), входящим в 
+(11.20), и оптическим потенциалом (10.48), используемым в задаче 
+упругого рассеяния. Правда, сама аппроксимация сложного, зависящего от энергии, нелокального обобщенного оптического
+ потенциала с помощью простого локального оператора (10.48) 
+предполагает, что в сумме (10.47) нет резко выделенных членов, 
+обусловленных особенно сильной связью основного состояния мишени с 
+каким-либо отдельным возбужденным состоянием. Поэтому, коль скоро такая 
+аппроксимация принята, не следует придавать большого значения 
+формальному различию между потенциалом V<sub>opt,1</sub>(<b>r</b>) и оптическим 
+потенциалом (10.48).<br>
+&nbsp;&nbsp;&nbsp; Продолжая обсуждение замены (11.19), обратим внимание  на различие  между  средними  потенциалами V<sub>11</sub>(<b>r</b>) = &lt;1|<img src="../simages/op_v.gif" alt="op_V" width="11" height="17">(ξ,<b>r</b>)|1) и 
+V<sub>22</sub>(<b>r</b>) = &lt;2|<img src="../simages/op_v.gif" alt="op_V" width="11" height="17">(ξ,<b>r</b>)|2&gt;, относящимися к 
+основному и возбужденному состояниям мишени. Как правило, размеры атома 
+или атомного ядра в возбуждённом состоянии больше, чем в основном 
+состоянии. Значит, и средний потенциал V<sub>22</sub>(<b>r</b>) имеет более протяженный 
+характер, чем средний потенциал V<sub>11</sub>(<b>r</b>) (см. упр. 11.1).<br>
+&nbsp;&nbsp;&nbsp; В заключение параграфа заметим, что, конечно, систему уравнений 
+(11.20) можно использовать не только в качестве промежуточного этапа при
+ вьшоде формул метода искаженных волн, но и непосредственно − в рамках 
+задачи на связь двух каналов с оптическими потенциалами в каждом из этих
+ каналов.</p>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table40">
+		<tr>
+			<td>
+<h4>§ <a name="11.3.">11.3.</a> Метод искаженных волн при высоких энергиях</h4>
+<p>&nbsp;&nbsp;&nbsp; Прямой способ вычисления интеграла (11.7) для получения амплитуды неупругого рассеяния заключается в том, что обе искаженные волны
+<img border="0" src="images/eqqti10_04.gif" width="28" height="26" align="middle">(<b>r</b>) и 
+<img border="0" src="images/eqqti11_03.gif" width="31" height="26" align="middle">(<b>r</b>) подставляются в (11.7) в
+ виде разложения по сферическим гармоникам, после чего интегрирование по
+ углам выполняется аналитически, и дело сводится к численному 
+интегрированию по радиальной переменной. Однако с ростом энергии 
+налетающих частиц число орбитальных моментов в падающей и рассеянной волнах быстро растет, поэтому при больших 
+энергиях такая процедура расчетов по методу искаженных волн становится 
+очень громоздкой, а точность расчетов − плохо контролируемой. В этом 
+случае оказывается полезной другая процедура; в ее основе лежит 
+использование эйконального приближения для решения уравнений(11.10).<br>
+&nbsp;&nbsp;&nbsp; Заметим, что ввиду ограниченных размеров мишени интегрирование в 
+(11.7) производится фактически по некоторой конечной области − примерно 
+той же, в которой сосредоточены оптические потенциалы V<sub>opt,1</sub>(<b>r</b>) и 
+V<sub>opt,2</sub>(<b>r</b>). В § 4.2 было показано, что при больших энергиях частицы 
+решение одночастичного уравнения Шредингера ψ<sub><b>k</b></sub>(<b>r</b>) во внутренней области 
+можно с хорошей точностью представить в виде интеграла по прямому лучу, 
+из бесконечности в точку <b>r</b> по направлению импульса падающей частицы:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table53">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_18.gif" width="274" height="56"></td>
+			<td align="right" width="45">(11.21)</td>
+		</tr>
+	</table>
+</div>
+
+<p>где <img border="0" src="images/opkb.gif" width="11" height="15"> = <b>k</b>/k − единичный вектор в направлении вектора
+<b>k</b>. То же соотношение удобно записать по другому:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table54">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_19.gif" width="257" height="56"></td>
+			<td align="right" width="45">(11.22)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Воспользуемся этим результатом для приближенного решения уравнений 
+(11.10). При этом нам понадобится также соотношение (1.43), связывающее 
+между собой искаженные волны двух типов; имея в виду использовать его 
+для вычисления интеграла (11.7), запишем это соотношение в виде</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table55">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_20.gif" width="134" height="36"></td>
+			<td align="right" width="45">(11.23)</td>
+		</tr>
+	</table>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp; Отсюда для частицы, движущейся в потенциале V(<b>r</b>), имеем</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table56">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_21.gif" width="289" height="56"></td>
+			<td align="right" width="45">(11.24)</td>
+		</tr>
+	</table>
+</div>
+
+<p>здесь интеграл берется по лучу, идущему из точки <b>r</b> в бесконечность по
+ направлению импульса рассеянной частицы. Подставляя (11.22) и (11.24) в
+ (11.7), получаем</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table57">
+		<tr>
+			<td align="center">
+			F<sub>21</sub>(<b>k</b><sub>2</sub>,<b>k</b><sub>1</sub>) = −<img border="0" src="images/eqqti11_02.gif" width="40" height="34" align="middle"><sub><font size="6">∫</font></sub>e<sup>i<b>qr</b></sup>(<b>r</b>)S(<b>r</b>)V<sub>21</sub>(<b>r</b>)d<sup>3</sup>r . </td>
+			<td align="right" width="45">(11.25)</td>
+		</tr>
+	</table>
+</div>
+
+<p>где все эффекты взаимодействия частицы с мишенью в начальном и конечном состояниях передаются
+<font color="#800000"><b>фактором искажения</b></font> S(<b>r</b>):</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table58">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_22.gif" width="410" height="56"></td>
+			<td align="right" width="45">(11.26)</td>
+		</tr>
+	</table>
+</div>
+
+<p>Заметим, что, поскольку мнимая часть оптического потенциала отрицательна, фактор 
+S(<b>r</b>) всегда меньше единицы.</p>
+			<table border="1" cellpadding="2" style="border-collapse: collapse" width="270" bordercolorlight="#000000" bordercolordark="#000000" id="table59" align="right">
+				<tr>
+					<td>
+					<img border="0" src="images/fqti11_01.gif" width="266" height="97"><br>
+					Рис. 11.1. Схема пути интегрирования при вычислении фактора искажения
+					</td>
+				</tr>
+			</table>
+			<p>&nbsp;&nbsp;&nbsp; На рис. 11.1 показана схема пути интегрирования при вычислении 
+фактора искажения S(<b>r</b>). Если угол рассеяния очень мал, то интеграл 
+берется по прямолинейной     траектории.<br>
+&nbsp;&nbsp;&nbsp; Правда, на участке до точки <b>r</b> и после точки <b>r</b> подынтегральные 
+выражения не совпадают друг с другом из-за различия оптических 
+потенциалов частицы в каналах 1 и 2. Если, далее, пренебречь этими различиями, то фактор искажения в
+ произвольной точке <b>r</b> определяется лишь проекцией <b>b</b> этой точки на 
+плоскость, перпендикулярную направлению движения частиц, но не зависит 
+от координаты z:</p>
+
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table60">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti11_23.gif" width="272" height="56"></td>
+			<td align="right" width="45">(11.27)</td>
+		</tr>
+	</table>
+</div><h4><a name="p"></a>Упражнения</h4>
+<p><b>11.1.</b>&nbsp;Вычислить средний потенциал взаимодействия электрона с атомом 
+водорода, находящимся: а) в основном состоянии 1s, б) в возбужденном состоянии 
+2s.</p>
+<p><b>11.2.</b>&nbsp;То же для состояния 2р, m = 0, ±1.</p>
+<p><b>11.3.</b>&nbsp;Поток электронов рассеивается атомом водорода, находящимся в 
+состоянии |2р,m&gt;, где m − проекция орбитального момента атома на некоторое 
+направление. Сформулировать способ вычисления вероятности упругого рассеяния, 
+сопровождающегося реориентациеи момента атома <br>
+m → m<i>&#39;</i>. Рассмотреть следующие варианты подхода: а) метод сильной связи с 
+учетом трех состояний атома |2р,m), m. = 0, ±1; б) то же, включая состояние 
+|2s&gt;; в)&nbsp;борновское приближение с искаженными волнами; г)&nbsp;плосковолновое 
+борновское приближение.</p>
+<p><b>11.4.</b>&nbsp;Нуклон неупруго рассеивается ядром на малый угол. Вычислить 
+фактор искажения S(<b>b</b>):<br>
+а)&nbsp;для оптического потенциала прямоугольной формы;<br>
+б)&nbsp;для оптического потенциала гауссовой формы.</p><hr>
+<p align="center"><a href="qti_10.htm">
+<img src="../images/prev.gif"
+alt=""
+border="0" width="24" height="24"></a><a href="index.html"><img src="../images/rtop.gif"
+alt="Содержание" border="0" width="24" height="24"></a><a href="qti_12.htm"><img src="../images/next.gif"
+alt=""
+border="0" width="24" height="24"></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan -->&nbsp;&nbsp;
+
+
+</td>
+		</tr>
+	</table>
+</div>
+
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+
+</html>

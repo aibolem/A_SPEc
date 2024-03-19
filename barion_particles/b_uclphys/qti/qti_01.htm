@@ -1,0 +1,714 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="ru">
+<title>Стационарная теория потенциального рассеяния</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛÄнgიAge©///₾ÄngიAge® Ekohomei©Å TÅLKiNg ი.ბ.м.ლ.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table1">
+		<tr>
+			<td>
+<h2>Раздел I. Потенциальное рассеяние</h2>
+<h3>Лекция 1. Стационарная теория потенциального рассеяния. Общие положения</h3><article>
+<h4>§ <a name="1.1.">1.1.</a> Постановка задачи. Интегральное уравнение для волновой функции. Асимптотическое условие</h4>
+<p>&nbsp;&nbsp;&nbsp; Методы современной квантовой теории столкновений принято разделять на две категории 
+− стационарные и нестационарные.<br>
+&nbsp;&nbsp;&nbsp; Внешнее различие между этими двумя подходами велико. Оно касается и 
+того, как формулируется задача, и математического аппарата и, наконец, 
+области непосредственного практического применения. В первом случае она 
+очень широка и включает разнообразные задачи, относящиеся к 
+столкновениям атомных частиц, ядерным реакциям, взаимодействию 
+элементарных частиц. Во втором случае область практического применения 
+теории гораздо уже. Нестационарная теория столкновений используется чаще
+ всего при решении особых задач, связанных с трактовкой специально 
+поставленных экспериментов. Кроме того, в отличие от стационарной теории
+ здесь по существу нет таких стандартных теоретических приемов, которые 
+были бы взяты «на вооружение» непосредственно экспериментаторами.<br>
+&nbsp;&nbsp;&nbsp; Тем не менее, между стационарной и нестационарной теориями 
+столкновений нет принципиальных различий, а, следовательно, и 
+какого-либо принципиального разделения сфер их действия. Мы покажем, что
+ стационарная теория столкновений со всеми ее привычными атрибутами − фазами рассеяния, борновским приближением, формфакторами и т.п. 
+− вытекает из строгой формулировки задачи столкновения, которая в 
+квантовой  механике,  как  и  в  классической  механике, дается изначально в рамках нестационарной теории. Другими словами, 
+стационарная теория столкновений − это особый математический метод, 
+«рецепт» решения задач теории столкновений, который технически очень 
+удобен и физически нагляден. Вместе с тем надо учитывать и то, что 
+современная квантовая физика все чаще сталкивается с задачами, где видна
+ потребность в разработке других, «прямых» методов нестационарной 
+теории, позволяющих непосредственно проследить за эволюцией состояний 
+квантовых систем в процессах столкновений.<br>
+&nbsp;&nbsp;&nbsp; Мы построим изложение следующим образом. Сначала, отправляясь от 
+интуитивных соображений, сформулируем основные положения стационарной 
+теории столкновений − сперва применительно к задаче потенциального 
+рассеяния, а затем и к разнообразным задачам о столкновениях с 
+составными системами. По ходу разработки конкретных методов теории мы 
+будем не только демонстрировать их успешное применение, но и 
+останавливаться на трудностях, условностях стационарной теории. В 
+заключительной лекции первого раздела курса будет сделано «сшивание» 
+стационарного и нестационарного подходов.<br>
+&nbsp;&nbsp;&nbsp; Начнем с простейшей задачи о рассеянии частиц неподвижным силовым 
+центром. Пусть V(<b>r</b>) − потенциальная энергия взаимодействия частиц с 
+центром, μ − масса частицы. Наша цель − найти дифференциальное сечение 
+рассеяния dσ/dΩ при условии, что на центр из бесконечности падает 
+плоскопараллельный пучок частиц с заданной начальной скоростью <b>v</b><sub>0</sub> =
+<b>n</b><sub>0</sub>v<sub>0</sub>.<br>
+&nbsp;&nbsp;&nbsp; Вспомним, как решается эта задача в классической механике. При t = 
+−∞ для каждой частицы падающего пучка задается прицельный параметр <b>b</b>. В общем случае это двумерный вектор в плоскости, перпендикулярной 
+направлению <b>n</b><sub>0</sub>. При   рассеянии   сферически-симметричным или аксиально-симметричным (относительно направления падающих 
+частиц) потенциалом задача характеризуется аксиальной симметрией; в 
+таком случае достаточно указать модуль вектора b = |<b>b</b>|. Уравнения 
+движения позволяют найти для каждого значения <b>b</b> траекторию движения 
+частиц: <b><br>
+r</b> = <b>r</b>(t). Ее асимптотика при t → +∞ указывает направление 
+вылета рассеянной частицы <b>n</b>, т.е. в общем случае, полярный G и 
+азимутальный ср углы рассеяния. Установив зависимость <b>n</b> = <b>n</b>(<b>b</b>), мы 
+вычисляем дифференциальное сечение рассеяния dσ/dΩ.<br>
+&nbsp;&nbsp;&nbsp; В квантовой механике нет траекторий движения частиц. Процесс 
+рассеяния описывается волновой функцией, которая при использовании 
+стационарной теории столкновений есть решение стационарного уравнения 
+Шредингера:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table47">
+		<tr>
+			<td align="center">
+			<img src="../simages/op_h.gif" alt="op_H" width="12" height="16">ψ(<b>r</b>) 
+			= Eψ(<b>r</b>).</td>
+			<td align="right" width="40">(1.1)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; В рассматриваемой задаче <b>r</b> − это пространственная координата частицы,
+ а гамильтониан <img src="../simages/op_h.gif" alt="op_H" width="12" height="16"> 
+− оператор, представляющий собой сумму оператора 
+кинетической энергии частицы
+<img border="0" src="images/eqqti01_01.gif" width="90" height="44" align="middle">     и потенциальной энергии     ее     взаимодействия    с     силовым     центром
+<img src="../simages/op_v.gif" alt="op_V" width="11" height="17"> = V(<b>r</b>):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table48">
+		<tr>
+			<td align="center">
+			<img src="../simages/op_h.gif" alt="op_H" width="12" height="16"> = 
+			<img src="../simages/op_h.gif" alt="op_H" width="12" height="16"><sub>0</sub> +
+			<img src="../simages/op_v.gif" alt="op_V" width="11" height="17">.</td>
+			<td align="right" width="40">(1.2)</td>
+		</tr>
+	</table>
+</div>
+<p>Все взаимодействия, с которыми мы будем иметь дело, исчезают на 
+больших расстояниях от силового центра. Примем уровень потенциальной 
+энергии на бесконечности за начало отсчета полной и потенциальной 
+энергии частицы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table49">
+		<tr>
+			<td align="center">V|<sub>r→∞</sub> = 0.</td>
+			<td align="right" width="40">(1.3)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Таким образом, область, в которой V(<b>r</b>) &gt; 0, соответствует отталкиванию, a V(<b>r</b>) &lt; 0 
+− притяжению частицы силовым центром.<br>
+&nbsp;&nbsp;&nbsp; При Е &gt; 0 уравнение (1.1) не имеет квадратично интегрируемых 
+решений. Вместе с тем важнейшим исходным положением квантовой механики 
+является положение о том, что только квадратично интегрируемые функции 
+описывают реальные состояния физических систем (см. [1, с.6]). Таким 
+образом, решения стационарного уравнения Шредингера, с которыми имеет 
+дело стационарная теория столкновений, играют с физической точки зрения 
+лишь вспомогательную роль, и их связь с реальными состояниями частицы, 
+испытывающей столкновение, нам еще предстоит выяснить (<a target="_blank" href="qti_07.htm">см. лекцию 7</a>).<br>
+&nbsp;&nbsp;&nbsp; Подставляя (1.2) в (1.1), перепишем уравнение Шредингера в виде</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table50">
+		<tr>
+			<td align="center">(<img src="../simages/op_h.gif" alt="op_H" width="12" height="16"><sub>0</sub> 
+			− E)ψ(<b>r</b>) = -<img src="../simages/op_v.gif" alt="op_V" width="11" height="17">ψ(<b>r</b>).</td>
+			<td align="right" width="40">(1.4)</td>
+		</tr>
+	</table>
+</div>
+<p>Вместе с этим уравнением нам придется рассматривать и соответствующее
+ однородное уравнение, решения которого мы будем обозначать как φ(<b>r</b>):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table51">
+		<tr>
+			<td align="center">(<img src="../simages/op_h.gif" alt="op_H" width="12" height="16"><sub>0</sub> 
+			− E)φ(<b>r</b>) = 0.</td>
+			<td align="right" width="40">(1.5)</td>
+		</tr>
+	</table>
+</div>
+<p>Частным случаем решения φ(<b>r</b>) является плоская волна:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table52">
+		<tr>
+			<td align="center">φ<sub><b>k</b></sub>(<b>r</b>) = e<sup>i<b>kr</b></sup>.</td>
+			<td align="right" width="40">(1.6)</td>
+		</tr>
+	</table>
+</div>
+<p>Не будучи квадратично интегрируемой, функция (1.6) не описывает 
+какого-либо реального состояния частицы; в стационарной теории 
+столкновений мы будем пользоваться ею для описания плоскопараллельного 
+стационарного потока частиц с заданным импульсом <b>р</b> = ћ<b>k</b> (в дальнейшем 
+мы будем просто говорить - «с импульсом <b>k</b>»). Заметим, что при выбранной 
+нами нормировке функции (1.6) удовлетворяют следующему соотношению 
+(«условие полноты»):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table53">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_02.gif" width="196" height="49"></td>
+			<td align="right" width="40">(1.7)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Будем искать решение уравнения (1.4), описывающее процесс рассеяния, 
+исходя из следующего <b>физического требования</b>: пусть на достаточно большом
+ расстоянии от силового центра, когда взаимодействием между частицей и 
+силовым центром можно пренебречь, волновая функция задачи рассеяния 
+представляет собой суперпозицию плоской волны (1.6) и расходящейся 
+сферической волны:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table54">
+		<tr>
+			<td align="center">φ<sub><b>k</b></sub>(<b>r</b>)|<sub>r→∞</sub> = e<sup>i<b>kr</b></sup> 
+			+ расх. волна,</td>
+			<td align="right" width="40">(1.8)</td>
+		</tr>
+	</table>
+</div>
+<p>где <b>k</b> − импульс (волновой вектор) падающих частиц. Ниже мы покажем, что такое решение уравнения (1.4) действительно существует.<br>
+&nbsp;&nbsp;&nbsp; Для этого перейдем от дифференциального уравнения Шредингера (1.4) к эквивалентному интегральному уравнению</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table55">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_03.gif" width="272" height="29"></td>
+			<td align="right" width="40">(1.9)</td>
+		</tr>
+	</table>
+</div>
+<p>где G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>&#39;</i>) − функция Грина, соответствующая оператору <img src="../simages/op_h.gif" alt="op_H" width="12" height="16"><sub>0</sub> 
+			и удовлетворяющая уравнению</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table56">
+		<tr>
+			<td align="center">(E −
+			<img src="../simages/op_h.gif" alt="op_H" width="12" height="16"><sub>0</sub>)G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>&#39;</i>) 
+			= δ(<b>r</b> − <b>r</b><i>&#39;</i>)</td>
+			<td align="right" width="40">(1.10)</td>
+		</tr>
+	</table>
+</div>
+<p>(мы будем называть G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>&#39;</i>)
+<font color="#800000"><b>функцией Грина свободного движения 
+частицы</b></font>). В эквивалентности (1.4) и (1.9) легко убедиться, подставив 
+(1.9) в левую часть уравнения (1.4). При этом надо учесть связь между 
+энергией и импульсом свободной частицы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table57">
+		<tr>
+			<td align="center">E = ћ<sup>2</sup>k<sup>2</sup>/2μ.</td>
+			<td align="right" width="40">(1.11)</td>
+		</tr>
+	</table>
+</div>
+<p>В дальнейшем мы будем пользоваться также сокращенной записью уравнения (1.9):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table58">
+		<tr>
+			<td align="center">ψ<sub><b>k</b></sub>(<b>r</b>) = e<sup>i<b>kr</b></sup> 
+			+
+			<img border="0" src="images/eqqti01_04.gif" width="62" height="46" align="middle"><img src="../simages/op_v.gif" alt="op_V" width="11" height="17">ψ<sub><b>k</b></sub>(<b>r</b>),</td>
+			<td align="right" width="40">(1.12)</td>
+		</tr>
+	</table>
+</div>
+<p>или</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table59">
+		<tr>
+			<td align="center">ψ<sub><b>k</b></sub>(<b>r</b>) = e<sup>i<b>kr</b></sup> 
+			+ <img border="0" src="../simages/op_g.gif" width="12" height="15"><sub>0</sub>(E)<img src="../simages/op_v.gif" alt="op_V" width="11" height="17">ψ<sub><b>k</b></sub>(<b>r</b>),</td>
+			<td align="right" width="40">(1.13)</td>
+		</tr>
+	</table>
+</div>
+<p>где</p>
+<p align="center">
+<img border="0" src="../simages/op_g.gif" width="12" height="15"><sub>0</sub>(E) ≡
+<img border="0" src="images/eqqti01_04.gif" width="62" height="46" align="middle"></p>
+<p>−&nbsp;<font color="#800000"><b>гриновский оператор свободного движения частицы</b></font> (являющийся, как видно из (1.9), интегральным оператором).<br>
+&nbsp;&nbsp;&nbsp; Интегральные уравнения (1.9), (1.13) для волновой функции задачи рассеяния носят название
+<font color="#800000"><b>уравнения Липпмана−Швингера</b></font>.<br>
+&nbsp;&nbsp;&nbsp; Из всех возможных решений уравнения Липпмана− Швингера нам надо выбрать такие, которые удовлетворяют 
+асимптотическому условию (1.8). Как это сделать? Для ответа на этот 
+вопрос вычислим функцию Грина G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>'</i>) и рассмотрим, как выглядит 
+она при r → ∞.</p>
+</td>
+		</tr>
+	</table>
+</div>
+
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table90">
+		<tr>
+			<td>&nbsp;<h4>§ <a name="1.2.">1.2.</a> Функция Грина свободного движения частицы. Амплитуда рассеяния</h4>
+<p>&nbsp;&nbsp;&nbsp; Легко убедиться в том, что если G(E,<b>r</b>,<b>r</b><i>'</i>) 
+− функция    Грина,    соответствующая    оператору
+<img src="../simages/op_h.gif" alt="op_H" width="12" height="16">,    а
+<br>
+{φ<sub>n</sub>(<b>r</b>)}<img border="0" src="images/eqqti01_05.gif" width="18" height="21" align="middle"> 
+− полный набор ортонормированных собственных функций этого оператора:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table92">
+		<tr>
+			<td align="center">
+			<img src="../simages/op_h.gif" alt="op_H" width="12" height="16">φ<sub>n</sub> 
+			= Eφ<sub>n</sub>,<sub>&nbsp;&nbsp; </sub>n = 1, 2,..., ∞,</td>
+			<td align="right" width="40">(1.14)</td>
+		</tr>
+	</table>
+</div>
+<p>то справедливо так называемое <font color="#800000"><b>спектральное разложение</b></font>, или
+<font color="#800000"><b>спектральное представление функции Грина</b></font>:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table93">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_06.gif" width="184" height="49"></td>
+			<td align="right" width="40">(1.15)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Действительно, подействовав на G(E,<b>r</b>,<b>r</b><i>'</i>) оператором (E − <img src="../simages/op_h.gif" alt="op_H" width="12" height="16">) и учитывая свойство полноты функций фп(г), приходим к уравнению типа 
+(1.10):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table94">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_07.gif" width="457" height="49"></td>
+			<td align="right" width="40">(1.16)</td>
+		</tr>
+	</table>
+</div>
+<p>где оператор <img src="../simages/op_h.gif" alt="op_H" width="12" height="16"> действует на переменную
+<b>r</b>; это уравнение определяет функцию Грина, соответствующую оператору
+<img src="../simages/op_h.gif" alt="op_H" width="12" height="16">.<br>
+&nbsp;&nbsp;&nbsp; Воспользуемся спектральным представлением (1.15) для вычисления 
+функции Грина свободной частицы G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>'</i>). Правда, в нашем случае 
+спектр собственных значений (или, если говорить более строго, обобщенных<span lang="ru">
+</span>собственных значений) оператора
+<img border="0" src="images/eqqti01_01.gif" width="90" height="44" align="middle">     − непрерывный, и сумму в (1.15) надо заменить интегралом:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table95">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_08.gif" width="221" height="74"></td>
+			<td align="right" width="40">(1.17)</td>
+		</tr>
+	</table>
+</div>
+<p>здесь φ<sub><b>χ</b></sub>(<b>r</b>) − плоская волна (1.6) описывающая свободное движение 
+частицы с импульсом <b>χ</b>. Выполняя несложные преобразования, связанные, в 
+частности, с интегрированием по направлениям вектора <b>χ</b>, приходим к 
+выражению</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table96">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_09.gif" width="296" height="68"></td>
+			<td align="right" width="40">(1.18)</td>
+		</tr>
+	</table>
+</div>
+<p>Здесь становится видно, что уравнение (1.10) и соответствующее ему 
+спектральное представление (1.17) не определяют функции Грина G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>'</i>) однозначно. Мы можем сами распорядиться способом обхода полюсов в 
+интеграле (1.18), чтобы получить нужную нам функцию Грина <br>
+G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>'</i>), такую, которая при подстановке в уравнение Липпмана − Швингера (1.9) 
+обеспечит требуемое соотношением (1.8) асимптотическое поведение 
+волновой функции ψ<sub><b>k</b></sub>(<b>r</b>).<br>
+&nbsp;&nbsp;&nbsp; Рассмотрим два способа обхода полюсов: добавим к положительной 
+вещественной величине Е, входящей в (1.18), малую добавку ±iε, а после 
+вычисления интеграла обратим ε в нуль; соответствующие выражения для 
+функции Грина G<sub>0</sub>(E,<b>r</b>,<b>r</b><i>'</i>) снабдим индексом (+) или (−):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table97">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_10.gif" width="226" height="33"></td>
+			<td align="right" width="40">(1.19)</td>
+		</tr>
+	</table>
+</div>
+<p>В соответствии с (1.19) определим также два гриновских оператора
+<img border="0" src="images/eqqti01_16.gif" align="middle" width="32" height="26">,
+<img border="0" src="images/eqqti01_17.gif" align="middle" width="32" height="26">:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table98">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_15.gif" width="172" height="46"></td>
+			<td align="right" width="40">(1.20)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Непосредственное (с помощью техники вычетов) вычисление интегралов (1.19) дает</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table99">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_13.gif" width="198" height="48"></td>
+			<td align="right" width="40">(1.21)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table100">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_14.gif" width="202" height="48"></td>
+			<td align="right" width="40">(1.22)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Покажем, что подстановка в уравнение (1.9) функции Грина
+<img border="0" src="images/eqqti01_11.gif" width="28" height="23" align="middle"> 
+обеспечивает выполнение асимптотического условия (1.8). Для этого 
+заметим, что при r &gt;&gt; r<i>'</i> функция Грина
+<img border="0" src="images/eqqti01_11.gif" width="28" height="23" align="middle">(E,<b>r</b>,<b>r</b><i>'</i>) имеет вид</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table101">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_18.gif" width="232" height="46"></td>
+			<td align="right" width="40">(1.23)</td>
+		</tr>
+	</table>
+</div>
+<p>здесь мы воспользовались разложением</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table102">
+		<tr>
+			<td align="center">|<b>r</b> − <b>r</b><i>&#39;</i>| = |<b>r</b>| − <b>
+			rr</b><i>&#39;</i>/r + ...</td>
+			<td align="right" width="40">(1.24)</td>
+		</tr>
+	</table>
+</div>
+<p>и ввели новое обозначение</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table103">
+		<tr>
+			<td align="center"><b>k</b><i>&#39;</i> = k<b>r</b>/r</td>
+			<td align="right" width="40">(1.25)</td>
+		</tr>
+	</table>
+</div>
+<p>Вектор <b>k</b><i>&#39;</i> равен по модулю импульсу падающих частиц <b>k</b> и направлен в 
+точку наблюдения; таким образом, <b>k</b><i>&#39;</i> − это импульс частицы, рассеянной в 
+направлении единичного вектора <b>r</b>/r.<br>
+&nbsp;&nbsp;&nbsp; Прежде      чем      подставить      функцию      Грина
+<img border="0" src="images/eqqti01_11.gif" width="28" height="23" align="middle">(E,<b>r</b>,<b>r</b><i>'</i>) в (1.9) условимся об одном важном ограничении, 
+касающемся потенциала взаимодействия V(<b>r</b>). Именно − ограничимся так 
+называемыми <font color="#800000"><b>потенциалами конечного радиуса</b></font>: для каждого из них можно 
+указать такое расстояние от центра d, за пределами которого 
+взаимодействие частиц с силовым центром пренебрежимо мало (мы будем 
+говорить также, что радиус d разделяет «внутреннюю» и «внешнюю» области 
+действия силового центра). К классу потенциалов конечного радиуса 
+относятся такие часто используемые потенциалы, как потенциал 
+прямоугольной формы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table104">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_19.gif" width="128" height="48"></td>
+			<td align="right" width="40">(1.26)</td>
+		</tr>
+	</table>
+</div>
+<p>потенциал Юкавы:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table105">
+		<tr>
+			<td align="center">V(r) = Ae<sup>-r/a</sup>/r</td>
+			<td align="right" width="40">(1.27)</td>
+		</tr>
+	</table>
+</div>
+<p>(ту   же    форму   имеет   экранированный
+кулоновский потенциал); гауссов потенциал:&nbsp;</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table106">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_20.gif" width="114" height="30"></td>
+			<td align="right" width="40">(1.28)</td>
+		</tr>
+	</table>
+</div>
+<p>потенциал Вудса − Саксона:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table107">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_21.gif" width="150" height="65"></td>
+			<td align="right" width="40">(1.29)</td>
+		</tr>
+	</table>
+</div>
+<p>Важнейший пример потенциала, не
+являющегося
+потенциалом конечного радиуса, −
+кулоновский
+потенциал:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table108">
+		<tr>
+			<td align="center">V<sub>c</sub>(r) = Z<sub>1</sub>Z<sub>2</sub>e<sup>2</sup>/r;</td>
+			<td align="right" width="40">(1.30)</td>
+		</tr>
+	</table>
+</div>
+<p>а также любой потенциал с кулоновским поведением на больших расстояниях (с кулоновским «хвостом»). 
+(В <a target="_blank" href="qti_05.htm">§ 5.1</a> мы увидим, что с математической точки зрения при определении 
+характера короткодействия потенциала является важным, спадает ли 
+потенциал на больших расстояниях быстрее или медленнее, чем 1/r<sup>2</sup>.<br>
+&nbsp;&nbsp;&nbsp; Итак, пусть в рассматриваемой нами задаче V(<b>r</b>) − это потенциал 
+конечного радиуса. Обратимся к уравнению (1.9). Интеграл в правой части 
+берется фактически по области конечных размеров − порядка d. Поэтому при r &gt;&gt; d можно подставить в (1.9) приближенное выражение функции Грина 
+(1.23). В итоге получаем</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table109">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_22.gif" width="326" height="46"></td>
+			<td align="right" width="40">(1.3l)</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;&nbsp;&nbsp; Мы убедились в том, что использование в уравнении Липпмана − Швингера
+ функции Грина (1.21) обеспечивает требуемое соотношением (1.8) 
+асимптотическое поведение волновой функции ψ<sub><b>k</b></sub>(<b>r</b>) (плоская плюс 
+расходящаяся волны). Будем обозначать такое решение уравнения (1.9) 
+символом
+<br>
+<img border="0" src="images/eqqti01_25e.gif" width="26" height="23" align="middle">(<b>r</b>) а само уравнение перепишем в виде</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table110">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_23.gif" width="293" height="29"></td>
+			<td align="right" width="40">(1.32)</td>
+		</tr>
+	</table>
+</div>
+<p>где, в отличие от (1.9), явно указано, что в него входит функция 
+Грина (1.21). Асимптотика волновой функции
+<img border="0" src="images/eqqti01_25e.gif" width="26" height="23" align="middle">(<b>r</b>) имеет, согласно (1.31),
+ вид</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table111">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_24.gif" width="214" height="45"></td>
+			<td align="right" width="40">(1.33)</td>
+		</tr>
+	</table>
+</div>
+<p>где</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table112">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_26.gif" width="258" height="42"></td>
+			<td align="right" width="40">(1.34)</td>
+		</tr>
+	</table>
+</div>
+<p>Квадрат модуля величины ƒ(<b>k</b><i>'</i>,<b>k</b>) определяет, на больших расстояниях 
+от силового центра, интенсивность расходящейся волны e<sup>ikr</sup>/r относительно
+ падающей волны e<sup>ikr</sup>. Будем называть <br>
+ƒ(<b>k</b><i>'</i>,<b>k</b>) амплитудой рассеяния.</p>
+			<p>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table91">
+		<tr>
+			<td>
+<h4>§ <a name="1.3.">1.3.</a> Связь дифференциального сечения рассеяния с амплитудой рассеяния</h4>
+<p>&nbsp;&nbsp;&nbsp; Элемент эффективного сечения рассеяния dσ, соответствующий телесному 
+углу dΩ, есть, по определению, число частиц, которые в результате 
+рассеяния попадают в этот телесный угол в единицу времени, отнесенное к 
+плотности потока падающих частиц:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table122">
+		<tr>
+			<td align="center">dσ = dn/j<sub>in</sub>.</td>
+			<td align="right" width="40">(1.35)</td>
+		</tr>
+	</table>
+</div>
+<p>На первый взгляд, нет никаких проблем в том, чтобы, зная асимптотику 
+волновой функции задачи рассеяния (1.33) и пользуясь известной формулой 
+для плотности тока вероятности</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table123">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_27.gif" width="180" height="44"></td>
+			<td align="right" width="40">(1.36)</td>
+		</tr>
+	</table>
+</div>
+<p>найти числитель и знаменатель этого выражения. Действительно, число 
+частиц dn есть радиальная составляющая плотности потока рассеянных 
+частиц j<sub>out</sub>, умноженная на соответствующую площадь поверхности:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table124">
+		<tr>
+			<td align="center">dn = j<sub>out</sub>r<sup>2</sup>dΩ.</td>
+			<td align="right" width="40">(1.37)</td>
+		</tr>
+	</table>
+</div>
+<p>Считая, что составляющая e<sup>ikr</sup> в асимптотической волновой функции 
+(1.33) определяет плотность падающего потока j<sub>in</sub>, а составляющая ƒ(<b>k</b><i>'</i>,<b>k</b>)(e<sup>ikr</sup>/r) − плотность рассеянного потока j<sub>out</sub>, мы по формуле 
+(1.36) получаем:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table131">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_28.gif" width="156" height="44"></td>
+			<td align="right" width="40">(1.38)</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table132">
+		<tr>
+			<td align="center"><b>j</b><sub>in</sub> = ћ<b>k</b>/μ,</td>
+			<td align="right" width="40">(1.39)</td>
+		</tr>
+	</table>
+</div>
+<p>Отсюда следует</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table133">
+		<tr>
+			<td align="center">dσ = |ƒ(<b>k</b><i>'</i>,<b>k</b>)|<sup>2</sup>dΩ</td>
+			<td align="right" width="40">(1.40)</td>
+		</tr>
+	</table>
+</div>
+<p>или − иначе − для дифференциального сечения:</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table134">
+		<tr>
+			<td align="center">dσ/dΩ = |ƒ(<b>k</b><i>'</i>,<b>k</b>)|<sup>2</sup></td>
+			<td align="right" width="40">(1.41)</td>
+		</tr>
+	</table>
+</div>
+<p>Итак, квадрат модуля амплитуды рассеяния − это дифференциальное сечение рассеяния.<br>
+&nbsp;&nbsp;&nbsp; Надо обратить внимание на то, что наш вывод формулы (1.41) был 
+формальным. Плотность тока вероятности <b>j</b>(<b>r</b>) − это квадратичная форма 
+относительно волновой функции. Подставляя в (1.36) всю комбинацию (1.33), можно выделить в 
+<b>j</b>(<b>r</b>) то, что мы назвали плотностью падающего
+ потока <b>j</b><sub>in</sub> и плотностью рассеянных частиц <b>j</b><sub>out</sub>. Но ведь остается еще и 
+интерференционное слагаемое! Каков его физический смысл? Почему мы его 
+отбросили?<br>
+&nbsp;&nbsp;&nbsp; Мы отложим разбор этих вопросов, а вместе с ним и последовательный вывод формулы (1.41) до
+<a target="_blank" href="qti_06.htm">лекции 6</a>.</p>
+<p></p>
+</td>
+		</tr>
+	</table>
+</div>
+<div align="center">
+	<table border="0" cellpadding="0" width="700" cellspacing="0" id="table135">
+		<tr>
+			<td>
+<h4><a name="p"></a>Упражнения</h4>
+<p><b>1.1.</b>&nbsp;Обозначим символом
+<img border="0" src="images/eqqti01_25c.gif" width="26" height="23" align="middle">(<b>r</b>) 
+волновую функцию, удовлетворяющую уравнению Липпмана − Швингера с функцией Грина
+<img border="0" src="images/eqqti01_11a.gif" width="28" height="23" align="middle">(E,<b>r</b>,<b>r</b><i>&#39;</i>):</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table136">
+		<tr>
+			<td align="center">
+			<img border="0" src="images/eqqti01_29a.gif" width="292" height="29"></td>
+			<td align="right" width="40">(1.42)</td>
+		</tr>
+	</table>
+</div>
+<p>где
+<img border="0" src="images/eqqti01_11a.gif" width="28" height="23" align="middle"> 
+дается выражением (1.22). Найти асимптотику функции
+<img border="0" src="images/eqqti01_25c.gif" width="26" height="23" align="middle">(<b>r</b>).</p>
+<p><b>1.2.</b>&nbsp;Показать, что при любом вещественном V(r) функции
+<img border="0" src="images/eqqti01_25e.gif" width="26" height="23" align="middle">(<b>r</b>) 
+и
+<img border="0" src="images/eqqti01_25c.gif" width="26" height="23" align="middle">(<b>r</b>) 
+связаны соотношением</p>
+<div align="center">
+	<table border="0" cellpadding="2" width="600" id="table137">
+		<tr>
+			<td align="center">[<img border="0" src="images/eqqti01_25c.gif" width="26" height="23" align="middle">(<b>r</b>)]* 
+			=
+<img border="0" src="images/eqqti01_25b.gif" width="45" height="23" align="middle">,</td>
+			<td align="right" width="40">(1.43)</td>
+		</tr>
+	</table>
+</div>
+<p>которое справедливо во всей области изменения <b>r</b>.</p>
+<p><b>1.3.</b>&nbsp;Найти функцию Грина свободной частицы
+<img border="0" src="images/eqqti01_29.gif" width="12" height="14"><sub>0</sub>(E,<b>r</b>,<b>r</b><i>&#39;</i>), 
+вычисляя интеграл (1.18) в смысле главного значения. Какова асимптотика волновой 
+функции
+<img border="0" src="images/eqqti01_30.gif" width="44" height="24" align="middle"> 
+удовлетворяющей уравнению Липпмана − Швингера с функцией Грина
+<img border="0" src="images/eqqti01_29.gif" width="12" height="14"><sub>0</sub>? 
+Есть ли связь между функцией
+<img border="0" src="images/eqqti01_30.gif" width="44" height="24" align="middle"> 
+и функциями
+<img border="0" src="images/eqqti01_25.gif" width="26" height="23" align="middle">(<b>r</b>)?</p>
+			<p><b>1.4.</b>&nbsp;Проследить, как скажется на формулах для вычисления 
+			дифференциального сечения рассеяния <br>
+			((1.41), (1.34) и др.) изменение нормировочного множителя плоской 
+			волны в асимптотическом условии (1.8). Убедиться в том, что сама 
+			величина dσ/dΩ не зависит от выбора этого множителя.</p>
+			<hr width="700">
+			<p align="center"><a href="index.html"><img src="../images/rtop.gif"
+alt="Содержание" border="0" width="24" height="24"></a><a href="qti_02.htm"><img src="../images/next.gif"
+
+border="0" width="24" height="24"></a></p>
+			<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --><p>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;</p>
+			
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+
+</html>
