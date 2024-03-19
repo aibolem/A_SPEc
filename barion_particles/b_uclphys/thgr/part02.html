@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="ru">
+
+<head><link rel="shortcut icon" href="https://bit.ly/m/ASPECTR" width=32px><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet" href="tts.css"><link rel="prefetch" href="pause1.svg"> 	<link rel="prefetch" href="play1.svg"> 	<link rel="prefetch" href="stop1.svg"> 	<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><script src="tts.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<title>Группы и алгебры. Основные понятия</title>
+<div id="google_translate_element"></div><script type="text/javascript"> function googleTranslateElementInit() {   new google.translate.TranslateElement({pageLanguage: 'ru'}, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <p>©hoo$e ЛAнg?Age©///?Ang?Age® Ekohomei©A TALKiNg ?.?.м.?.</p><p><A HREF="http://geo.rf.gd">geo.rf.gd</A><BR><p/></head>
+
+<body><button id=play></button> &nbsp;<button id=pause></button> &nbsp;<button id=stop></button></div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<h3>1.2 Группы и алгебры. Основные понятия </h3><article>
+
+<h4>&nbsp;&nbsp;&nbsp; Определение группы</h4>
+
+<p>Пусть задано множество элементов G&nbsp; g<sub>1</sub>, g<sub>2</sub>, ... , g<sub>n</sub> ,
+обладающих следующими свойствами: 
+
+<ol>
+  <li>Определен закон умножения элементов g<sub>i</sub>
+    g<sub>j</sub>&nbsp; =&nbsp; g<sub>k</sub>, причем если g<sub>i</sub>, g<sub>j</sub>
+    <img SRC="Images/blng.gif" align="baseline" width="13" height="13"> G, то g<sub>i</sub> g<sub>j</sub> = g<sub>k</sub>
+    <img SRC="Images/blng.gif" width="13" height="13"> G,&nbsp; <br>
+    i, j, l = 1, 2, ...,&nbsp;n.</li>
+  <li>Выполняется закон ассоциативности g<sub>i</sub>
+    (g<sub>j</sub> g<sub>k</sub>) = (g<sub>i</sub> g<sub>j</sub>) g<sub>k</sub>.</li>
+  <li>Существует единичный элемент e, eg<sub>i</sub>
+    = g<sub>i</sub>, i = 1, 2, ... , n.</li>
+  <li>Существует обратный элемент&nbsp; g <sub>i</sub><sup>-1</sup>,
+    g <sub>i</sub><sup>-1</sup>g<sub>i</sub> = e,&nbsp; i = 1, 2, ... , n.</li>
+</ol>
+
+<p>Тогда на множестве G задана группа
+элементов g<sub>1</sub>, g<sub>2</sub>, ... , g<sub>n</sub></p>
+
+<p>&nbsp;&nbsp;&nbsp; В качестве простого примера
+рассмотрим вращение на плоскости. Зададим
+множество&nbsp;Ф всех поворотов на углы <font face="Times New Roman">&#966;</font> 
+
+<ol>
+  <li>Закон умножения в данном случае - это
+    сложение углов: <font face="Times New Roman">&#966;</font><sub>1</sub> + 
+	<font face="Times New Roman">&#966;</font><sub>2</sub> = 
+	<font face="Times New Roman">&#966;</font><sub>3</sub> <img SRC="Images/blng.gif" width="13" height="13">Ф.</li>
+  <li> Закон ассоциативности запишется как (<font face="Times New Roman">&#966;</font><sub>1</sub> + 
+	<font face="Times New Roman">&#966;</font><sub>2</sub>) + 
+	<font face="Times New Roman">&#966;</font><sub>3</sub> = 
+	<font face="Times New Roman">&#966;</font><sub>1</sub> + (<font face="Times New Roman">&#966;</font><sub>2</sub> + 
+	<font face="Times New Roman">&#966;</font><sub>3</sub>).</li>
+  <li> Единичный элемент в данном случае -
+    поворот на угол 0 ( +2<font face="Times New Roman">&#960;</font>n 
+     ). </li>
+  <li> Обратный элемент в данном случае
+    -поворот на угол - <font face="Times New Roman">&#966;</font>(+2<font face="Times New Roman">&#960;</font>n).</li>
+</ol>
+</td>
+</tr>
+</table>
+</div>
+<div align="center">
+	<table border="0" width="700" id="table1" cellpadding="5">
+		<tr>
+			<td>
+
+<p> Итак, вращения вокруг оси,
+перпендикулярной выбранной плоскости, образуют
+группу.<br>
+&nbsp;&nbsp;&nbsp; Рассмотрим поворот координатных осей<span
+style="mso-spacerun:yes">&nbsp; </span>x, y, z, задающих декартову
+систему координат в 3-мерном пространстве, на
+угол <font face="Times New Roman">&#952;</font><sub>3</sub>  в
+плоскости x y вокруг оси z: <a name="1"></a></p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_01.gif" width="293" height="74"></td>
+    <td width="4%"><p align="right">(1.1)</td>
+  </tr>
+</table>
+
+<p> Пусть <font face="Times New Roman">&#949;</font>  - бесконечно малый поворот. Разложим матрицу поворота 
+R<sub>3</sub>(<font face="Times New Roman">&#949;</font>)  в ряд
+Тэйлора и ограничимся членами, линейными по   
+<font face="Times New Roman">&#949;</font>: </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_02.gif" width="334" height="46"></td>
+    <td width="4%"><p align="right">(1.2)</td>
+  </tr>
+</table>
+
+<p> где использовано, что R<sub>3</sub>(0) суть
+единичная матрица, и введена матрица </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_03.gif" width="198" height="74"></td>
+    <td width="4%"><p align="right">(1.3)</td>
+  </tr>
+</table>
+
+<p> которую назовем генератором поворота
+вокруг 3-ей оси (оси z). Выберем   
+<font face="Times New Roman">&#949; = &#951;<sub>3</sub>/n</font>, тогда поворот на угол   
+<font face="Times New Roman">&#951;<sub>3</sub></font> получится n-кратным применением
+оператора  R<sub>3</sub>(<font face="Times New Roman">&#949;</font>) 
+ , и в пределе </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table2">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_06.gif" width="360" height="34"></td>
+    <td width="4%"><p align="right">(1.4)</td>
+  </tr>
+</table>
+
+<p> Рассмотрим повороты вокруг оси у: </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table3">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_07.gif" width="290" height="74"></td>
+    <td width="4%"><p align="right">(1.5)</td>
+  </tr>
+</table>
+
+<p> где, соответственно, введен генератор
+поворота вокруг оси<span style="mso-spacerun:yes">&nbsp; </span>у: </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table4">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_08.gif" width="224" height="74"></td>
+    <td width="4%"><p align="right">(1.6)</td>
+  </tr>
+</table>
+
+<p> и  вокруг оси x: </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table5">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_09.gif" WIDTH="284" HEIGHT="74"></td>
+    <td width="4%"><p align="right">(1.7)</td>
+  </tr>
+</table>
+
+<p> где введен генератор поворота вокруг
+оси x: </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table6">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_10.gif" width="196" height="74"></td>
+    <td width="4%"><p align="right">(1.8)</td>
+  </tr>
+</table>
+
+<p> Теперь в трехмерном пространстве можно
+уже записать поворот декартовой 3-мерной системы
+координат на произвольные конечные углы,
+например, как </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table10">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_11.gif" align="middle" width="257" height="28">.</td>
+    <td width="4%"><p align="right">(1.9)</td>
+  </tr>
+</table>
+
+<p> Обычно, однако, вращение в 3-мерном
+пространстве задают несколько иначе, а именно,
+посредством углов Эйлера </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table11">
+  <tr>
+    <td width="96%"><p align="center"><img SRC="images/i02_14.gif" width="166" height="26"></td>
+    <td width="4%"><p align="right">(1.10)</td>
+  </tr>
+</table>
+
+<p> Генераторы A<sub>l</sub>&nbsp; l = 1, 2, 3, &nbsp;
+удовлетворяют коммутационным соотношениям </p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%" id="table12">
+  <tr>
+    <td width="96%"><p align="center">A<sub>i</sub>·A<sub>j</sub> - A<sub>j</sub>·A<sub>i</sub>
+    = [A<sub>i</sub>, A<sub>j</sub>] = i <font face="Times New Roman">&#949;</font><sub>ijk</sub> A<sub>k</sub>,</td>
+    <td width="4%"><p align="right">(1.11)</td>
+  </tr>
+</table>
+
+<p> где&nbsp; <span lang="en-us"><font face="Times New Roman">&#949;</font></span><sub>ijk</sub>
+- абсолютно антисимметричный тензор 3-го ранга.
+Отметим,что матрицы A<sub>l</sub>&nbsp; l = 1, 2, 3,
+антисимметричны, тогда как матрицы R<sub>k</sub>-ортогональны,
+т.е. <img SRC="images/i02_13.gif" align="texttop" width="73" height="26">, где значок&nbsp; T
+означает транспонирование. Повороты могут быть
+полностью заданы посредством генераторов<span
+style="mso-spacerun:yes">&nbsp;</span>A<sub>l</sub> &nbsp;
+l&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3, другими словами, группа
+3-мерных вращений (как, впрочем, и любая
+непрерывная группа Ли с точностью до дискретных
+преобразований) вполне характеризуется заданием
+<strong>алгебры</strong> , т.е. заданием генераторов A<sub>l</sub> , 
+  &nbsp; l&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3, их линейных
+комбинаций и коммутационных соотношений. </p>
+
+<h4>&nbsp;&nbsp;&nbsp; Определение&nbsp; алгебры</h4>
+
+<p> L - алгебра Ли над полем вещественных
+чисел K, если:<br>
+(i) L -линейное пространство над К (для x <img
+SRC="Images/blng.gif" width="13" height="13"> L определено умножение&nbsp; на числа
+из К),<br>
+(ii) для x,y <img SRC="Images/blng.gif" width="13" height="13"> L определен коммутатор&nbsp; [x, y], также принадлежащий L,
+причем [x, y] обладает свойствами: <br>
+[<img src="../simages/alpha.gif" alt="альфа" width="8" height="7">x,&nbsp;y]&nbsp;=&nbsp;<img
+src="../simages/alpha.gif" alt="альфа" width="8" height="7">[x,&nbsp;y], [x,&nbsp;<img
+src="../simages/alpha.gif" alt="альфа" width="8" height="7">y]&nbsp;=&nbsp;<img src="../simages/alpha.gif"
+alt="альфа" width="8" height="7">[x,&nbsp;y] при <img src="../simages/alpha.gif" alt="альфа" width="8" height="7"> <img
+SRC="Images/blng.gif" width="13" height="13">K и [x<sub>1</sub> + x<sub>2</sub>, y] = [x<sub>1</sub>,
+y] + [x<sub>2</sub>, y], <br>
+[x, y<sub>1</sub> + y<sub>2</sub>] = [x, y<sub>1</sub>] + [x, y<sub>2</sub>] &nbsp; для
+всех x, y <img SRC="Images/blng.gif" width="13" height="13"> L; <br>
+[x, x] = 0&nbsp; для всех x, y <img
+SRC="Images/blng.gif" width="13" height="13"> L;<br>
+[[x, y] z] + [[y, z] x] + [[z, x] y] = 0 (тождество Якоби).</p>
+
+<p align="center"><a href="index.html#с"><img src="../react/images/sod.gif"
+alt="Содержание" border="0" width="118" height="25"></a> <a href="part03.html"><img
+src="../react/images/next.gif" alt="Продолжение" border="0" width="130" height="25"></a></p>
+<!--webbot bot="Include" U-Include="../radiation/rad_include.htm" TAG="BODY" startspan -->
+
+<p align="left"><a target="_blank" href="../index.html"><img src="../images/home.gif"
+alt="На головную страницу" border="0" align="right" width="22" height="28"></a></p>
+
+
+
+
+
+ 
+
+
+
+<!--webbot bot="Include" i-checksum="56241" endspan --></td>
+</tr>
+</table>
+</div>
+
+</article><!-- Top.Mail.Ru counter --><script type="text/javascript"> var _tmr = window._tmr || (window._tmr = []); _tmr.push({id: "3493895", type: "pageView", start: (new Date()).getTime()}); (function (d, w, id) {   if (d.getElementById(id)) return;   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;   ts.src = "https://top-fwz1.mail.ru/js/code.js";   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "tmr-code"); </script><noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3493895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript> <!-- /Top.Mail.Ru counter --><!-- Top.Mail.Ru logo --> <a href="https://top-fwz1.mail.ru/jump?from=3493895"><img src="https://top-fwz1.mail.ru/counter?id=3493895;t=309;l=1" height="15" width="88" alt="Top.Mail.Ru" style="border:0;" /></a> <!-- /Top.Mail.Ru logo --></body>
+</html>
