@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body  
+{ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: normal;
+	color: #333333; 
+	font-kerning: auto;
+	font-weight: 400; 
+	
+}
+h1 {
+	font-size: x-large; 
+}
+h2 {
+	font-weight: 200;
+	font-size: x-large; 
+}
+h4
+{color: #055E9D;}
+
+a:link {
+    color: #055E9D;
+    text-decoration: none;
+}
+a:visited {
+    color: #055E9D;
+    text-decoration: none;
+}
+a:hover {
+    color: #055E9D;
+    text-decoration:underline;
+}
+
+
+
+.head1
+{
+    font-size: x-large;
+    color: white;
+    font-weight: 700;
+    padding-left: 20px;
+    background-color: #055E9D;
+	width: auto;
+    overflow: hidden;
+}
+.head2
+{
+	font-size: large; 
+	background: #055E9D;
+	color: white;
+	font-weight: 300;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	width: auto;
+    overflow: hidden;
+}
+
+#Ish
+{
+ /*   width: 190px; */
+	float: left;	
+	background-color: #055E9D;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+#nav
+{
+	width: 200px;
+	float: left;
+}
+#body
+{
+    width: auto;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#wrapper {
+	overflow: hidden; /* add this to contain floated children */
+}
+#wrapper2 {
+	overflow: hidden; /* add this to contain floated children */
+	background-color: #055E9D;
+}
